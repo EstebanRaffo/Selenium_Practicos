@@ -1,0 +1,12 @@
+<suite name="Practico 13">
+    <test name="practico 13">
+        <!--<parameter name="tagName" value="h1"></parameter>-->
+        <!--<parameter name="tagName" value="h2"></parameter>-->
+        <parameter name="tagName" value="h3"></parameter>
+
+        <classes>
+            <class name="tests.testParametrizables"></class>
+            <!--<class name="tests.DocusignTest"></class>-->
+        </classes>
+    </test>
+</suite>

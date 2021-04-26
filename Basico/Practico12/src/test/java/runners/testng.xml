@@ -1,0 +1,19 @@
+<suite name="Practico 12">
+    <test name="Ejercicios Testng">
+        <parameter name="specificTag" value="h2"></parameter>
+
+        <groups>
+            <run>
+                <!--<include name="successTests"/>-->
+<!--                <include name="failTests"/>-->
+            </run>
+        </groups>
+
+        <classes>
+<!--            <class name="TestngSalesforce"></class>-->
+            <class name="SpotifyTestWithParameters"></class>
+                <!--<class name="TestngSpotify"></class>-->
+<!--                <class name="GroupTests"></class>-->
+        </classes>
+    </test>
+</suite>

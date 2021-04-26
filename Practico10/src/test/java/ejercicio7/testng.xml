@@ -1,0 +1,13 @@
+<suite name = "Prueba Suite Test">
+
+    <listeners>
+        <listener class-name="ejercicio7.SuiteListeners"></listener>
+    </listeners>
+
+    <test name = "Pruebas ejercicio 7">
+        <classes>
+            <class name="ejercicio7.OrangeTest"></class>
+        </classes>
+    </test>
+
+</suite>

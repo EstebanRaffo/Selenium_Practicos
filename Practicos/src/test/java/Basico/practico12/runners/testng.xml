@@ -1,0 +1,11 @@
+<suite name="Clase 12">
+    <test name="Ejercicios Testng">
+        <parameter name="tagName" value="a"></parameter>
+        <parameter name="username" value="testing@qa.com"></parameter>
+        <parameter name="password" value="holamundo123"></parameter>
+
+        <classes>
+            <class name="Basico.practico12.testngTests"></class>
+        </classes>
+    </test>
+</suite>
