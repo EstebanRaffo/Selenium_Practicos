@@ -1,0 +1,112 @@
+import org.junit.Assert;
+import org.testng.annotations.Test;
+import org.testng.util.Strings;
+
+import java.util.*;
+
+public class StringTest {
+
+    public static String first_name = "Pedro";
+    public static String second_name = "Juan";
+    public static String lastname = "Perez";
+    public static String telephone_number = "116688-0926";
+    public static String anyString = "ciertos caracteres";
+
+    public static void main(Strings args[]){
+
+        /*ArrayList<String> name = new ArrayList<>();
+        name.add(first_name);
+        name.add(second_name);
+        name.add(lastname);*/
+
+        String name = first_name.concat(second_name).concat(lastname);
+        System.out.println(name);
+
+        String[] numbers = telephone_number.split("-");
+        System.out.println(numbers[0]);
+        System.out.println(numbers[1]);
+
+        if(anyString.startsWith("c")){
+            System.out.println("anyString comienza con c");
+        }
+
+        HashMap<String, String> capitalCities = new HashMap<String, String>();
+
+        capitalCities.put("Argentina", "Buenos Aires");
+        capitalCities.put("Uruguay", "Montevideo");
+        capitalCities.put("Chile", "Santiago");
+        capitalCities.put("Noruega", "Oslo");
+        capitalCities.put("Finlandia", "Helsinki");
+        System.out.println(capitalCities);
+
+        for(Map.Entry pais : capitalCities.entrySet()){
+            System.out.println(pais.getKey() + ": " + pais.getValue());
+        }
+
+        HashMap<Integer, String> cities = new HashMap<Integer, String>();
+
+        cities.put(0, "Santiago");
+        cities.put(1, "Buenos Aires");
+        cities.put(2, "Montevideo");
+        cities.put(3, "Oslo");
+
+        for(int i = 0; i < cities.size(); i++){
+            System.out.println("Ciudad: " + cities.get(i) + " ; posición -> " + i);
+        }
+
+        for(Map.Entry city : cities.entrySet()){
+            System.out.println(city.getKey() + ": " + city.getValue());
+        }
+
+        cities.put(1, "Madrid");
+        cities.remove(2);
+    }
+
+    @Test
+    public static void validateEmails(List<String> emails){
+        boolean emailsAreValid = false;
+        for(String anEmail : emails){
+            if(anEmail.endsWith(".com") && anEmail.contains("@")){
+                emailsAreValid = true;
+            }else{
+                emailsAreValid = false;
+            }
+        }
+        Assert.assertTrue(emailsAreValid);
+    }
+
+    @Test
+    public static int positionOf(String anEmail){
+        return anEmail.indexOf("@");
+    }
+
+    @Test
+    public static String replaceCharacters(String anString){
+        String newString;
+        newString = anString.replace(",", "-");
+        newString = newString.replace(";", "@");
+
+        return newString;
+    }
+
+    @Test
+    public static String extractChars(String anyString, int start_pos, int end_pos){
+        String newString = anyString.substring(start_pos, end_pos);
+
+        return newString;
+    }
+
+    @Test
+    public static String convertToLower(String aString){
+        String newString = aString.toLowerCase();
+
+        return newString;
+    }
+
+    @Test
+    public static String convertToUpper(String aString){
+        String newString = aString.toUpperCase();
+
+        return newString;
+    }
+}

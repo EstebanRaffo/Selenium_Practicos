@@ -26,8 +26,10 @@ public class ManejoStrings {
         }
 
         System.out.println(capitalesMap.get("Chile"));
+        System.out.println(capitalesMap.get("Argentina"));
         System.out.println(capitalesMap.get("Colombia"));
         System.out.println(capitalesMap.get("Uruguay"));
+        System.out.println(capitalesMap.get("España"));
 
     }
 }
