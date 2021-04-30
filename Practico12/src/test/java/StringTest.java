@@ -11,6 +11,7 @@ public class StringTest {
     public static String lastname = "Perez";
     public static String telephone_number = "116688-0926";
     public static String anyString = "ciertos caracteres";
+    public static String stringEmails = "e.fraffo@gmail.com; e.fraffo@hotmail.com; e.fraffo@argentina.com";
 
     public static void main(String args[]){
 
@@ -76,8 +77,6 @@ public class StringTest {
         empleados.add(new Empleado(32123321, "Juan Perez", "QA Analyst"));
         empleados.add(new Empleado(33312231, "Pepe", "AF"));
 
-        //buscarEmpleadoPorDni(empleados, 31123321);
-
         HashMap<Integer, Empleado> empleados_list = new HashMap<Integer, Empleado>();
 
         for(int i = 0; i < empleados.size(); i++){
@@ -87,6 +86,12 @@ public class StringTest {
 
         System.out.println("Empleado con DNI 32123321: " + empleados_list.get(32123321));
         System.out.println("Nombre del Empleado con DNI 32123321: " + empleados_list.get(32123321).getNombre());
+
+        String [] arrayEmails = stringEmails.split(";");
+        System.out.println("arrayEmails: ");
+        for(int i = 0; i < arrayEmails.length; i++){
+            System.out.println("arrayEmails[" + i + "] = " + arrayEmails[i]);
+        }
     }
 
     @Test
