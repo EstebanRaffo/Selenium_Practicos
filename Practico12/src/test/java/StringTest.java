@@ -12,12 +12,7 @@ public class StringTest {
     public static String telephone_number = "116688-0926";
     public static String anyString = "ciertos caracteres";
 
-    public static void main(Strings args[]){
-
-        /*ArrayList<String> name = new ArrayList<>();
-        name.add(first_name);
-        name.add(second_name);
-        name.add(lastname);*/
+    public static void main(String args[]){
 
         String name = first_name.concat(second_name).concat(lastname);
         System.out.println(name);
@@ -60,6 +55,38 @@ public class StringTest {
 
         cities.put(1, "Madrid");
         cities.remove(2);
+        System.out.println(cities);
+
+        System.out.println("Validar emails");
+        List<String> emails = new ArrayList<>();
+        emails.add("e.fraffo@hotmail.com");
+        emails.add("e.fraffo@gmail.com");
+        emails.add("e.fraffo@argentina.com");
+
+        validateEmails(emails);
+        System.out.println("Posicion de @: " + positionOf("e.fraffo@gmail.com"));
+        System.out.println("Caracteres reemplazados: " + replaceCharacters(",,,,,,;;;;;;;"));
+        System.out.println("Extracto de e.fraffo@gmail.com desde pos 1 a 5: " + extractChars("e.fraffo@gmail.com", 1, 5));
+        System.out.println("Convertir HOLA a minuscula: " + convertToLower("HOLA"));
+        System.out.println("Convertir hola a mayuscula: " + convertToUpper("hola"));
+
+
+        ArrayList<Empleado> empleados = new ArrayList<>();
+        empleados.add(new Empleado(31123321, "Pedro Perez", "Dev"));
+        empleados.add(new Empleado(32123321, "Juan Perez", "QA Analyst"));
+        empleados.add(new Empleado(33312231, "Pepe", "AF"));
+
+        //buscarEmpleadoPorDni(empleados, 31123321);
+
+        HashMap<Integer, Empleado> empleados_list = new HashMap<Integer, Empleado>();
+
+        for(int i = 0; i < empleados.size(); i++){
+            Empleado unEmpleado = empleados.get(i);
+            empleados_list.put(unEmpleado.getDni(), unEmpleado);
+        }
+
+        System.out.println("Empleado con DNI 32123321: " + empleados_list.get(32123321));
+        System.out.println("Nombre del Empleado con DNI 32123321: " + empleados_list.get(32123321).getNombre());
     }
 
     @Test
@@ -109,4 +136,6 @@ public class StringTest {
 
         return newString;
     }
+
+
 }
