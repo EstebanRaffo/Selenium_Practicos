@@ -1,4 +1,5 @@
 import org.junit.Assert;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.testng.util.Strings;
 
@@ -12,6 +13,8 @@ public class StringTest {
     public static String telephone_number = "116688-0926";
     public static String anyString = "ciertos caracteres";
     public static String stringEmails = "e.fraffo@gmail.com; e.fraffo@hotmail.com; e.fraffo@argentina.com";
+    public static String data = "33123456,Pedro,Rosario,Argentina,pedro@gmail.com; 32456123,Juan,Montevideo,Uruguay,juan@gmail.com";
+    public static List<Persona> lista_personas = new ArrayList<>();
 
     public static void main(String args[]){
 
@@ -64,6 +67,7 @@ public class StringTest {
         emails.add("e.fraffo@gmail.com");
         emails.add("e.fraffo@argentina.com");
 
+        /***********************************************************************************************/
         validateEmails(emails);
         System.out.println("Posicion de @: " + positionOf("e.fraffo@gmail.com"));
         System.out.println("Caracteres reemplazados: " + replaceCharacters(",,,,,,;;;;;;;"));
@@ -71,7 +75,7 @@ public class StringTest {
         System.out.println("Convertir HOLA a minuscula: " + convertToLower("HOLA"));
         System.out.println("Convertir hola a mayuscula: " + convertToUpper("hola"));
 
-
+        /***********************************************************************************************/
         ArrayList<Empleado> empleados = new ArrayList<>();
         empleados.add(new Empleado(31123321, "Pedro Perez", "Dev"));
         empleados.add(new Empleado(32123321, "Juan Perez", "QA Analyst"));
@@ -92,7 +96,91 @@ public class StringTest {
         for(int i = 0; i < arrayEmails.length; i++){
             System.out.println("arrayEmails[" + i + "] = " + arrayEmails[i]);
         }
+
+        /***********************************************************************************************/
+        String[] dataPersona = data.split(";");
+
+        List<String> nombres_persona = new ArrayList<>();
+        List<String> emails_persona = new ArrayList<>();
+
+        for(int i = 0; i < dataPersona.length; i++){
+            String [] unaPersona = dataPersona[i].split(",");
+            String nombre = unaPersona[1];
+            nombres_persona.add(nombre);
+        }
+
+        System.out.println("Lista de nombres: " + nombres_persona);
+
+        for(String datosPersonales : dataPersona){
+            String[] datosPersona = datosPersonales.split(",");
+            emails_persona.add(datosPersona[4]);
+        }
+
+        System.out.println("Lista de emails: " + emails_persona);
+
+        /***********************************************************************************************/
+        List<String> nombres = new ArrayList<>();
+        List<String> listaPersonas = Arrays.asList(data.split(";"));
+
+        int cantidadDePersonas = listaPersonas.size();
+        String[] arregloDePersonas = new String[cantidadDePersonas];
+        String[] arregloDeNombres = new String[cantidadDePersonas];
+
+        for(String datosPersona : listaPersonas){
+            String[] datosDePersona = datosPersona.split(",");
+            String nombre = datosDePersona[1];
+            nombres.add(nombre);
+        }
+
+        for(int i = 0; i < cantidadDePersonas; i++){
+            arregloDePersonas[i] = listaPersonas.get(i);
+            arregloDeNombres[i] = nombres.get(i);
+        }
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Ingrese un nombre");
+        String unNombre = input.nextLine();
+        int posicion = nombres.indexOf(unNombre);
+
+        System.out.println("Datos de " + unNombre + ": " + arregloDePersonas[posicion]);
+
+        /***********************************************************************************************/
+        HashMap<String, String> personaPorNombre = new HashMap<>();
+        List<String> lista_personas = Arrays.asList(data.split(";"));
+
+        for(String datosDePersona : lista_personas){
+            String[] arregloDePersona = datosDePersona.split(",");
+            String nombre = arregloDePersona[1];
+            personaPorNombre.put(nombre, datosDePersona);
+        }
+
+        System.out.println("Ingrese un nombre");
+        String otroNombre = input.nextLine();
+
+        System.out.println("Datos de " + otroNombre + ": " + personaPorNombre.get(otroNombre));
+
+        /***********************************************************************************************/
+        HashMap<String, String> mapa_emails = new HashMap<>();
+
+        for(String persona : lista_personas){
+            String[] datos_persona = persona.split(",");
+            String email = datos_persona[4];
+            String nombre = datos_persona[1];
+            mapa_emails.put(email, nombre);
+        }
+
+        System.out.println("Ingrese un email");
+        String email = input.next();
+
+        System.out.println("Datos de "+ email + ": " + mapa_emails.get(email));
     }
+
+    @BeforeTest
+    public void loadData(){
+
+    }
+
+
 
     @Test
     public static void validateEmails(List<String> emails){
