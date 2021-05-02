@@ -13,7 +13,7 @@ import java.util.List;
 
 public class StringsDePersonas {
 
-    public static String data = "112111,Emiliano,Montevideo,Uruguay,testing@test.com; 12341234,Ana,Buenos Aires,Argentina,ana@ana.com";
+    public static String data = "112111,Emiliano,Montevideo,Uruguay,testing@test.com;12341234,Ana,Buenos Aires,Argentina,ana@ana.com";
     public static List<Persona> LISTA_PERSONAS = new ArrayList<>();
 
     public WebDriver driver;
