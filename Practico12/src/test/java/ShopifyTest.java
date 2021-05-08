@@ -1,6 +1,7 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.opera.OperaDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -39,13 +40,21 @@ public class ShopifyTest {
     private int i = 0;
     @Test (invocationCount = 2)
     public void registrationTest() throws InterruptedException {
-        driver.get("https://www.shopify.com");
+        driver.get("https://www.shopify.com/signup");
         Persona unaPersona = LISTA_PERSONAS.get(i);
         String email = unaPersona.getEmail();
+
+
+        driver.findElement(By.xpath("//section[@role='region']/button")).click(); // Cerrar anuncio
         Thread.sleep(3000);
-        System.out.println(email);
-        driver.findElement(By.xpath("//input[@autocomplete='email']")).sendKeys(email);
-        driver.findElement(By.xpath("//button[contains(text(), 'Start free trial')]")).click();
+        driver.findElement(By.id("0_signup_email")).sendKeys(email);
+        driver.findElement(By.id("0_signup_shop_name")).sendKeys(unaPersona.getNombre());
+        //driver.findElement(By.xpath("//button[contains(text(), 'Start free trial')]")).click();
         i++;
     }
+
+    /*@AfterMethod
+    public void tearDown(){
+        driver.close();
+    }*/
 }
