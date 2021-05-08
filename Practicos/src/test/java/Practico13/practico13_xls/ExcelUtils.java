@@ -14,7 +14,7 @@ public class ExcelUtils {
         XSSFSheet sheet1 = samplexlsx.getSheet("Sheet1");
         List<String> listaPersonas = new ArrayList<>();
 
-        for (int fila = 0; fila < 9; fila++){
+        for (int fila = 0; fila < 10; fila++){
             String datosPersonales = "";
             for (int columna = 0; columna < 8; columna++){
                 try {

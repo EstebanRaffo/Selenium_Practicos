@@ -19,7 +19,7 @@ public class CSV_Ejemplo2 {
 
         List<String> datosPersonasEmpresa = CSV_Utils.leerArchivoCSV("dataloader/username-password-recovery-code.csv");
 
-        for (String csv_row: datosPersonasEmpresa){
+        for (String csv_row : datosPersonasEmpresa){
             System.out.println(csv_row);
             String [] datos = csv_row.split(";");
 
