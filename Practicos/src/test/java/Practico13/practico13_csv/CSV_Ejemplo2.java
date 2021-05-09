@@ -27,9 +27,10 @@ public class CSV_Ejemplo2 {
             String identifier = datos[1];
             String name =  datos[4].concat(datos[5]);
             String location = datos[7];
+            String unEmail = username+"@test.com";
 
             ID_USERNAME_MAP.put(identifier, username);
-            Persona person = new Persona(0, name, location,"" );
+            Persona person = new Persona(0, name, location, unEmail );
 
             USERNAME_PERSON_MAP.put(username, person);
 
