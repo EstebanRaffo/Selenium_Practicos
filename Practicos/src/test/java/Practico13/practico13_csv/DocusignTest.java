@@ -27,7 +27,7 @@ public class DocusignTest {
 
     @BeforeMethod
     public void setDriver(ITestContext context) {
-        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
         driver = new ChromeDriver();
         driver.navigate().to("https://www.docusign.com");
     }

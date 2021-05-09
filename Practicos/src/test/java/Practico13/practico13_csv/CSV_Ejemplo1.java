@@ -28,6 +28,7 @@ public class CSV_Ejemplo1 {
         String [] celda;
 
         while((celda = reader.readNext()) != null){
+            System.out.println("celda: " + celda);
             for (int i = 0; i < celda.length; i++){
                 String datos = celda[i];
                 LISTA_DATOS_PERSONALES.add(datos);
@@ -38,6 +39,7 @@ public class CSV_Ejemplo1 {
     public static List<Persona> procesarDatosPersonales(){
         LISTA_DATOS_PERSONALES.remove(0);
         List<Persona> listaPersonas = new ArrayList<>();
+
         for (String dato : LISTA_DATOS_PERSONALES){
             String [] datoPersona = dato.split(";");
             //System.out.println("Email: " + datoPersona[0] + " Id " + datoPersona[1] + " Nombre: " + datoPersona[2]);
