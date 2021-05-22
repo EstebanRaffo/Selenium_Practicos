@@ -18,9 +18,9 @@ public class OrangeSteps {
 
     @Given("estoy en la pagina de Orange")
     public void estoy_en_la_pagina_de_orange() {
-            System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
-         driver = new ChromeDriver();
-         driver.get("https://orangehrm-demo-6x.orangehrmlive.com/");
+        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
+        driver = new ChromeDriver();
+        driver.get("https://orangehrm-demo-6x.orangehrmlive.com/");
     }
 
     @When("me logeo")

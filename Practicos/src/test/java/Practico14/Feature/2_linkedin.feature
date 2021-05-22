@@ -13,7 +13,7 @@ Feature: Linkedin Login
     And ingreso mi contraseña correctamente
     Then se despliega un error de login
 
-    @error
+  @error
   Scenario: Linkedin Invalid Email and Password Login
     Given estoy en la pagina de login de linkedin
     When ingreso mi email incorrectamente
