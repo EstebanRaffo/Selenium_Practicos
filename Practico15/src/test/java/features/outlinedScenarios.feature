@@ -33,3 +33,24 @@ Feature: Practico 15 Test
     | Marcus   |  No se encuentra en el sistema |
     | Rox123   |  Nombre de usuario invalido    |
     | Matt     |  Nombre de usuario inactivo    |
+
+
+  Scenario Outline: Validar Quick Access
+    Given estoy en el sitio Orange
+    When me logueo
+    And valido que estoy en la landing page
+    Then valido que aparece <quick_action> en Quick Access
+
+    Examples:
+    | quick_action |
+    | Assign Leave |
+    | Leave List   |
+    | Leave Calendar |
+
+
+  Scenario: Validar Leave Request to approve
+    Given estoy en el sitio Orange
+    When me logueo
+    And obtengo la cantidad de leave request to approve
+    And ingreso a la seccion de leave request
+    Then valido que coincide la cantidad de elementos
