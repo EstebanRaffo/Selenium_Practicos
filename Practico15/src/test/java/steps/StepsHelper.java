@@ -10,7 +10,7 @@ import java.util.List;
 public class StepsHelper {
 
     public static boolean searchQuickAccess(WebDriver driver, String quick_access_term) throws InterruptedException {
-        Thread.sleep(3000);
+        Thread.sleep(4000);
 
         List<WebElement> quick_access_list = driver.findElements(By.className("quick-access-heading"));
         Assert.assertNotEquals(quick_access_list.size(), 0, "El quick access esta vacío");
