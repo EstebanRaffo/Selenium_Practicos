@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29b64697-5994-4111-b426-9811df0e8137" name="Default Changelist" comment="Practico 14 - 16/05" />
+    <list default="true" id="29b64697-5994-4111-b426-9811df0e8137" name="Default Changelist" comment="Practico 14 - 16/05">
+      <change beforePath="$PROJECT_DIR$/../Practico15/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Practico15/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
