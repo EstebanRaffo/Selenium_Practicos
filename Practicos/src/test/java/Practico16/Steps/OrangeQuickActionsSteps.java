@@ -9,28 +9,23 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import practico15.Helpers.Constants;
-import practico15.Helpers.StepsHelper;
-import practico15.PageObject.OrangeDashboardPage;
-import practico15.PageObject.OrangeLeavePage;
-import practico15.PageObject.OrangeLoginPage;
+import Practico16.Helpers.Constants;
+import Practico16.Helpers.StepsHelper;
+import Practico16.PageObject.OrangeDashboardPage;
+import Practico16.PageObject.OrangeLeavePage;
+import Practico16.PageObject.OrangeLoginPage;
 
 import java.util.concurrent.TimeUnit;
 
-public class OrangeSteps {
+public class OrangeQuickActionsSteps extends OrangeBaseSteps {
 
-    public WebDriver driver;
-    public OrangeLoginPage orangeLoginPage;
-    public OrangeDashboardPage orangeDashboardPage;
-    public OrangeLeavePage orangeLeavePage;
-
-    @Given("estoy en la pagina de Orange")
+    /*@Given("estoy en la pagina de Orange")
     public void estoy_en_la_pagina_de_orange() {
-       /*  System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
+       *//*  System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
          driver = new ChromeDriver();
          driver.get("https://orangehrm-demo-6x.orangehrmlive.com/");
          driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-*/
+*//*
         orangeLoginPage = new OrangeLoginPage(driver);
         orangeLoginPage.inicializarOrangePage();
     }
@@ -39,7 +34,7 @@ public class OrangeSteps {
     public void me_logeo() {
         //driver.findElement(By.name("Submit")).click();
         orangeDashboardPage = orangeLoginPage.loginToOrange();
-    }
+    }*/
 
     @And("entro en la landing page")
     public void entro_en_la_landing_page() {

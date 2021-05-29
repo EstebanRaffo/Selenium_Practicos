@@ -1,4 +1,4 @@
-Feature: Organe Quck Actions Tests
+Feature: Orange Quick Actions Tests
 
   Scenario Outline:
     Given estoy en la pagina de Orange

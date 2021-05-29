@@ -1,4 +1,4 @@
-Feature: Organe Tests
+Feature: Orange Tests
 
   Scenario Outline:
     Given estoy en la pagina de Orange
