@@ -15,7 +15,7 @@ public class OrangeLoginPage {
     }
 
     public void inicializarOrangePage(){
-        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("https://orangehrm-demo-6x.orangehrmlive.com/");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

@@ -21,6 +21,7 @@ public class BookingTest {
         System.setProperty("webdriver.opera.driver", "drivers/operadriver.exe");
         driver = new OperaDriver();
         driver.get(URL);
+        driver.manage().window().maximize();
     }
 
     @Test
@@ -58,7 +59,7 @@ public class BookingTest {
         Assert.assertNotEquals(h2List.size(), 0);
         Assert.assertFalse(h2List.isEmpty()); //retorna true si la lista es vacia, de lo contrario retorna falso...
         boolean genteViajeraPresente = false;
-        for (WebElement h2: h2List){
+        for (WebElement h2 : h2List){
             System.out.println(h2.getText());
             if (h2.getText().equals("Conecta con gente viajera")){
                 genteViajeraPresente = true;

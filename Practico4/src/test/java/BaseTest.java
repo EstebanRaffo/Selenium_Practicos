@@ -6,7 +6,8 @@ import org.testng.annotations.BeforeTest;
 
 import java.util.concurrent.TimeUnit;
 
-public class BaseTest {
+public class
+BaseTest {
     public WebDriver driver;
     public WebDriverWait wait;
 

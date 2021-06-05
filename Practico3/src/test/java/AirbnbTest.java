@@ -24,7 +24,7 @@ public class AirbnbTest extends BaseTest {
     @Test
     public void searchHousing() throws InterruptedException {
 
-        driver.findElement(By.xpath("//button[@data-testid='accept-btn']")).click();
+        //driver.findElement(By.xpath("//button[@data-testid='accept-btn']")).click();
 
         Thread.sleep(5000);
         WebElement place = driver.findElement(By.xpath("//input[@placeholder='¿A dónde vas?']"));

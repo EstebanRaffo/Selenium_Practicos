@@ -20,7 +20,7 @@ public class AutomationTest extends BaseTest {
 
     1)	Localizar todos los elementos de tipo WebElement del sitio.
     2)	Interactuar con los elementos enviando la información deseada.
-        3)	Hacer click en el botón de registro.
+    3)	Hacer click en el botón de registro.
     4)	Validar que la información desplegada sea la correcta.*/
     @Test
     public void validations(){
