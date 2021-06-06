@@ -78,7 +78,7 @@ public class RegistrationPage {
     @FindBy(id = "submitAccount")
     public WebElement registerButton;
 
-    public AccountPage fillingRegistrationForm(String aFirstName, String aLastName, String aCompany){
+    public AccountPage fillingRegistrationFormAndSend(String aFirstName, String aLastName, String aCompany){
         //waiting for the form to load completely
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("account-creation_form")));
 

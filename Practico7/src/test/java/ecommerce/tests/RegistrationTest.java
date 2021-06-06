@@ -34,8 +34,8 @@ public class RegistrationTest extends BaseTest{
         //assertions for the personal information
         softAssert.assertEquals(myPersonalInformationPage.getGenderClassAttribute(), "checked", "gender not checked ----> ");
 
-        softAssert.assertEquals(myPersonalInformationPage.getFirstNameFieldValue(), fakeFirstName, "Firstname Failed ----> "); // Passed
-        // softAssert.assertEquals(myPersonalInformationPage.getFirstNameFieldValue(), fakeFirstName + "1", "Firstname Failed ----> "); // Failed
+        // softAssert.assertEquals(myPersonalInformationPage.getFirstNameFieldValue(), fakeFirstName, "Firstname Failed ----> "); // Passed
+        softAssert.assertEquals(myPersonalInformationPage.getFirstNameFieldValue(), fakeFirstName + "1", "Firstname Failed ----> "); // Failed
         softAssert.assertEquals(myPersonalInformationPage.getLastNameFieldValue(), fakeLastName, "Lastname Failed ----> ");
         softAssert.assertEquals(myPersonalInformationPage.getEmailForm(), emailString, "email Failed ----> ");
 
@@ -44,8 +44,8 @@ public class RegistrationTest extends BaseTest{
         System.out.println("Birthyear: " + myPersonalInformationPage.getBirthyear());
 
         softAssert.assertTrue(myPersonalInformationPage.getBirthdate().contains(Constants.BIRTH_DAY), "Birthday Failed ----> ");
-        softAssert.assertTrue(myPersonalInformationPage.getBirthmonth().contains(Constants.BIRTH_MONTH), "Birthmonth Failed ----> "); // Failed
-        // softAssert.assertTrue(myPersonalInformationPage.getBirthmonth().contains("January"), "Birthmonth Failed ----> "); // Passed
+        // softAssert.assertTrue(myPersonalInformationPage.getBirthmonth().contains(Constants.BIRTH_MONTH), "Birthmonth Failed ----> "); // Failed
+        softAssert.assertTrue(myPersonalInformationPage.getBirthmonth().contains("January"), "Birthmonth Failed ----> "); // Passed
         softAssert.assertTrue(myPersonalInformationPage.getBirthyear().contains(Constants.BIRTH_YEAR), "Birthyear Failed ----> ");
 
         //assertions for the address information

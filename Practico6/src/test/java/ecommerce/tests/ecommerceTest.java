@@ -140,9 +140,8 @@ public class ecommerceTest {
         LoginPage loginPage = new LoginPage(driver);
         AccountPage accountPageAfterLogin = loginPage.login(emailString, Constants.PASSWORD);
 
-        String welcome_message_expected = "Welcome to your account";
         String welcome_message_got = accountPageAfterLogin.getWelcomeMsg();
-        Assert.assertTrue(welcome_message_got.contains(welcome_message_expected));
+        Assert.assertTrue(welcome_message_got.contains(Constants.WELCOME_MESSAGE_EXPECTED));
     }
 
 }

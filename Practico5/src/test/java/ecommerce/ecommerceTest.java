@@ -41,7 +41,7 @@ public class ecommerceTest {
 
         /************************************ RegistrationPage ******************************************/
         RegistrationPage registrationPage = authPage.registerUser(anEmail);
-        AccountPage accountPage = registrationPage.fillingRegistrationForm(aFirstName, aLastName, aCompany);
+        AccountPage accountPage = registrationPage.fillingRegistrationFormAndSend(aFirstName, aLastName, aCompany);
         return accountPage;
     }
 

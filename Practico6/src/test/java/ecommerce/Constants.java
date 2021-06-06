@@ -10,5 +10,5 @@ public class Constants {
     public static String BIRTH_MONTH = "1";
     public static String POST_CODE = "11100";
     public static String PASSWORD = "holamundo125";
-
+    public static String WELCOME_MESSAGE_EXPECTED = "Welcome to your account";
 }
