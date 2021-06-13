@@ -11,6 +11,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AuthPage extends BasePage{
 
+    public AuthPage(WebDriver remoteDriver){
+        this.driver = remoteDriver;
+        wait = new WebDriverWait(driver, 5);
+        PageFactory.initElements(driver, this);  //para utilizar los @Find By...
+    }
+
     @FindBy(xpath = "//*[@href='http://automationpractice.com/index.php?controller=my-account']")
     public WebElement loginBtn;
 
@@ -31,12 +37,6 @@ public class AuthPage extends BasePage{
 
     @FindBy(id="SubmitLogin")
     public WebElement loginAccountBtn;
-
-    public AuthPage(WebDriver remoteDriver){
-        this.driver = remoteDriver;
-        wait = new WebDriverWait(driver, 5);
-        PageFactory.initElements(driver, this);  //para utilizar los @Find By...
-    }
 
     public CreateAccountPage registerAnUser(String anEmail) throws InterruptedException {
         //waiting until the h1 element is visible on the site "Authentication"

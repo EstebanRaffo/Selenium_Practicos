@@ -8,7 +8,7 @@ public class NetflixTest {
 
     @BeforeSuite
     public void beforeTesting(){
-        System.out.println("Before Suite <----");
+        System.out.println("Before Suite Netflix <----");
     }
 
     @Test
@@ -18,6 +18,6 @@ public class NetflixTest {
 
     @AfterSuite
     public void afterTesting(){
-        System.out.println("After Suite <----");
+        System.out.println("After Suite Netflix <----");
     }
 }

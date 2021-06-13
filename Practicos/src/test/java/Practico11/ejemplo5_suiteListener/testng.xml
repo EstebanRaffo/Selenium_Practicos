@@ -2,6 +2,7 @@
 
     <listeners>
         <listener class-name="Practico11.ejemplo5_suiteListener.TestListener"></listener>
+<!--        <listener class-name="Practico11.ejemplo5_suiteListener.SuiteListeners"></listener>-->
     </listeners>
 
     <test name = "Pruebas Selenium">

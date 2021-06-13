@@ -10,13 +10,11 @@ public class TestListener implements ITestListener {
     }
 
     public void onTestSuccess(ITestResult result) {
-        System.out.println("onTestSuccess ===>   Test Exitoso " + result.getName());
+        System.out.println("onTestSuccess ===>   Test Exitoso: " + result.getName());
     }
 
     public void onTestFailure(ITestResult result) {
-        System.out.println("onTestFailure ===>  FALLA  " + result.getName());
-
-
+        System.out.println("onTestFailure ===>  FALLA " + result.getName());
     }
 
     public void onTestSkipped(ITestResult result) {

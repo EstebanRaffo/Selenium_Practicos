@@ -38,8 +38,11 @@ public class AccountPage extends BasePage{
     @FindBy(xpath = "//*[@href='http://automationpractice.com/index.php?controller=my-account']")
     public WebElement myAccount;
 
-    public void clickOnLogoutBtn(){
+    public LoginPage clickOnLogoutBtn(){
         logout_button.click();
+
+        LoginPage loginPage = new LoginPage(driver);
+        return loginPage;
     }
 
     public void clickOnLoginBtn() { myAccount.click(); }

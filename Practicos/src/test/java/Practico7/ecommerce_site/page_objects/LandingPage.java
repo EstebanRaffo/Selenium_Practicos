@@ -12,6 +12,12 @@ public class LandingPage {
     public WebDriver driver;
     public WebDriverWait wait;
 
+    public LandingPage(WebDriver remoteDriver){
+        driver = remoteDriver;
+        wait = new WebDriverWait(driver, 5);
+        PageFactory.initElements(driver, this);
+    }
+
     @FindBy(xpath = "//*[@href='http://automationpractice.com/index.php?mylogout=']")
     public WebElement logoutBtn;
 
@@ -35,13 +41,6 @@ public class LandingPage {
 
     @FindBy (xpath = "//div[@id='create_account_error']/ol/li")
     public WebElement emailErrMsg;
-
-
-    public LandingPage(WebDriver remoteDriver){
-        driver = remoteDriver;
-        wait = new WebDriverWait(driver, 5);
-        PageFactory.initElements(driver, this);
-    }
 
     public AuthPage clickOnLoginBtn(){
         //waiting for the SignIn button to be clickable, otherwise it will fail

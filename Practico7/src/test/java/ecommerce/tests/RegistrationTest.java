@@ -81,9 +81,7 @@ public class RegistrationTest extends BaseTest{
 
         AccountPage accountPage = registerAnUser(emailString, fakeFirstName, fakeLastName, fakeCompany);
 
-        accountPage.clickOnLogoutBtn();
-        accountPage.clickOnLoginBtn();
-        LoginPage loginPage = new LoginPage(driver);
+        LoginPage loginPage = accountPage.clickOnLogoutBtn();
         loginPage.fillEmailAndSend(emailString);
 
         Thread.sleep(3000);
