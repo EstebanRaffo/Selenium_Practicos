@@ -5,42 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e94c548-974b-46bd-a9a3-e75ba378b7dc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Practico10/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practico11/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practico11/screenshots/failedForcedTest1623608286762.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practico8/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practico9/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practicos/screenshots/tryForFreeBtnTestFails1623608000957.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SeleniumIntermedioExamen.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drivers/chromedriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drivers/operadriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drivers/sha512_sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practico10/src/test/java/ejercicio2/Alumno.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Practico10/src/test/java/ejercicio2/Alumno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practico10/src/test/java/ejercicio8/NetflixTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Practico10/src/test/java/ejercicio8/NetflixTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practico10/src/test/java/ejercicio9/OrangeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Practico10/src/test/java/ejercicio9/OrangeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practico10/target/test-classes/ejercicio8/NetflixTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Practico10/target/test-classes/ejercicio8/NetflixTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practico10/target/test-classes/ejercicio9/OrangeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Practico10/target/test-classes/ejercicio9/OrangeTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practico11/drivers/operadriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Practico11/drivers/operadriver.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practico11/drivers/sha512_sum" beforeDir="false" afterPath="$PROJECT_DIR$/../Practico11/drivers/sha512_sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practico8/drivers/operadriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Practico8/drivers/operadriver.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practico8/drivers/sha512_sum" beforeDir="false" afterPath="$PROJECT_DIR$/../Practico8/drivers/sha512_sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practico8/target/test-classes/AirbnbTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Practico8/target/test-classes/AirbnbTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practico8/target/test-classes/DateObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Practico8/target/test-classes/DateObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practicos/src/test/java/Practico10/TestListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Practicos/src/test/java/Practico10/TestListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practicos/src/test/java/Practico10/ejemplo1/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Practicos/src/test/java/Practico10/ejemplo1/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practicos/src/test/java/Practico11/ejemplo5_suiteListener/TestListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Practicos/src/test/java/Practico11/ejemplo5_suiteListener/TestListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practicos/src/test/java/Practico11/ejemplo5_suiteListener/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Practicos/src/test/java/Practico11/ejemplo5_suiteListener/testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practicos/src/test/java/Practico7/ecommerce_site/page_objects/AuthPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Practicos/src/test/java/Practico7/ecommerce_site/page_objects/AuthPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practicos/src/test/java/Practico7/ecommerce_site/page_objects/LandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Practicos/src/test/java/Practico7/ecommerce_site/page_objects/LandingPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practicos/target/test-classes/Practico10/TestListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Practicos/target/test-classes/Practico10/TestListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practicos/target/test-classes/Practico10/ejemplo1/Demo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Practicos/target/test-classes/Practico10/ejemplo1/Demo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practicos/target/test-classes/Practico11/ejemplo5_suiteListener/TestListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Practicos/target/test-classes/Practico11/ejemplo5_suiteListener/TestListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practico7/target/test-classes/ecommerce/page_objects/AccountPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Practico7/target/test-classes/ecommerce/page_objects/AccountPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practico7/target/test-classes/ecommerce/tests/LoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Practico7/target/test-classes/ecommerce/tests/LoginTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +29,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">

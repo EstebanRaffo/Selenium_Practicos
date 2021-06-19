@@ -5,6 +5,7 @@ Feature: Ejercicios
     When se encuentra con otra
     Then la saluda
 
+  @important
   Scenario: Google Search
     Given estoy en google
     When busco "Queso"
@@ -15,6 +16,7 @@ Feature: Ejercicios
     When ingreso 4 y 5
     Then muestro la suma
 
+  @billing
   Scenario: Calculadora Resta
     Given inicio calculadora
     When ingreso 9 y 5
@@ -25,6 +27,7 @@ Feature: Ejercicios
     When ingreso 7 y 8
     Then muestro el producto
 
+  @important
   Scenario: Mensaje de error de confirmación de email
     Given ingreso en registracion de spotify
     When completo email con "testselenium@testseleninum.com"
@@ -36,7 +39,7 @@ Feature: Ejercicios
     When consulto el titulo
     Then valido el titulo
 
-  Scenario: Mensaje de error de email
+  Scenario: Mensaje de error de email vacio
     Given ingreso en registracion de spotify
     When dejo email vacio
     Then valido mensaje de error de email obligatorio

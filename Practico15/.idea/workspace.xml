@@ -5,7 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="796e8f7a-d3d0-45ff-befc-ad04990cc52c" name="Default Changelist" comment="Practico 15 - 23/05">
+      <change afterPath="$PROJECT_DIR$/../Practico14/src/test/java/runner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practicos/target/test-classes/Practico14/StepDef/calculadoraSteps.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practicos/target/test-classes/Practico14/StepDef/googleSteps.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practicos/target/test-classes/Practico14/StepDef/greetingSteps.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practicos/target/test-classes/Practico14/StepDef/linkedinSteps.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practicos/target/test-classes/Practico14/StepDef/spotifySteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practico14/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Practico14/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practico14/src/test/java/Feature/ejercicios.feature" beforeDir="false" afterPath="$PROJECT_DIR$/../Practico14/src/test/java/Feature/ejercicios.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practico7/target/test-classes/ecommerce/page_objects/AccountPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Practico7/target/test-classes/ecommerce/page_objects/AccountPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practico7/target/test-classes/ecommerce/tests/LoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Practico7/target/test-classes/ecommerce/tests/LoginTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practicos/src/test/java/Practico14/StepDef/spotifySteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Practicos/src/test/java/Practico14/StepDef/spotifySteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practicos/src/test/java/Practico14/runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Practicos/src/test/java/Practico14/runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practicos/target/test-classes/Practico7/ecommerce_site/page_objects/AuthPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Practicos/target/test-classes/Practico7/ecommerce_site/page_objects/AuthPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practicos/target/test-classes/Practico7/ecommerce_site/page_objects/LandingPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Practicos/target/test-classes/Practico7/ecommerce_site/page_objects/LandingPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SeleniumIntermedioExamen/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SeleniumIntermedioExamen/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

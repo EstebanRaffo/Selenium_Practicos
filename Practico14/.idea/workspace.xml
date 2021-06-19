@@ -5,7 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29b64697-5994-4111-b426-9811df0e8137" name="Default Changelist" comment="Practico 14 - 16/05">
-      <change beforePath="$PROJECT_DIR$/../Practico15/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Practico15/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/runner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practicos/target/test-classes/Practico14/StepDef/calculadoraSteps.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practicos/target/test-classes/Practico14/StepDef/googleSteps.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practicos/target/test-classes/Practico14/StepDef/greetingSteps.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practicos/target/test-classes/Practico14/StepDef/linkedinSteps.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practicos/target/test-classes/Practico14/StepDef/spotifySteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Feature/ejercicios.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Feature/ejercicios.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practico7/target/test-classes/ecommerce/page_objects/AccountPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Practico7/target/test-classes/ecommerce/page_objects/AccountPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practico7/target/test-classes/ecommerce/tests/LoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Practico7/target/test-classes/ecommerce/tests/LoginTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practicos/src/test/java/Practico14/StepDef/spotifySteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Practicos/src/test/java/Practico14/StepDef/spotifySteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practicos/src/test/java/Practico14/runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Practicos/src/test/java/Practico14/runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practicos/target/test-classes/Practico7/ecommerce_site/page_objects/AuthPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Practicos/target/test-classes/Practico7/ecommerce_site/page_objects/AuthPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practicos/target/test-classes/Practico7/ecommerce_site/page_objects/LandingPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Practicos/target/test-classes/Practico7/ecommerce_site/page_objects/LandingPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SeleniumIntermedioExamen/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SeleniumIntermedioExamen/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,43 +48,22 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Practico15" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Usuario\Documents\SeleniumAcademy\IdeaProjects\Practico14" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Mensaje de error de contraseña vacia">
-    <configuration name="Scenario: Calculadora Producto" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.runner">
+    <configuration name="Feature: ejercicios" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Feature/ejercicios.feature" />
       <option name="GLUE" value="Steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="Practico14" />
-      <option name="NAME_FILTER" value="^Calculadora Producto$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Calculadora Producto$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Calculadora Producto" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: Mensaje de error de confirmación de email" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Feature/ejercicios.feature" />
-      <option name="GLUE" value="Steps" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="Practico14" />
-      <option name="NAME_FILTER" value="^Mensaje de error de confirmación de email$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Mensaje de error de confirmación de email$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Mensaje de error de confirmación de email" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: ejercicios" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -142,13 +135,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practico14" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="runner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.runner" />
+        <item itemvalue="Cucumber Java.Feature: ejercicios" />
         <item itemvalue="Cucumber Java.Scenario: Mensaje de error de contraseña vacia" />
         <item itemvalue="Cucumber Java.Scenario: Mensaje de error de email" />
         <item itemvalue="Cucumber Java.Scenario: Validar Titulo de sitio Spotify" />
-        <item itemvalue="Cucumber Java.Scenario: Mensaje de error de confirmación de email" />
-        <item itemvalue="Cucumber Java.Scenario: Calculadora Producto" />
       </list>
     </recent_temporary>
   </component>

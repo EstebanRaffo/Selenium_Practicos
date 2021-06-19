@@ -8,10 +8,9 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
      features = "C:/Users/Usuario/Documents/SeleniumAcademy/IdeaProjects/Practicos/src/test/java/Practico14/Feature",
-     glue = "practico14/StepDef",
+     glue = "Practico14/StepDef",
      plugin = {"pretty"},
-     tags = "@error"
-
+     tags = "@error or @success"
 )
 public class runner {
 

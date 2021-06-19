@@ -15,7 +15,7 @@ public class spotifySteps {
 
     @Given("me encuentro en el sitio de spotify")
     public void me_encuentro_en_el_sitio_de_spotify() {
-        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("https://www.spotify.com");
     }
