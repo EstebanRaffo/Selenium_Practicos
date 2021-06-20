@@ -4,23 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="796e8f7a-d3d0-45ff-befc-ad04990cc52c" name="Default Changelist" comment="Practico 15 - 23/05">
-      <change afterPath="$PROJECT_DIR$/../Practico14/src/test/java/runner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practicos/target/test-classes/Practico14/StepDef/calculadoraSteps.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practicos/target/test-classes/Practico14/StepDef/googleSteps.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practicos/target/test-classes/Practico14/StepDef/greetingSteps.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practicos/target/test-classes/Practico14/StepDef/linkedinSteps.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practicos/target/test-classes/Practico14/StepDef/spotifySteps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practico14/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Practico14/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practico14/src/test/java/Feature/ejercicios.feature" beforeDir="false" afterPath="$PROJECT_DIR$/../Practico14/src/test/java/Feature/ejercicios.feature" afterDir="false" />
+    <list default="true" id="796e8f7a-d3d0-45ff-befc-ad04990cc52c" name="Default Changelist" comment="Repaso - 19/06">
+      <change afterPath="$PROJECT_DIR$/src/test/java/runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practico7/target/test-classes/ecommerce/page_objects/AccountPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Practico7/target/test-classes/ecommerce/page_objects/AccountPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practico7/target/test-classes/ecommerce/tests/LoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Practico7/target/test-classes/ecommerce/tests/LoginTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practicos/src/test/java/Practico14/StepDef/spotifySteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Practicos/src/test/java/Practico14/StepDef/spotifySteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practicos/src/test/java/Practico14/runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Practicos/src/test/java/Practico14/runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practicos/target/test-classes/Practico7/ecommerce_site/page_objects/AuthPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Practicos/target/test-classes/Practico7/ecommerce_site/page_objects/AuthPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practicos/target/test-classes/Practico7/ecommerce_site/page_objects/LandingPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Practicos/target/test-classes/Practico7/ecommerce_site/page_objects/LandingPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SeleniumIntermedioExamen/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SeleniumIntermedioExamen/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/outlinedScenarios.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/outlinedScenarios.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,23 +35,22 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Practicos" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Usuario\Documents\SeleniumAcademy\IdeaProjects\Practico15" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Validar Quick Access">
-    <configuration name="Scenario: Calculadora de Gastos" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.runner">
+    <configuration name="Feature: outlinedScenarios" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/outlinedScenarios.feature" />
       <option name="GLUE" value="steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="Practico15" />
-      <option name="NAME_FILTER" value="^Calculadora de Gastos$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Calculadora de Gastos$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Calculadora de Gastos" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: outlinedScenarios" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -79,6 +65,7 @@
     <configuration name="Scenario: Calculadora" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/outlinedScenarios.feature" />
+      <option name="GLUE" value="steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="Practico15" />
       <option name="NAME_FILTER" value="^Calculadora$" />
@@ -135,33 +122,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Verificar Usernames" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/outlinedScenarios.feature" />
-      <option name="GLUE" value="steps" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+    <configuration name="runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practico15" />
-      <option name="NAME_FILTER" value="^Verificar Usernames$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verificar Usernames$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Verificar Usernames" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="runner" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.runner" />
+        <item itemvalue="Cucumber Java.Scenario: Calculadora" />
+        <item itemvalue="Cucumber Java.Feature: outlinedScenarios" />
         <item itemvalue="Cucumber Java.Scenario: Validar Quick Access" />
         <item itemvalue="Cucumber Java.Scenario: Validar Leave Request to approve" />
-        <item itemvalue="Cucumber Java.Scenario: Verificar Usernames" />
-        <item itemvalue="Cucumber Java.Scenario: Calculadora de Gastos" />
-        <item itemvalue="Cucumber Java.Scenario: Calculadora" />
       </list>
     </recent_temporary>
   </component>
@@ -195,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621804816223</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Repaso - 19/06">
+      <created>1624134083973</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1624134083973</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -213,6 +196,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Practico 15 - 22/05" />
     <MESSAGE value="Practico 15 - 23/05" />
-    <option name="LAST_COMMIT_MESSAGE" value="Practico 15 - 23/05" />
+    <MESSAGE value="Repaso - 19/06" />
+    <option name="LAST_COMMIT_MESSAGE" value="Repaso - 19/06" />
   </component>
 </project>

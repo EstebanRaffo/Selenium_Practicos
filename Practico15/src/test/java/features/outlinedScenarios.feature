@@ -1,5 +1,6 @@
 Feature: Practico 15 Test
 
+  @basic
   Scenario Outline: Calculadora
     Given tengo una calculadora
     When ingreso <num1> y <num2>
@@ -11,6 +12,7 @@ Feature: Practico 15 Test
       | 4    | 10   | 14   |
       | 6    | 7    | 13   |
 
+  @basic
   Scenario Outline: Calculadora de Gastos
     Given monto inicial de <monto_inicial>
     When gasto de <gasto>
