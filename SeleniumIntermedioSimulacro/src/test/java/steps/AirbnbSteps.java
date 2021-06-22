@@ -7,92 +7,45 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import pageObject.*;
 
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 public class AirbnbSteps {
     public WebDriver driver;
-    public WebDriverWait wait;
-
+    public LandingPage landingPage;
+    public HousingPage housingPage;
 
     @Given("estoy en la pagina de Airbnb")
     public void estoy_en_la_pagina_de_airbnb() {
-        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
-        driver = new ChromeDriver();
-        driver.get("https://www.airbnb.com.ar");
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        PageFactory.initElements(driver, this);
-        driver.findElement(By.xpath("//button[@data-testid='accept-btn']")).click();
+        landingPage = new LandingPage(driver);
+        landingPage.inicializarAirbnbPage();
     }
-
-    @FindBy(xpath = "//input[@placeholder='¿A dónde vas?']")
-    public WebElement lugar;
-
-    @FindBy(xpath = "//div[contains(text(), 'Check-in')]")
-    public WebElement checkin;
-
-    @FindBy(xpath = "//div[@data-testid='datepicker-day-2021-06-25']")
-    public WebElement datein;
-
-    @FindBy(xpath = "//div[@data-testid='datepicker-day-2021-07-10']")
-    public WebElement dateout;
-
-    @FindBy(xpath = "//div[contains(text(), 'Check-out')]")
-    public WebElement checkout;
-
-    @FindBy(xpath = "//div[contains(text(), 'Huéspedes')]")
-    public WebElement huespedes;
-
-    @FindBy(xpath = "//button[@data-testid='stepper-adults-increase-button']")
-    public WebElement increaseAdults;
-
-    @FindBy(xpath = "//button[@data-testid='structured-search-input-search-button']")
-    public WebElement searchButton;
 
     @When("informo lugar Rosario, Santa Fe")
     public void informo_lugar_rosario_santa_fe() {
-        lugar.sendKeys("Rosario, Santa Fe");
+        landingPage.setLugar("Rosario, Santa Fe");
     }
 
     @When("informo checkin")
-    public void informo_checkin() {
-        wait = new WebDriverWait(driver, 4);
-        wait.until(ExpectedConditions.elementToBeClickable(checkin));
-        checkin.click();
-        datein.click();
-    }
+    public void informo_checkin() { landingPage.setDateCheckin(); }
 
     @When("informo checkout")
-    public void informo_checkout() {
-        dateout.click();
-    }
+    public void informo_checkout() { landingPage.setDateCheckout(); }
 
     @When("informo huespedes {int} adultos")
-    public void informo_huespedes(Integer cantidad) {
-        huespedes.click();
-
-        for(int i = 0; i < cantidad; i++){
-            increaseAdults.click();
-        }
-    }
+    public void informo_huespedes(Integer cantidad) { landingPage.setHuespedes(cantidad); }
 
     @When("click en Buscar")
     public void click_en_buscar() {
-        searchButton.click();
+        housingPage = landingPage.clickOnSearchButton();
     }
 
     @Then("se muestra el resultado de lugares donde alojarse en Rosario, Santa Fe")
     public void se_muestra_el_resultado_de_lugares_donde_alojarse_en_rosario_santa_fe() {
-        Assert.assertTrue(driver.getCurrentUrl().contains("Rosario"));
-        List<WebElement> cantidadHuespedesMsgList = driver.findElements(By.xpath("//*[contains(text(),'2 huéspedes')]"));
+
+        Assert.assertTrue(housingPage.getCurrentUrl().contains("Rosario"));
+        List<WebElement> cantidadHuespedesMsgList = housingPage.getHuespedesResultado();
 
         Assert.assertNotEquals(cantidadHuespedesMsgList.size(), 0);
         Assert.assertNotNull(cantidadHuespedesMsgList);
@@ -100,8 +53,8 @@ public class AirbnbSteps {
 
     @Then("se muestra el resultado de lugares donde alojarse en Villa Carlos Paz, Cordoba")
     public void se_muestra_el_resultado_de_lugares_donde_alojarse_en_villa_carlos_paz_cordoba() {
-        Assert.assertTrue(driver.getCurrentUrl().contains("Villa-Carlos-Paz"));
-        List<WebElement> cantidadHuespedesMsgList = driver.findElements(By.xpath("//*[contains(text(),'2 huéspedes')]"));
+        Assert.assertTrue(housingPage.getCurrentUrl().contains("Villa-Carlos-Paz"));
+        List<WebElement> cantidadHuespedesMsgList = housingPage.getHuespedesResultado();
 
         Assert.assertNotEquals(cantidadHuespedesMsgList.size(), 0);
         Assert.assertNotNull(cantidadHuespedesMsgList);
@@ -109,8 +62,8 @@ public class AirbnbSteps {
 
     @Then("se muestra el resultado de lugares donde alojarse en Villa La Angostura, Neuquén")
     public void se_muestra_el_resultado_de_lugares_donde_alojarse_en_villa_la_angostura_neuquen() {
-        Assert.assertTrue(driver.getCurrentUrl().contains("Villa-La-Angostura"));
-        List<WebElement> cantidadHuespedesMsgList = driver.findElements(By.xpath("//*[contains(text(),'2 huéspedes')]"));
+        Assert.assertTrue(housingPage.getCurrentUrl().contains("Villa-La-Angostura"));
+        List<WebElement> cantidadHuespedesMsgList = housingPage.getHuespedesResultado();
 
         Assert.assertNotEquals(cantidadHuespedesMsgList.size(), 0);
         Assert.assertNotNull(cantidadHuespedesMsgList);
@@ -118,36 +71,33 @@ public class AirbnbSteps {
 
     @When("informo lugar Villa Carlos Paz, Cordoba")
     public void informo_lugar_villa_carlos_paz_cordoba() {
-        lugar.sendKeys("Villa Carlos Paz, Cordoba");
+        landingPage.setLugar("Villa Carlos Paz, Cordoba");
     }
 
     @When("informo lugar Villa La Angostura, Neuquén")
     public void informo_lugar_villa_la_angostura_neuquén() {
-        lugar.sendKeys("Villa La Angostura, Neuquén");
+        landingPage.setLugar("Villa La Angostura, Neuquén");
     }
 
     @Given("selecciono experiencias")
     public void selecciono_experiencias() {
-        driver.findElement(By.xpath("(//span[contains(text(), 'Experiencias')])[1]")).click();
-        WebElement textExperiences = driver.findElement(By.xpath("(//span[contains(text(), 'Escápate a la naturaleza')])[3]"));
-        Assert.assertTrue(textExperiences.getText().contains("Escápate a la naturaleza"));
+        landingPage.selectExperiencias();
+        String textExperiences = landingPage.getExperienciasTitle();
+        Assert.assertTrue(textExperiences.contains("Escápate a la naturaleza"));
     }
 
     @When("informo lugar {string}")
     public void informo_lugar(String destino) {
-        lugar.sendKeys(destino);
+        landingPage.setLugar(destino);
     }
 
     @When("informo fecha")
-    public void informo_fecha() {
-        driver.findElement(By.xpath("//div[contains(text(), 'Agregá cuándo querés ir')]")).click();
-        datein.click();
-    }
+    public void informo_fecha() { landingPage.setDateOfExperience(); }
 
     @Then("se muestra el resultado de experiencias")
     public void se_muestra_el_resultado_de_experiencias() {
-        WebElement text_result = driver.findElement(By.xpath("//h1[contains(text(), 'experiencia')]"));
-        Assert.assertTrue(text_result.getText().contains("experiencia"));
+        String text_result = landingPage.getTitleResult();
+        Assert.assertTrue(text_result.contains("experiencia"));
     }
 
     @Then("se muestran lugares cercanos")
