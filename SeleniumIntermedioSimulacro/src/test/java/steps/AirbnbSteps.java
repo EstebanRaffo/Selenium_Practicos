@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import pageObject.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class AirbnbSteps {
@@ -83,7 +84,7 @@ public class AirbnbSteps {
     public void selecciono_experiencias() {
         landingPage.selectExperiencias();
         String textExperiences = landingPage.getExperienciasTitle();
-        Assert.assertTrue(textExperiences.contains("Escápate a la naturaleza"));
+        Assert.assertTrue(textExperiences.contains("¿No sabés adónde ir?"));
     }
 
     @When("informo lugar {string}")
@@ -102,7 +103,7 @@ public class AirbnbSteps {
 
     @Then("se muestran lugares cercanos")
     public void se_muestran_lugares_cercanos() {
-       List<WebElement> lugares_cercanos = driver.findElements(By.xpath("//span[@class='_1i13tcg']"));
+       List<WebElement> lugares_cercanos = landingPage.getLugaresCercanos();
 
        System.out.println("Explorá lugares cercanos: ");
        for(WebElement unLugar : lugares_cercanos){

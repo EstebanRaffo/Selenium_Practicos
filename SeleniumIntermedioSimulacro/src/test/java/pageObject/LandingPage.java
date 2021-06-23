@@ -9,6 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class LandingPage {
@@ -79,7 +80,7 @@ public class LandingPage {
 
     public void selectExperiencias(){ driver.findElement(By.xpath("(//span[contains(text(), 'Experiencias')])[1]")).click(); }
 
-    public String getExperienciasTitle(){ return driver.findElement(By.xpath("(//span[contains(text(), 'Escápate a la naturaleza')])[3]")).getText(); }
+    public String getExperienciasTitle(){ return driver.findElement(By.xpath("(//span[contains(text(), '¿No sabés adónde ir? ¡Perfecto!')]")).getText(); }
 
     public void setDateOfExperience(){
         driver.findElement(By.xpath("//div[contains(text(), 'Agregá cuándo querés ir')]")).click();
@@ -87,4 +88,9 @@ public class LandingPage {
     }
 
     public String getTitleResult(){ return driver.findElement(By.xpath("//h1[contains(text(), 'experiencia')]")).getText(); }
+
+    public List<WebElement> getLugaresCercanos(){ return driver.findElements(By.xpath("//span[@class='_1i13tcg']")); }
+
+
+
 }
