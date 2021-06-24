@@ -83,8 +83,10 @@ public class AirbnbSteps {
     @Given("selecciono experiencias")
     public void selecciono_experiencias() {
         landingPage.selectExperiencias();
-        String textExperiences = landingPage.getExperienciasTitle();
-        Assert.assertTrue(textExperiences.contains("¿No sabés adónde ir?"));
+        String textLugar = landingPage.getLugarInput();
+        Assert.assertTrue(textLugar.contains("Lugar"));
+        String textFecha = landingPage.getFechaInput();
+        Assert.assertTrue(textFecha.contains("Fecha"));
     }
 
     @When("informo lugar {string}")
@@ -98,7 +100,10 @@ public class AirbnbSteps {
     @Then("se muestra el resultado de experiencias")
     public void se_muestra_el_resultado_de_experiencias() {
         String text_result = landingPage.getTitleResult();
+        String[] result = text_result.split(" ");
+        int quantity = Integer.valueOf(result[0]);
         Assert.assertTrue(text_result.contains("experiencia"));
+        Assert.assertTrue(quantity > 0);
     }
 
     @Then("se muestran lugares cercanos")

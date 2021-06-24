@@ -80,7 +80,10 @@ public class LandingPage {
 
     public void selectExperiencias(){ driver.findElement(By.xpath("(//span[contains(text(), 'Experiencias')])[1]")).click(); }
 
-    public String getExperienciasTitle(){ return driver.findElement(By.xpath("(//span[contains(text(), '¿No sabés adónde ir? ¡Perfecto!')]")).getText(); }
+    public String getLugarInput(){ return driver.findElement(By.xpath("//div[contains(text(), 'Lugar')]")).getText(); }
+
+    public String getFechaInput(){ return driver.findElement(By.xpath("//div[contains(text(), 'Fecha')]")).getText(); }
+
 
     public void setDateOfExperience(){
         driver.findElement(By.xpath("//div[contains(text(), 'Agregá cuándo querés ir')]")).click();
