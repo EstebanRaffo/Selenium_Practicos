@@ -22,24 +22,11 @@ public class LandingPage {
 
     }
 
-    public void clickOnPremium(){
+    public PremiumPage clickOnPremium(){
         WebElement linkPremium = driver.findElement(By.xpath("//a[contains(text(),'Premium')]"));
         linkPremium.click();
-    }
-
-    public String getPlanIndividual(){
-        WebElement planIndividual = driver.findElement(By.xpath("//h3[contains(text(),'Individual')]"));
-        return planIndividual.getText();
-    }
-
-    public String getPlanDuo(){
-        WebElement planDuo = driver.findElement(By.xpath("//h3[contains(text(),'Duo')]"));
-        return planDuo.getText();
-    }
-
-    public String getPlanFamiliar(){
-        WebElement planFamiliar = driver.findElement(By.xpath("//h3[contains(text(),'Familiar')]"));
-        return planFamiliar.getText();
+        PremiumPage premiumPage = new PremiumPage(driver);
+        return premiumPage;
     }
 
     public RegistrationPage clickOnRegistrarse(){

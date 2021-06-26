@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e94c548-974b-46bd-a9a3-e75ba378b7dc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/features/spotify.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pageObjects/LandingPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pageObjects/RegistrationPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pageObjects/TermsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/steps/spotifySteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practico15/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Practico15/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="3e94c548-974b-46bd-a9a3-e75ba378b7dc" name="Default Changelist" comment="selenium intermedio examen">
+      <change afterPath="$PROJECT_DIR$/src/test/java/pageObjects/PremiumPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/LandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/LandingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/spotifySteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/spotifySteps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +37,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SeleniumIntermedioSimulacro" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -145,6 +142,14 @@
       <option name="presentableId" value="Default" />
       <updated>1623523382493</updated>
     </task>
+    <task id="LOCAL-00001" summary="selenium intermedio examen">
+      <created>1624725632676</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1624725632676</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -161,5 +166,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="selenium intermedio examen" />
+    <option name="LAST_COMMIT_MESSAGE" value="selenium intermedio examen" />
   </component>
 </project>

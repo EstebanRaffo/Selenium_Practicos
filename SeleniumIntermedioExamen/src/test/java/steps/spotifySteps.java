@@ -12,9 +12,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import pageObjects.LandingPage;
+import pageObjects.PremiumPage;
 import pageObjects.RegistrationPage;
 import pageObjects.TermsPage;
 
+import javax.annotation.PreDestroy;
 import java.security.Key;
 import java.util.concurrent.TimeUnit;
 
@@ -23,6 +25,7 @@ public class spotifySteps {
     public LandingPage landingPage;
     public RegistrationPage registrationPage;
     public TermsPage termsPage;
+    public PremiumPage premiumPage;
 
     @Given("estoy en la pagina de spotify")
     public void estoy_en_la_pagina_de_spotify() {
@@ -32,22 +35,22 @@ public class spotifySteps {
 
     @When("ingreso en premium")
     public void ingreso_en_premium() {
-        landingPage.clickOnPremium();
+        premiumPage = landingPage.clickOnPremium();
     }
 
     @Then("está el plan Individual")
     public void está_el_plan_individual() {
-        Assert.assertTrue(landingPage.getPlanIndividual().contains("Individual"));
+        Assert.assertTrue(premiumPage.getPlanIndividual().contains("Individual"));
     }
 
     @Then("está el plan Duo")
     public void está_el_plan_duo() {
-        Assert.assertTrue(landingPage.getPlanDuo().contains("Duo"));
+        Assert.assertTrue(premiumPage.getPlanDuo().contains("Duo"));
     }
 
     @Then("está el plan Familiar")
     public void está_el_plan_familiar() {
-        Assert.assertTrue(landingPage.getPlanFamiliar().contains("Familiar"));
+        Assert.assertTrue(premiumPage.getPlanFamiliar().contains("Familiar"));
     }
 
     @Given("ingreso en registrarse")
