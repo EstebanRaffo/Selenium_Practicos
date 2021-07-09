@@ -1,0 +1,14 @@
+<suite name = "PruebaInterfaces Suite Test">
+
+    <listeners>
+        <listener class-name="Intermedio.Practico11.ejemplo5_suiteListener.TestListener"></listener>
+<!--        <listener class-name="Intermedio.Practico11.ejemplo5_suiteListener.SuiteListeners"></listener>-->
+    </listeners>
+
+    <test name = "Pruebas Selenium">
+        <classes>
+            <class name="Intermedio.Practico11.ejemplo5_suiteListener.AppleTest"></class>
+        </classes>
+    </test>
+
+</suite>
