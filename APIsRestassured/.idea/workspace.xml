@@ -4,18 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/APIsRestassured.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/clase4/Ejemplo1_Procesar_JSON_De_Respuesta/EjerciciosJsons.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/clase4/Ejemplo2_Crear_JSON_Para_POST/EjercicioCrearJsons.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/clase4/Ejemplo2_Crear_JSON_Para_POST/Libro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practicos/drivers/chromedriver.exe" afterDir="false" />
+    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="9/10">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Practico4/Ejercicio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Practico4/entidades/Estudiante.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Practico4/entidades/TarjetaCredito.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/clase4/Ejemplo2_Crear_JSON_Para_POST/EjercicioCrearJsons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/clase4/Ejemplo2_Crear_JSON_Para_POST/EjercicioCrearJsons.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,18 +43,89 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunManager">
-    <configuration name="EjerciciosJsons.getReponseData" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.Ejercicio.getResponseData">
+    <configuration name="Ejercicio" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIsRestassured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="clase4.Ejemplo1_Procesar_JSON_De_Respuesta.*" />
+          <option name="PATTERN" value="Practico4.entidades.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="clase4.Ejemplo1_Procesar_JSON_De_Respuesta" />
-      <option name="MAIN_CLASS_NAME" value="clase4.Ejemplo1_Procesar_JSON_De_Respuesta.EjerciciosJsons" />
-      <option name="METHOD_NAME" value="getReponseData" />
+      <option name="PACKAGE_NAME" value="Practico4" />
+      <option name="MAIN_CLASS_NAME" value="Practico4.Ejercicio" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ejercicio.crearJsonTarjetasTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="APIsRestassured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Practico4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Practico4" />
+      <option name="MAIN_CLASS_NAME" value="Practico4.Ejercicio" />
+      <option name="METHOD_NAME" value="crearJsonTarjetasTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ejercicio.getResponseData" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="APIsRestassured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Practico4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Practico4" />
+      <option name="MAIN_CLASS_NAME" value="Practico4.Ejercicio" />
+      <option name="METHOD_NAME" value="getResponseData" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ejercicio.jsonCatsTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="APIsRestassured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Practico4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Practico4" />
+      <option name="MAIN_CLASS_NAME" value="Practico4.Ejercicio" />
+      <option name="METHOD_NAME" value="jsonCatsTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ejercicio.jsonTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="APIsRestassured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Practico4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Practico4" />
+      <option name="MAIN_CLASS_NAME" value="Practico4.Ejercicio" />
+      <option name="METHOD_NAME" value="jsonTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -69,7 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.EjerciciosJsons.getReponseData" />
+        <item itemvalue="TestNG.Ejercicio.getResponseData" />
+        <item itemvalue="TestNG.Ejercicio.jsonCatsTest" />
+        <item itemvalue="TestNG.Ejercicio.jsonTest" />
+        <item itemvalue="TestNG.Ejercicio.crearJsonTarjetasTest" />
+        <item itemvalue="TestNG.Ejercicio" />
       </list>
     </recent_temporary>
   </component>
@@ -82,6 +152,14 @@
       <option name="presentableId" value="Default" />
       <updated>1633806289567</updated>
     </task>
+    <task id="LOCAL-00001" summary="9/10">
+      <created>1633808903134</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1633808903134</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -98,5 +176,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="9/10" />
+    <option name="LAST_COMMIT_MESSAGE" value="9/10" />
   </component>
 </project>

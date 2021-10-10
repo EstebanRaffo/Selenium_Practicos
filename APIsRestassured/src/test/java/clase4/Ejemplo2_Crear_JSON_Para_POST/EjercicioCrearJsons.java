@@ -71,7 +71,7 @@ public class EjercicioCrearJsons {
 
         }
 
-        System.out.println("El precio de los " + cantidadDeLibros + " libros es $" + sumaPrecios);
+        System.out.println("El precio de los " + cantidadDeLibros + " libros es $ " + sumaPrecios);
 
         Assert.assertTrue(encontreAutorWRoberts, "Error: No se encontró el autor W. Roberts");
         Assert.assertTrue(encontreTituloElSalvador, "Error: No se encontró el titulo El Salvador");
