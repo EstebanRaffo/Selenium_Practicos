@@ -4,10 +4,10 @@ import Practico4.entidades.Estudiante;
 import Practico4.entidades.TarjetaCredito;
 import com.google.gson.Gson;
 import io.restassured.path.json.JsonPath;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class Ejercicio {
 
@@ -72,17 +72,13 @@ public class Ejercicio {
                 "   ]\n" +
                 "}";
 
-        JsonPath jsonPath = new JsonPath(response);
-        String firstName = jsonPath.get("firstName");
-        String lastName = jsonPath.get("lastName");
+//        JsonPath jsonPath = new JsonPath(response);
+//        String firstName = jsonPath.get("firstName");
+//        String lastName = jsonPath.get("lastName");
+        String firstName = ReUsableMethods.rawToJson(response, "firstName");
+        String lastName = ReUsableMethods.rawToJson(response, "lastName");
         System.out.println(firstName);
         System.out.println(lastName);
-    }
-
-    public static String rawToJason(String response, String param){
-        JsonPath jsonPath = new JsonPath(response);
-        String parameter = jsonPath.get(param);
-        return parameter;
     }
 
     @Test
@@ -122,14 +118,94 @@ public class Ejercicio {
                 "}";
 
         JsonPath jsonPath = new JsonPath(response);
+
         String accessToken = jsonPath.get("access_token");
         String instanceUrl = jsonPath.get("instance_url");
         String id = jsonPath.get("id");
         String signature = jsonPath.get("signature");
 
         System.out.println("====> " + accessToken);
-        System.out.println("====> " +instanceUrl);
-        System.out.println("====> " +id);
-        System.out.println("====> " +signature);
+        System.out.println("====> " + instanceUrl);
+        System.out.println("====> " + id);
+        System.out.println("====> " + signature);
+
+        HashMap<String, String> mapa = new HashMap<>();
+        mapa.put("access_token", accessToken);
+        mapa.put("instance_url", instanceUrl);
+        mapa.put("id", id);
+        mapa.put("signature", signature);
+
+        System.out.println("access_token: " + accessToken);
+        System.out.println("instance_url: " + instanceUrl);
+    }
+
+    @Test
+    public void cursosTest(){
+
+        String responseCursos = "{\n" + "\"dashboard\": {\n" + "\n" + "\"purchaseAmount\": 910,\n" + "\n" + "\"website\": \"rahulshettyacademy.com\"\n" + "\n" + "},\n" + "\n" + "\"courses\": [\n" + "\n" + "{\n" + "\n" + "\"title\": \"Selenium Python\",\n" + "\n" + "\"price\": 50,\n" + "\n" + "\"copies\": 6\n" + "\n" + "},\n" + "\n" + "{\n" + "\n" + "\"title\": \"Cypress\",\n" + "\n" + "\"price\": 40,\n" + "\n" + "\"copies\": 4\n" + "\n" + "},\n" + "\n" + "{\n" + "\n" + "\"title\": \"RPA\",\n" + "\n" + "\"price\": 45,\n" + "\n" + "\"copies\": 10\n" + "\n" + "}\n" + "\n" + "]\n" + "\n" + "}";
+
+        JsonPath jsonPathCursos = new JsonPath(responseCursos);
+        List<LinkedHashMap> cursos = jsonPathCursos.get("courses");
+        LinkedHashMap datos = jsonPathCursos.get("dashboard");
+
+        int purchaseAmount = Integer.parseInt(datos.get("purchaseAmount").toString());
+        System.out.println(datos);
+        System.out.println(datos.getClass());
+        System.out.println(purchaseAmount);
+        System.out.println(cursos.get(0).getClass());
+        System.out.println(cursos.get(0));
+
+        int cantidad_cursos = cursos.size();
+        int costo_total = 0;
+
+        for(int i = 0; i < cantidad_cursos; i++){
+            LinkedHashMap unCurso = cursos.get(i);
+            System.out.println("Titulo: " + unCurso.get("title") + " | Precio: " + unCurso.get("price"));
+            costo_total += Integer.parseInt(unCurso.get("price").toString()) * Integer.parseInt(unCurso.get("copies").toString());
+        }
+
+        Assert.assertEquals(costo_total, purchaseAmount, "El costo calculado no coincide con el de los datos de compra");
+        System.out.println("Cantidad de Cursos: "+ cantidad_cursos + "| Costo total es: " + costo_total);
+    }
+
+    @Test
+
+    public void librosTest() {
+        String responseCursos = "{\n" + "\"dashboard\": {\n" + "\n" + "\"purchaseAmount\": 910,\n" + "\n" + "\"website\": \"rahulshettyacademy.com\"\n" + "\n" + "},\n" + "\n" + "\"courses\": [\n" + "\n" + "{\n" + "\n" + "\"title\": \"Selenium Python\",\n" + "\n" + "\"price\": 50,\n" + "\n" + "\"copies\": 6\n" + "\n" + "},\n" + "\n" + "{\n" + "\n" + "\"title\": \"Cypress\",\n" + "\n" + "\"price\": 40,\n" + "\n" + "\"copies\": 4\n" + "\n" + "},\n" + "\n" + "{\n" + "\n" + "\"title\": \"RPA\",\n" + "\n" + "\"price\": 45,\n" + "\n" + "\"copies\": 10\n" + "\n" + "}\n" + "\n" + "]\n" + "\n" + "}";
+
+        JsonPath extractor = new JsonPath(responseCursos);
+
+        int cantidadCursos = extractor.getInt("courses.size()");
+        System.out.println(cantidadCursos);
+
+        int totalCursos = extractor.getInt("dashboard.purchaseAmount");
+        System.out.println(totalCursos);
+
+        String titleFirstCourse = extractor.get("courses[0].title");
+        System.out.println(titleFirstCourse);
+
+        System.out.println("**** TODOS LOS CURSOS *****");
+        int total = 0;
+
+        for (int i = 0; i < cantidadCursos; i++) {
+            String titulo = extractor.get("courses[" + i + "].title");
+            int precio = extractor.get("courses[" + i + "].price");
+            int copias = extractor.get("courses[" + i + "].copies");
+            System.out.println(titulo + " Precio: $" + precio);
+            total += precio * copias;
+        }
+
+        System.out.println("El precio final es de " + total);
+        Assert.assertEquals(total, totalCursos, "El costo calculado no coincide con el de los datos de compra");
+
+        //imprimir la cantidad de copias de el libro RSA
+        for (int i = 0; i < cantidadCursos; i++) {
+            String titulo = extractor.get("courses[" + i + "].title");
+            if (titulo.equalsIgnoreCase("RPA")){
+                int copias = extractor.get("courses[" + i + "].copies");
+                System.out.println("La cantidad de copias es " + copias);
+                break;
+            }
+        }
     }
 }

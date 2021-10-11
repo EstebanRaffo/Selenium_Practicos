@@ -1,4 +1,4 @@
-package clase4.Ejemplo2_Crear_JSON_Para_POST;
+package Clase4.Ejemplo2_Crear_JSON_Para_POST;
 
 import com.google.gson.Gson;
 import io.restassured.path.json.JsonPath;

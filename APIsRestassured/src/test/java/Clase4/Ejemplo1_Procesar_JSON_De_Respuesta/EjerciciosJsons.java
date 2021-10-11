@@ -1,4 +1,4 @@
-package clase4.Ejemplo1_Procesar_JSON_De_Respuesta;
+package Clase4.Ejemplo1_Procesar_JSON_De_Respuesta;
 
 import io.restassured.path.json.JsonPath;
 import org.testng.Assert;
