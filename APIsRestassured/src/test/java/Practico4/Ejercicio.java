@@ -169,7 +169,6 @@ public class Ejercicio {
     }
 
     @Test
-
     public void librosTest() {
         String responseCursos = "{\n" + "\"dashboard\": {\n" + "\n" + "\"purchaseAmount\": 910,\n" + "\n" + "\"website\": \"rahulshettyacademy.com\"\n" + "\n" + "},\n" + "\n" + "\"courses\": [\n" + "\n" + "{\n" + "\n" + "\"title\": \"Selenium Python\",\n" + "\n" + "\"price\": 50,\n" + "\n" + "\"copies\": 6\n" + "\n" + "},\n" + "\n" + "{\n" + "\n" + "\"title\": \"Cypress\",\n" + "\n" + "\"price\": 40,\n" + "\n" + "\"copies\": 4\n" + "\n" + "},\n" + "\n" + "{\n" + "\n" + "\"title\": \"RPA\",\n" + "\n" + "\"price\": 45,\n" + "\n" + "\"copies\": 10\n" + "\n" + "}\n" + "\n" + "]\n" + "\n" + "}";
 
@@ -198,7 +197,7 @@ public class Ejercicio {
         System.out.println("El precio final es de " + total);
         Assert.assertEquals(total, totalCursos, "El costo calculado no coincide con el de los datos de compra");
 
-        //imprimir la cantidad de copias de el libro RSA
+        //imprimir la cantidad de copias del libro RPA
         for (int i = 0; i < cantidadCursos; i++) {
             String titulo = extractor.get("courses[" + i + "].title");
             if (titulo.equalsIgnoreCase("RPA")){
