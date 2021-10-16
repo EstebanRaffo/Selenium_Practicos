@@ -1,12 +1,13 @@
-package clase5;
+package Clase5;
 
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import jdk.jfr.ContentType;
+//import jdk.jfr.ContentType;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
 
 import static io.restassured.RestAssured.given;
 import static io.restassured.RestAssured.when;
@@ -48,7 +49,7 @@ public class PostSimpleTest {
         String userId = jsonPath.get("userId");
         int id = jsonPath.get("id");
 
-        System.out.println("El titulo es " + titulo + " y el body es " + body);
+        System.out.println("El titulo es " + titulo + " y el body es " + body + " | userId = " + userId + " | id = " + id);
     }
 
     String userInfo = "{\n" +
@@ -73,6 +74,7 @@ public class PostSimpleTest {
         int identificador = jsonPath.get("id");
         String token = jsonPath.get("token");
 
+        System.out.println("identificador: " + identificador);
         Assert.assertFalse(token.isEmpty(), "Error: el token no deberia ser vacio");
 
     }

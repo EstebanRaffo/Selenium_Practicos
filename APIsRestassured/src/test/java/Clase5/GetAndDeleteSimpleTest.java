@@ -1,4 +1,4 @@
-package clase5;
+package Clase5;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -26,10 +26,8 @@ public class GetAndDeleteSimpleTest {
             .then().log().all()
                 .extract().response();
 
-        
-
-        //System.out.println("Status code: " + response.getStatusCode());
-        //System.out.println("Body : " + response.getBody().asString());
+        System.out.println("Status code: " + response.getStatusCode());
+        System.out.println("Body : " + response.getBody().asString());
     }
 
     @Test
