@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="12/10">
+    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="16/10">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Practico5/CatFact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Practico5/DogCeo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Practico5/DogFacts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Practico5/JsonPlaceHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Practico5/Reqres.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Clase5/GetAndDeleteSimpleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Clase5/GetAndDeleteSimpleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Clase5/PostSimpleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Clase5/PostSimpleTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,18 +43,18 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager" selected="TestNG.PostSimpleTest.postRequest">
-    <configuration name="Ejercicio.librosTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.CatFact.getTextsTest">
+    <configuration name="CatFact.getTextsTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIsRestassured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Practico4.*" />
+          <option name="PATTERN" value="Practico5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Practico4" />
-      <option name="MAIN_CLASS_NAME" value="Practico4.Ejercicio" />
-      <option name="METHOD_NAME" value="librosTest" />
+      <option name="PACKAGE_NAME" value="Practico5" />
+      <option name="MAIN_CLASS_NAME" value="Practico5.CatFact" />
+      <option name="METHOD_NAME" value="getTextsTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -60,51 +62,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetAndDeleteSimpleTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="JsonPlaceHolder.deleteRequest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIsRestassured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Clase5.*" />
+          <option name="PATTERN" value="Practico5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Clase5" />
-      <option name="MAIN_CLASS_NAME" value="Clase5.GetAndDeleteSimpleTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PostSimpleTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="APIsRestassured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Clase5.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Clase5" />
-      <option name="MAIN_CLASS_NAME" value="Clase5.PostSimpleTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PostSimpleTest.postRequest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="APIsRestassured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Clase5.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Clase5" />
-      <option name="MAIN_CLASS_NAME" value="Clase5.PostSimpleTest" />
-      <option name="METHOD_NAME" value="postRequest" />
+      <option name="PACKAGE_NAME" value="Practico5" />
+      <option name="MAIN_CLASS_NAME" value="Practico5.JsonPlaceHolder" />
+      <option name="METHOD_NAME" value="deleteRequest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -112,17 +80,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PostSimpleTest.registrationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="JsonPlaceHolder.getCommentsPostTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIsRestassured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Clase5.*" />
+          <option name="PATTERN" value="Practico5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Clase5" />
-      <option name="MAIN_CLASS_NAME" value="Clase5.PostSimpleTest" />
-      <option name="METHOD_NAME" value="registrationTest" />
+      <option name="PACKAGE_NAME" value="Practico5" />
+      <option name="MAIN_CLASS_NAME" value="Practico5.JsonPlaceHolder" />
+      <option name="METHOD_NAME" value="getCommentsPostTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JsonPlaceHolder.putPostTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="APIsRestassured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Practico5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Practico5" />
+      <option name="MAIN_CLASS_NAME" value="Practico5.JsonPlaceHolder" />
+      <option name="METHOD_NAME" value="putPostTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Reqres.putUserTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="APIsRestassured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Practico5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Practico5" />
+      <option name="MAIN_CLASS_NAME" value="Practico5.Reqres" />
+      <option name="METHOD_NAME" value="putUserTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -132,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.PostSimpleTest.postRequest" />
-        <item itemvalue="TestNG.PostSimpleTest.registrationTest" />
-        <item itemvalue="TestNG.GetAndDeleteSimpleTest" />
-        <item itemvalue="TestNG.PostSimpleTest" />
-        <item itemvalue="TestNG.Ejercicio.librosTest" />
+        <item itemvalue="TestNG.CatFact.getTextsTest" />
+        <item itemvalue="TestNG.JsonPlaceHolder.deleteRequest" />
+        <item itemvalue="TestNG.JsonPlaceHolder.putPostTest" />
+        <item itemvalue="TestNG.JsonPlaceHolder.getCommentsPostTest" />
+        <item itemvalue="TestNG.Reqres.putUserTest" />
       </list>
     </recent_temporary>
   </component>
@@ -177,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634078940786</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="16/10">
+      <created>1634418693610</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1634418693610</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -198,6 +209,7 @@
     <MESSAGE value="10/10" />
     <MESSAGE value="11/10" />
     <MESSAGE value="12/10" />
-    <option name="LAST_COMMIT_MESSAGE" value="12/10" />
+    <MESSAGE value="16/10" />
+    <option name="LAST_COMMIT_MESSAGE" value="16/10" />
   </component>
 </project>
