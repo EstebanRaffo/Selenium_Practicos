@@ -27,7 +27,7 @@ public class GetAndDeleteSimpleTest {
                 .extract().response();
 
         System.out.println("Status code: " + response.getStatusCode());
-        System.out.println("Body : " + response.getBody().asString());
+        System.out.println("Body: " + response.getBody().asString());
     }
 
     @Test

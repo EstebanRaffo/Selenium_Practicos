@@ -38,8 +38,8 @@ public class CatFact {
     public static Response doGetRequest(String endpoint) {
         return
                 given().headers("Content-Type", ContentType.JSON, "Accept", ContentType.JSON)
-                .when().get(endpoint).
-                then().contentType(ContentType.JSON).log().all().extract().response();
+                .when().get(endpoint)
+                .then().contentType(ContentType.JSON).log().all().extract().response();
     }
 
     @Test
@@ -52,21 +52,24 @@ public class CatFact {
         Assert.assertEquals(200, response.statusCode());
     }
 
+
     @Test
-    public static void getJsonUsersTest(){
-        RestAssured.baseURI = "https://jsonplaceholder.typicode.com";
-        String endpoint = "/users";
+    public static void weatherInJsonResponseTest(){
+        RestAssured.baseURI = "https://demoqa.com";
+        String endpoint = "/utilities/weather/city/Montevideo";
 
         Response response = doGetRequest(endpoint);
-        Assert.assertEquals(200, response.statusCode());
 
-        System.out.println(response.body().jsonPath());
-        System.out.println(response.body().getClass());
+        JsonPath js = response.jsonPath();
 
-        String jsonResponse = new Gson().toJson(response);
-        jsonResponse = "{\"users\": "+ jsonResponse +"}";
-        JsonPath js = new JsonPath(jsonResponse);
-        System.out.println("Se obtuvieron " + js.getInt("users.size()") + " usuarios");
+        String city = js.getString("City");
+        String temperature = js.getString("Temperature");
+        String humidity = js.getString("Humidity");
 
+        System.out.println("City: " + city + " | Temperature: " + temperature + " | humidity: " + humidity);
+
+        Assert.assertEquals(city, "Montevideo", "No se obtuvo Montevideo");
+        Assert.assertTrue(temperature.contains("Degree celsius"), "La temperatura no está en Degree Celsius");
+        Assert.assertTrue(humidity.contains("Percent"), "La humedad no está en %");
     }
 }

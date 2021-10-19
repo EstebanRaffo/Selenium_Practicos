@@ -2,11 +2,13 @@ package Practico5;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import static Practico5.CatFact.doGetRequest;
 import static io.restassured.RestAssured.given;
 
 public class JsonPlaceHolder {
@@ -70,6 +72,25 @@ public class JsonPlaceHolder {
         System.out.println(response.body().asString());
         Assert.assertEquals(200, response.statusCode());
     }
+
+    @Test
+    public static void getJsonUsersTest(){
+        String endpoint = "/users";
+
+        Response response = doGetRequest(endpoint);
+        Assert.assertEquals(200, response.statusCode());
+
+        String bodyAsString = response.getBody().asString();
+        System.out.println("Body as String: " + bodyAsString);
+
+        String jsonResponse = "{\"users\": "+ bodyAsString +"}";
+        System.out.println("jsonResponse: " + jsonResponse);
+        JsonPath js = new JsonPath(jsonResponse);
+        System.out.println("Se obtuvieron " + js.getInt("users.size()") + " usuarios");
+    }
+
+
+
 
 
 

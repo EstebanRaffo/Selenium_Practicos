@@ -38,7 +38,6 @@ public class Reqres {
 
     @Test
     public void postUserTest(){
-
         String userInfo = "{\n" +
                         "    \"name\": \"morpheus\",\n" +
                         "    \"job\": \"leader\"\n" +
