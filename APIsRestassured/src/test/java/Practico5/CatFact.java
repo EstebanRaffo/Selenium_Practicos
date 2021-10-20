@@ -7,8 +7,10 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import java.util.HashMap;
 import java.util.List;
 
 import static io.restassured.RestAssured.given;
@@ -52,11 +54,18 @@ public class CatFact {
         Assert.assertEquals(200, response.statusCode());
     }
 
+    @DataProvider(name = "ciudades")
+    public Object[][] datosDePersonas(){
+        return new Object[][]{
+                {"Montevideo"},
+                {"Cordoba"}
+        };
+    }
 
-    @Test
-    public static void weatherInJsonResponseTest(){
+    @Test(dataProvider = "ciudades")
+    public static void weatherInJsonResponseTest(String unaCiudad){
         RestAssured.baseURI = "https://demoqa.com";
-        String endpoint = "/utilities/weather/city/Montevideo";
+        String endpoint = "/utilities/weather/city/" + unaCiudad;
 
         Response response = doGetRequest(endpoint);
 
@@ -66,9 +75,14 @@ public class CatFact {
         String temperature = js.getString("Temperature");
         String humidity = js.getString("Humidity");
 
-        System.out.println("City: " + city + " | Temperature: " + temperature + " | humidity: " + humidity);
+        HashMap<String, String> weatherInfoMap = new HashMap<>();
+        weatherInfoMap.put("Ciudad", city);
+        weatherInfoMap.put("Temperatura", temperature);
+        weatherInfoMap.put("Humedad", humidity);
 
-        Assert.assertEquals(city, "Montevideo", "No se obtuvo Montevideo");
+        System.out.println("City: " + weatherInfoMap.get("Ciudad") + " | Temperature: " + weatherInfoMap.get("Temperatura") + " | humidity: " + weatherInfoMap.get("Humedad"));
+
+        Assert.assertEquals(city, unaCiudad, "No se obtuvo "+ unaCiudad +"\n"+ "La ciudad obtenida fue "+ city);
         Assert.assertTrue(temperature.contains("Degree celsius"), "La temperatura no está en Degree Celsius");
         Assert.assertTrue(humidity.contains("Percent"), "La humedad no está en %");
     }

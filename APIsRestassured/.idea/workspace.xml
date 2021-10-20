@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="18/10">
+    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="19/10">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Clase5/GetAndDeleteSimpleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Clase5/GetAndDeleteSimpleTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Practico5/CatFact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Practico5/CatFact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Practico5/JsonPlaceHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Practico5/JsonPlaceHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Practico5/Reqres.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Practico5/Reqres.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634598245252</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="19/10">
+      <created>1634685162037</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1634685162037</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -225,6 +229,7 @@
     <MESSAGE value="16/10" />
     <MESSAGE value="17/10" />
     <MESSAGE value="18/10" />
-    <option name="LAST_COMMIT_MESSAGE" value="18/10" />
+    <MESSAGE value="19/10" />
+    <option name="LAST_COMMIT_MESSAGE" value="19/10" />
   </component>
 </project>
