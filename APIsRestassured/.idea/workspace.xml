@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="23/10" />
+    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="23/10">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Clase6/Contact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Clase6/SalesforceRequests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,28 +37,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/Clase6" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager" selected="TestNG.CatFact.getTextsTest">
-    <configuration name="CatFact.getCurrencyListTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="APIsRestassured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Practico5.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Practico5" />
-      <option name="MAIN_CLASS_NAME" value="Practico5.CatFact" />
-      <option name="METHOD_NAME" value="getCurrencyListTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Usuario\Documents\SeleniumAcademy\IdeaProjects\APIsRestassured\src\test\java\Clase6" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.JsonPlaceHolder.getCommentsPostTest">
     <configuration name="CatFact.getJsonUsersTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIsRestassured" />
       <extension name="coverage">
@@ -109,6 +100,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JsonPlaceHolder.getCommentsPostTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="APIsRestassured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Practico5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Practico5" />
+      <option name="MAIN_CLASS_NAME" value="Practico5.JsonPlaceHolder" />
+      <option name="METHOD_NAME" value="getCommentsPostTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JsonPlaceHolder.getJsonUsersTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIsRestassured" />
       <extension name="coverage">
@@ -129,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.JsonPlaceHolder.getCommentsPostTest" />
         <item itemvalue="TestNG.CatFact.getTextsTest" />
         <item itemvalue="TestNG.CatFact.weatherInJsonResponseTest" />
         <item itemvalue="TestNG.JsonPlaceHolder.getJsonUsersTest" />
         <item itemvalue="TestNG.CatFact.getJsonUsersTest" />
-        <item itemvalue="TestNG.CatFact.getCurrencyListTest" />
       </list>
     </recent_temporary>
   </component>
@@ -216,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635010747978</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="23/10">
+      <created>1635011451454</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1635011451454</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
