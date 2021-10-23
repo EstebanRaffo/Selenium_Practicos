@@ -25,6 +25,7 @@ public class CatFact {
 
     @Test
     public void getTextsTest(){
+//        REVISAR, ARROJA ERROR 503
         List<String> textos =
                 given().header("Content-Type", "application/json")
                 .when().get("facts")
