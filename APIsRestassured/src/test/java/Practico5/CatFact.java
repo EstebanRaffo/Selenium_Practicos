@@ -25,16 +25,33 @@ public class CatFact {
 
     @Test
     public void getTextsTest(){
-//        List<String> response =
-//                given().header("Content-Type", "application/json")
-//                .when().get("facts")
-//                .then().assertThat().statusCode(503)
-//                .extract().path("text");
-//
-//        for (String text : response){
-//            System.out.println(text);
-//        }
+        List<String> textos =
+                given().header("Content-Type", "application/json")
+                .when().get("facts")
+                .then().log().all().assertThat().statusCode(200)
+//                        .extract().asString()
+                .extract().path("text");
+
+        // System.out.println(response);
+
+        for (String text : textos){
+            System.out.println(text);
+        }
+
+
+        List<String> status = given().header("Content-Type", "application/json")
+                .when().get("facts")
+                .then().assertThat().statusCode(200)
+                .extract().path("source");
+
+        System.out.println("Source");
+
+        for (String source : status){
+            System.out.println(source);
+        }
     }
+
+
 
 
     public static Response doGetRequest(String endpoint) {
