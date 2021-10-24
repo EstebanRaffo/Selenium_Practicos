@@ -13,6 +13,9 @@ public class SalesforceRequests {
 
         //obtener la autorizacion para trabajar en la instancia de Salesforce...
 
+//        Pedir permiso y token
+//        Crear contacto y responde con id de contacto creado y buscar en SF
+
         RestAssured.baseURI = "https://login.salesforce.com/services/oauth2/";
 
         String respuesta = given()
@@ -67,6 +70,7 @@ public class SalesforceRequests {
                 .header("Content-Type", "application/json")
                 .header("Authorization", "Bearer " + accessToken)
             .when()
+//                    El endpoint sale de workbench
                     .get("services/data/v51.0/sobjects/Contact/" + contactId )
             .then()
                     .assertThat().statusCode(200).extract().asString();
