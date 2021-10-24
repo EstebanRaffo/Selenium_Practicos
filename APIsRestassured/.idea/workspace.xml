@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="23/10">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Practico6/SalesforceRequests.java" afterDir="false" />
+    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="24/10">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Clase7/ContactTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Clase6/SalesforceRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Clase6/SalesforceRequests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +42,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Usuario\Documents\SeleniumAcademy\IdeaProjects\APIsRestassured\src\test\java\Clase6" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Usuario\Documents\SeleniumAcademy\IdeaProjects\APIsRestassured\src\test\java\Clase7" />
     </key>
   </component>
   <component name="RunManager" selected="TestNG.SalesforceRequests.getTokenTest">
@@ -238,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635024072687</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="24/10">
+      <created>1635101017326</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1635101017326</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -265,6 +274,7 @@
     <MESSAGE value="19/10" />
     <MESSAGE value="20/10" />
     <MESSAGE value="23/10" />
-    <option name="LAST_COMMIT_MESSAGE" value="23/10" />
+    <MESSAGE value="24/10" />
+    <option name="LAST_COMMIT_MESSAGE" value="24/10" />
   </component>
 </project>
