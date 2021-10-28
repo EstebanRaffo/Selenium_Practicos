@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="24/10">
+    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="26/10">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Practico7/ContactTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Practico6/SalesforceRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Practico6/SalesforceRequests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,18 +47,18 @@
       <recent name="C:\Users\Usuario\Documents\SeleniumAcademy\IdeaProjects\APIsRestassured\src\test\java\Clase7" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.SalesforceRequests.getTokenTest">
-    <configuration name="CatFact.getTextsTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.ContactTest.getAccountTest">
+    <configuration name="ContactTest.contactFlowTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIsRestassured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Practico5.*" />
+          <option name="PATTERN" value="Practico7.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Practico5" />
-      <option name="MAIN_CLASS_NAME" value="Practico5.CatFact" />
-      <option name="METHOD_NAME" value="getTextsTest" />
+      <option name="PACKAGE_NAME" value="Practico7" />
+      <option name="MAIN_CLASS_NAME" value="Practico7.ContactTest" />
+      <option name="METHOD_NAME" value="contactFlowTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -66,17 +66,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CatFact.weatherInJsonResponseTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ContactTest.getAccountTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIsRestassured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Practico5.*" />
+          <option name="PATTERN" value="Practico7.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Practico5" />
-      <option name="MAIN_CLASS_NAME" value="Practico5.CatFact" />
-      <option name="METHOD_NAME" value="weatherInJsonResponseTest" />
+      <option name="PACKAGE_NAME" value="Practico7" />
+      <option name="MAIN_CLASS_NAME" value="Practico7.ContactTest" />
+      <option name="METHOD_NAME" value="getAccountTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -139,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ContactTest.getAccountTest" />
+        <item itemvalue="TestNG.ContactTest.contactFlowTest" />
         <item itemvalue="TestNG.SalesforceRequests.getTokenTest" />
         <item itemvalue="TestNG.SalesforceRequests" />
         <item itemvalue="TestNG.JsonPlaceHolder.getCommentsPostTest" />
-        <item itemvalue="TestNG.CatFact.getTextsTest" />
-        <item itemvalue="TestNG.CatFact.weatherInJsonResponseTest" />
       </list>
     </recent_temporary>
   </component>
@@ -254,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635109427102</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="26/10">
+      <created>1635289494351</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1635289494351</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -282,6 +289,7 @@
     <MESSAGE value="20/10" />
     <MESSAGE value="23/10" />
     <MESSAGE value="24/10" />
-    <option name="LAST_COMMIT_MESSAGE" value="24/10" />
+    <MESSAGE value="26/10" />
+    <option name="LAST_COMMIT_MESSAGE" value="26/10" />
   </component>
 </project>
