@@ -19,7 +19,8 @@ public class SalesforceRequests {
 
         RestAssured.baseURI = "https://login.salesforce.com/services/oauth2/";
 
-        String respuesta = given()
+        String respuesta =
+                given()
                     //.header("Content-type", "application/json")
                     .queryParam("grant_type", "password")
                     .queryParam("client_id", "3MVG9p1Q1BCe9GmBFxFv86hAuBdOHjVb8SJIhkKHfVZUqdeSKAWcYNzzoLMN3v6QC0yp61kUYE1fCmekeCX.O")
@@ -28,8 +29,8 @@ public class SalesforceRequests {
                     .queryParam("password", "revolucionario87Ay7nOjpbwyCVhOpVNp2pSwfTx")
                 .when()
                     .post("token")
-                .then().assertThat().statusCode(200)
-                    .extract().asString();
+                .then()
+                    .assertThat().statusCode(200).extract().asString();
 
         System.out.println(respuesta);
 
@@ -48,14 +49,15 @@ public class SalesforceRequests {
 
         RestAssured.baseURI = instanceUrl;
 
-        String nuevoContacto = given()
-                .header("Content-type", "application/json")
-                .header("Authorization", "Bearer " + accessToken)
-                .body(contacto1)
+        String nuevoContacto =
+                given()
+                    .header("Content-type", "application/json")
+                    .header("Authorization", "Bearer " + accessToken)
+                    .body(contacto1)
                 .when()
-                .post("/services/data/v51.0/sobjects/Contact")
+                    .post("/services/data/v51.0/sobjects/Contact")
                 .then()
-                .assertThat().statusCode(201).extract().asString();
+                        .assertThat().statusCode(201).extract().asString();
 
         System.out.println(nuevoContacto);
 
@@ -66,13 +68,13 @@ public class SalesforceRequests {
         //obtener la informacion del contacto previamente creado....
         String contactInfo =
                 given()
-                        .header("Content-Type", "application/json")
-                        .header("Authorization", "Bearer " + accessToken)
-                        .when()
+                    .header("Content-Type", "application/json")
+                    .header("Authorization", "Bearer " + accessToken)
+                .when()
 //                    El endpoint sale de workbench
-                        .get("services/data/v51.0/sobjects/Contact/" + contactId )
-                        .then()
-                        .assertThat().statusCode(200).extract().asString();
+                    .get("services/data/v51.0/sobjects/Contact/" + contactId )
+                .then()
+                    .assertThat().statusCode(200).extract().asString();
 
         System.out.println("***********  Contact Information ***************");
         System.out.println("---> " + contactInfo);

@@ -63,12 +63,14 @@ public class JsonPlaceHolder {
 
     @Test
     public void deleteRequest() {
-        Response response = given()
-                .header("Content-type", "application/json")
+        Response response =
+                given()
+                    .header("Content-type", "application/json")
                 .when()
-                .delete("/posts/1")
+                    .delete("/posts/1")
                 .then()
-                .extract().response();
+                    .extract().response();
+
         System.out.println(response.body().asString());
         Assert.assertEquals(200, response.statusCode());
     }

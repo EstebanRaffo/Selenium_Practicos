@@ -22,7 +22,8 @@ public class DogFacts {
                         .when().get("/api/v1/resources/dogs/all")
                         .then().log().all().assertThat().statusCode(200).extract().response();
 
-        System.out.println("Body : " + response.getBody().asString());
+        System.out.println("Body : " + response.getBody());
+        System.out.println("Body as String: " + response.getBody().asString());
 
     }
 }

@@ -20,7 +20,8 @@ public class ContactTest {
 
         RestAssured.baseURI = "https://login.salesforce.com/services/oauth2/";
 
-        String respuesta = given()
+        String respuesta =
+                given()
                     //.header("Content-type", "application/json")
                     .queryParam("grant_type", "password")
                     .queryParam("client_id", "3MVG9p1Q1BCe9GmBFxFv86hAuBdOHjVb8SJIhkKHfVZUqdeSKAWcYNzzoLMN3v6QC0yp61kUYE1fCmekeCX.O")
@@ -29,8 +30,8 @@ public class ContactTest {
                     .queryParam("password", "revolucionario87Ay7nOjpbwyCVhOpVNp2pSwfTx")
                 .when()
                     .post("token")
-                .then().assertThat().statusCode(200)
-                    .extract().asString();
+                .then()
+                    .log().all().assertThat().statusCode(200).extract().asString();
 
         System.out.println(respuesta);
 
@@ -47,18 +48,19 @@ public class ContactTest {
     @Test
     public void contactFlowTest(){
 
-        Contact contacto1 = new Contact("Nicolas Del Caño");
+        Contact contacto1 = new Contact("Pedro Gomez");
 
         //crear un nuevo contacto....
 
-        String nuevoContacto = given()
+        String nuevoContacto =
+                given()
                     .header("Content-type", "application/json")
                     .header("Authorization", "Bearer " + ACCESS_TOKEN)
                     .body(contacto1)
                 .when()
                     .post("/services/data/v51.0/sobjects/Contact")
                 .then()
-                    .assertThat().statusCode(201).extract().asString();
+                    .log().all().assertThat().statusCode(201).extract().asString();
 
         System.out.println(nuevoContacto);
 
@@ -69,12 +71,12 @@ public class ContactTest {
         //obtener la informacion del contacto previamente creado....
         String contactInfo =
                 given()
-                        .header("Content-Type", "application/json")
-                        .header("Authorization", "Bearer " + ACCESS_TOKEN)
-                        .when()
-                        .get("services/data/v51.0/sobjects/Contact/" + contactId )
-                        .then()
-                        .assertThat().statusCode(200).extract().asString();
+                    .header("Content-Type", "application/json")
+                    .header("Authorization", "Bearer " + ACCESS_TOKEN)
+                .when()
+                    .get("services/data/v51.0/sobjects/Contact/" + contactId )
+                .then()
+                    .assertThat().statusCode(200).extract().asString();
 
         System.out.println("***********  Contact Information ***************");
         System.out.println("---> " + contactInfo);
@@ -84,12 +86,12 @@ public class ContactTest {
     public void getAccountTest() {
         String accountInfo =
                 given()
-                        .header("Content-Type", "application/json")
-                        .header("Authorization", "Bearer " + ACCESS_TOKEN)
-                        .when()
-                        .get("services/data/v51.0/sobjects/Account/" + "0035f000004cnYYAAY" )
-                        .then()
-                        .assertThat().statusCode(200).extract().asString();
+                    .header("Content-Type", "application/json")
+                    .header("Authorization", "Bearer " + ACCESS_TOKEN)
+                .when()
+                    .get("services/data/v51.0/sobjects/Account/" + "0035f000004csvZAAQ" )
+                .then()
+                    .log().all().assertThat().statusCode(200).extract().asString();
 
         System.out.println("***********  Contact Information ***************");
         System.out.println("---> " + accountInfo);
@@ -103,12 +105,12 @@ public class ContactTest {
     public void deleteAccountTest(){
         String responseInfo =
                 given()
-                        .header("Content-Type", "application/json")
-                        .header("Authorization", "Bearer " + ACCESS_TOKEN)
-                        .when()
-                        .delete("services/data/v51.0/sobjects/Contact/" + "0035f000004cnYYAAY" )
-                        .then()
-                        .assertThat().statusCode(204).extract().asString();
+                    .header("Content-Type", "application/json")
+                    .header("Authorization", "Bearer " + ACCESS_TOKEN)
+                .when()
+                    .delete("services/data/v51.0/sobjects/Contact/" + "0035f000004cfS6AAI" )
+                .then()
+                    .assertThat().statusCode(204).extract().asString();
 
         System.out.println("***********  Contact Information ***************");
         System.out.println("---> " + responseInfo);

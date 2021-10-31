@@ -18,17 +18,18 @@ public class SalesforceRequests {
 
         RestAssured.baseURI = "https://login.salesforce.com/services/oauth2/";
 
-        String respuesta = given()
-                //.header("Content-type", "application/json")
-                .queryParam("grant_type", "password")
-                .queryParam("client_id", "3MVG9p1Q1BCe9GmCSj33tBJjfBszMSaJDvJDfwwj2VeMpQy4rRnWS_IXrAPj41qd.0V3e50FHZMBySnXCLnzC")
-                .queryParam("client_secret", "E63928F2EF75E18F2562AE5CEA50F56897C29092C6D6E3AF9718E16218FE4FC8")
-                .queryParam("username", "seleniumcurso+123@gmail.com")
-                .queryParam("password", "holamundo123FxZ0KNxCgPgIQ0TDPYW7HmkmF")
-        .when()
+        String respuesta =
+            given()
+                    //.header("Content-type", "application/json")
+                    .queryParam("grant_type", "password")
+                    .queryParam("client_id", "3MVG9p1Q1BCe9GmCSj33tBJjfBszMSaJDvJDfwwj2VeMpQy4rRnWS_IXrAPj41qd.0V3e50FHZMBySnXCLnzC")
+                    .queryParam("client_secret", "E63928F2EF75E18F2562AE5CEA50F56897C29092C6D6E3AF9718E16218FE4FC8")
+                    .queryParam("username", "seleniumcurso+123@gmail.com")
+                    .queryParam("password", "holamundo123FxZ0KNxCgPgIQ0TDPYW7HmkmF")
+            .when()
                 .post("token")
-        .then().assertThat().statusCode(200)
-                .extract().asString();
+            .then()
+                .assertThat().statusCode(200).extract().asString();
 
         System.out.println(respuesta);
 
@@ -44,21 +45,20 @@ public class SalesforceRequests {
 
         Contact contacto1 = new Contact("Marquez Gonzalez");
 
-
         //crear un nuevo contacto....
         RestAssured.baseURI = instanceUrl;
 
-        String nuevoContacto = given()
+        String nuevoContacto =
+            given()
                 .header("Content-type", "application/json")
                 .header("Authorization", "Bearer " + accessToken)
                 .body(contacto1)
-        .when()
+            .when()
                 .post("/services/data/v51.0/sobjects/Contact")
-        .then()
+            .then()
                 .assertThat().statusCode(201).extract().asString();
 
         System.out.println(nuevoContacto);
-
 
         js = new JsonPath(nuevoContacto);
 
