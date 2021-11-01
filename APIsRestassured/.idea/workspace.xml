@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="28/10">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Clase8/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Clase8/AccountsDataProvider.java" afterDir="false" />
+    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="31/10">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Clase6/SalesforceRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Clase6/SalesforceRequests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Clase7/ContactTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Clase7/ContactTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Practico5/DogFacts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Practico5/DogFacts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Practico5/JsonPlaceHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Practico5/JsonPlaceHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Practico6/SalesforceRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Practico6/SalesforceRequests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Practico7/ContactTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Practico7/ContactTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Clase8/AccountsDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Clase8/AccountsDataProvider.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -276,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635461543089</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="31/10">
+      <created>1635698656049</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1635698656049</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -306,6 +306,7 @@
     <MESSAGE value="24/10" />
     <MESSAGE value="26/10" />
     <MESSAGE value="28/10" />
-    <option name="LAST_COMMIT_MESSAGE" value="28/10" />
+    <MESSAGE value="31/10" />
+    <option name="LAST_COMMIT_MESSAGE" value="31/10" />
   </component>
 </project>
