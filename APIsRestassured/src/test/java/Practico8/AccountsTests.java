@@ -15,15 +15,6 @@ public class AccountsTests {
     private static String ACCESS_TOKEN = "";
     private static String INSTANCE_URL = "";
 
-    @DataProvider(name = "accounts")
-    public Object[][] dataProviderAccounts() {
-        return new Object[][]{
-                {"Juan", "Esta es la cuenta de Juan"},
-                {"Maria", "Esta es la cuenta de Maria"}
-        };
-    }
-
-
     @BeforeTest
     public void obtainAuthorizationFromSalesforce() {
         //obtener la autorizacion para trabajar en la instancia de Salesforce...
@@ -32,16 +23,16 @@ public class AccountsTests {
 
         String respuesta =
                 given()
-                        //.header("Content-type", "application/json")
-                        .queryParam("grant_type", "password")
-                        .queryParam("client_id", "3MVG9p1Q1BCe9GmCSj33tBJjfBszMSaJDvJDfwwj2VeMpQy4rRnWS_IXrAPj41qd.0V3e50FHZMBySnXCLnzC")
-                        .queryParam("client_secret", "E63928F2EF75E18F2562AE5CEA50F56897C29092C6D6E3AF9718E16218FE4FC8")
-                        .queryParam("username", "seleniumcurso+123@gmail.com")
-                        .queryParam("password", "holamundo123FxZ0KNxCgPgIQ0TDPYW7HmkmF")
-                        .when()
-                        .post("token")
-                        .then()
-                        .assertThat().statusCode(200).extract().asString();
+                    //.header("Content-type", "application/json")
+                    .queryParam("grant_type", "password")
+                    .queryParam("client_id", "3MVG9p1Q1BCe9GmBFxFv86hAuBdOHjVb8SJIhkKHfVZUqdeSKAWcYNzzoLMN3v6QC0yp61kUYE1fCmekeCX.O")
+                    .queryParam("client_secret", "4381C0ECBB5F8BA367E97A1B75874BCBBB3EAE68ECD34D2523740B9EC56B68C8")
+                    .queryParam("username", "e.fraffo@gmail.com")
+                    .queryParam("password", "revolucionario87Ay7nOjpbwyCVhOpVNp2pSwfTx")
+                .when()
+                    .post("token")
+                .then()
+                    .log().all().assertThat().statusCode(200).extract().asString();
 
         System.out.println(respuesta);
 
@@ -56,6 +47,14 @@ public class AccountsTests {
     }
 
 
+    @DataProvider(name = "accounts")
+    public Object[][] dataProviderAccounts() {
+        return new Object[][]{
+                {"Pedro", "Esta es la cuenta de Pedro"},
+                {"Maria", "Esta es la cuenta de Maria"}
+        };
+    }
+
     @Test(dataProvider = "accounts")
     public void loadAccountsTest(String name, String description) {
 
@@ -65,21 +64,21 @@ public class AccountsTests {
 
         String newAccountResponse =
                 given()
-                        .header("Content-type", "application/json")
-                        .header("Authorization", "Bearer " + ACCESS_TOKEN)
-                        .body(anAccount)
-                        .when()
-                        .post("/services/data/v51.0/sobjects/Account")
-                        .then()
-                        .assertThat().statusCode(201).extract().asString();
+                    .header("Content-type", "application/json")
+                    .header("Authorization", "Bearer " + ACCESS_TOKEN)
+                    .body(anAccount)
+                .when()
+                    .post("/services/data/v51.0/sobjects/Account")
+                .then()
+                    .log().all().assertThat().statusCode(201).extract().asString();
 
         System.out.println("Respuesta: " + newAccountResponse);
     }
 
 
     /*
-    @Emiliano
-    30-10-2021
+    @Esteban
+    02-11-2021
     Se realiza la prueba de un POST sin access token
     Se espera mensajes de error
      */
@@ -90,13 +89,13 @@ public class AccountsTests {
 
         String newAccountResponse =
                 given()
-                        .header("Content-type", "application/json")
-                        //.header("Authorization", "Bearer " + ACCESS_TOKEN)
-                        .body(anAccount)
-                        .when()
-                        .post("/services/data/v51.0/sobjects/Account")
-                        .then()
-                        .assertThat().statusCode(401).extract().asString();
+                    .header("Content-type", "application/json")
+                    //.header("Authorization", "Bearer " + ACCESS_TOKEN)
+                    .body(anAccount)
+                .when()
+                    .post("/services/data/v51.0/sobjects/Account")
+                .then()
+                    .log().all().assertThat().statusCode(401).extract().asString();
 
         System.out.println("--> " + newAccountResponse);
 
@@ -106,13 +105,13 @@ public class AccountsTests {
 
         Response response =
                 given()
-                        .header("Content-type", "application/json")
-                        //.header("Authorization", "Bearer " + ACCESS_TOKEN)
-                        .body(anAccount)
-                        .when()
-                        .post("/services/data/v51.0/sobjects/Account")
-                        .then()
-                        .assertThat().statusCode(401).extract().response();
+                    .header("Content-type", "application/json")
+                    //.header("Authorization", "Bearer " + ACCESS_TOKEN)
+                    .body(anAccount)
+                .when()
+                    .post("/services/data/v51.0/sobjects/Account")
+                .then()
+                    .log().all().assertThat().statusCode(401).extract().response();
 
         JsonPath js = response.jsonPath();
         String msg = js.get("[0].message");
@@ -123,32 +122,30 @@ public class AccountsTests {
 
         Assert.assertEquals(msg, "Session expired or invalid", "Error: se esperaba otro mensaje");
         Assert.assertEquals(errorCode, "INVALID_SESSION_ID", "Error: se esperaba otro session id");
-
     }
 
     /*
- @Emiliano
- 30-10-2021
- Se realiza la prueba de un POST sin body
- Se espera mensajes de error
-  */
+     @Esteban
+     02-11-2021
+     Se realiza la prueba de un POST sin body
+     Se espera mensajes de error
+    */
     @Test
     public void emptyBodyErrorTest() {
 
         String newAccountResponse =
                 given()
-                        .header("Content-type", "application/json")
-                        .header("Authorization", "Bearer " + ACCESS_TOKEN)
-                        //.body(anAccount)
-                        .when()
-                        .post("/services/data/v51.0/sobjects/Account")
-                        .then()
-                        .assertThat().statusCode(400).extract().asString();
+                    .header("Content-type", "application/json")
+                    .header("Authorization", "Bearer " + ACCESS_TOKEN)
+                    //.body(anAccount)
+                .when()
+                    .post("/services/data/v51.0/sobjects/Account")
+                .then()
+                    .log().all().assertThat().statusCode(400).extract().asString();
 
         System.out.println("--> " + newAccountResponse);
 
         Assert.assertTrue(newAccountResponse.contains("JSON_PARSER_ERROR"), "Error: deberia estar el error code JSON_PARSER_ERROR");
         Assert.assertTrue(newAccountResponse.contains("The HTTP entity body is required, but this request has no entity body."), "Error: deberia estar el mensaje no body");
     }
-
 }

@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="31/10">
+    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="1/11">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Clase8/AccountsDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Clase8/AccountsDataProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Practico8/AccountsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Practico8/AccountsTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +47,25 @@
       <recent name="C:\Users\Usuario\Documents\SeleniumAcademy\IdeaProjects\APIsRestassured\src\test\java\Clase7" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ContactTest.getAccountTest">
+  <component name="RunManager" selected="TestNG.AccountsTests.loadAccountsTest">
+    <configuration name="AccountsTests.loadAccountsTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="APIsRestassured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Practico8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Practico8" />
+      <option name="MAIN_CLASS_NAME" value="Practico8.AccountsTests" />
+      <option name="METHOD_NAME" value="loadAccountsTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ContactTest.contactFlowTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIsRestassured" />
       <extension name="coverage">
@@ -120,31 +138,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DogFacts.getDogsFactsTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="APIsRestassured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Practico5.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Practico5" />
-      <option name="MAIN_CLASS_NAME" value="Practico5.DogFacts" />
-      <option name="METHOD_NAME" value="getDogsFactsTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AccountsTests.loadAccountsTest" />
         <item itemvalue="TestNG.ContactTest.getAccountTest" />
         <item itemvalue="TestNG.ContactTest.contactFlowTest" />
         <item itemvalue="TestNG.ContactTest.getAccountTest (1)" />
         <item itemvalue="TestNG.ContactTest.deleteAccountTest" />
-        <item itemvalue="TestNG.DogFacts.getDogsFactsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -276,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635698656049</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="1/11">
+      <created>1635808904675</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1635808904675</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -307,6 +314,7 @@
     <MESSAGE value="26/10" />
     <MESSAGE value="28/10" />
     <MESSAGE value="31/10" />
-    <option name="LAST_COMMIT_MESSAGE" value="31/10" />
+    <MESSAGE value="1/11" />
+    <option name="LAST_COMMIT_MESSAGE" value="1/11" />
   </component>
 </project>
