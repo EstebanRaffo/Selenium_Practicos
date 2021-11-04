@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="1/11">
+    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="2/11">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Practico8/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Practico8/Account.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Practico8/AccountsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Practico8/AccountsTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +49,24 @@
     </key>
   </component>
   <component name="RunManager" selected="TestNG.AccountsTests.loadAccountsTest">
+    <configuration name="AccountsTests.deleteAccountTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="APIsRestassured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Practico8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Practico8" />
+      <option name="MAIN_CLASS_NAME" value="Practico8.AccountsTests" />
+      <option name="METHOD_NAME" value="deleteAccountTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AccountsTests.loadAccountsTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIsRestassured" />
       <extension name="coverage">
@@ -77,24 +96,6 @@
       <option name="PACKAGE_NAME" value="Practico7" />
       <option name="MAIN_CLASS_NAME" value="Practico7.ContactTest" />
       <option name="METHOD_NAME" value="contactFlowTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ContactTest.deleteAccountTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="APIsRestassured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Practico7.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Practico7" />
-      <option name="MAIN_CLASS_NAME" value="Practico7.ContactTest" />
-      <option name="METHOD_NAME" value="deleteAccountTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -141,10 +142,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.AccountsTests.loadAccountsTest" />
+        <item itemvalue="TestNG.AccountsTests.deleteAccountTest" />
         <item itemvalue="TestNG.ContactTest.getAccountTest" />
         <item itemvalue="TestNG.ContactTest.contactFlowTest" />
         <item itemvalue="TestNG.ContactTest.getAccountTest (1)" />
-        <item itemvalue="TestNG.ContactTest.deleteAccountTest" />
       </list>
     </recent_temporary>
   </component>
@@ -283,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635808904675</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="2/11">
+      <created>1635894532845</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1635894532845</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -315,6 +323,7 @@
     <MESSAGE value="28/10" />
     <MESSAGE value="31/10" />
     <MESSAGE value="1/11" />
-    <option name="LAST_COMMIT_MESSAGE" value="1/11" />
+    <MESSAGE value="2/11" />
+    <option name="LAST_COMMIT_MESSAGE" value="2/11" />
   </component>
 </project>

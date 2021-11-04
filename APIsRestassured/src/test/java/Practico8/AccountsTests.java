@@ -50,17 +50,17 @@ public class AccountsTests {
     @DataProvider(name = "accounts")
     public Object[][] dataProviderAccounts() {
         return new Object[][]{
-                {"Pedro", "Esta es la cuenta de Pedro"},
-                {"Maria", "Esta es la cuenta de Maria"}
+                {"Pedro Lopez", "Esta es la cuenta de Pedro", "pedro.com.ar"},
+                {"Maria Lopez", "Esta es la cuenta de Maria", "maria.com.ar"}
         };
     }
 
     @Test(dataProvider = "accounts")
-    public void loadAccountsTest(String name, String description) {
+    public void loadAccountsTest(String name, String description, String site) {
 
         System.out.println("---> " + name + "  " + description);
 
-        Account anAccount = new Account(name, description);
+        Account anAccount = new Account(name, description, site);
 
         String newAccountResponse =
                 given()
@@ -73,6 +73,44 @@ public class AccountsTests {
                     .log().all().assertThat().statusCode(201).extract().asString();
 
         System.out.println("Respuesta: " + newAccountResponse);
+        JsonPath js = new JsonPath(newAccountResponse);
+        String contactId = js.get("id");
+        Assert.assertTrue(contactId.startsWith("001"));
+    }
+
+
+    @Test
+    public void getAccountTest() {
+        String accountInfo =
+                given()
+                    .header("Content-Type", "application/json")
+                    .header("Authorization", "Bearer " + ACCESS_TOKEN)
+                .when()
+                    .get("services/data/v51.0/sobjects/Account/" + "0035f000004csvZAAQ" )
+                .then()
+                    .log().all().assertThat().statusCode(200).extract().asString();
+
+        System.out.println("***********  Contact Information ***************");
+        System.out.println("---> " + accountInfo);
+
+        JsonPath js = new JsonPath(accountInfo);
+        String accountName = js.get("Name");
+        Assert.assertEquals(accountName, "United Oil & Gas Corp.", "Error: se esperaba otro nombre de cuenta!!");
+    }
+
+    @Test
+    public void deleteAccountTest(){
+        String responseInfo =
+                given()
+                    .header("Content-Type", "application/json")
+                    .header("Authorization", "Bearer " + ACCESS_TOKEN)
+                .when()
+                    .delete("services/data/v51.0/sobjects/Contact/" + "0035f000004csvZAAQ" )
+                .then()
+                    .assertThat().statusCode(204).extract().asString();
+
+        System.out.println("***********  Contact Information ***************");
+        System.out.println("---> " + responseInfo);
     }
 
 
@@ -85,7 +123,7 @@ public class AccountsTests {
     @Test
     public void emptyTokenErrorTest() {
 
-        Account anAccount = new Account("Juan", "Mi cuenta");
+        Account anAccount = new Account("Juan", "Mi cuenta", "juan@mail.com");
 
         String newAccountResponse =
                 given()
