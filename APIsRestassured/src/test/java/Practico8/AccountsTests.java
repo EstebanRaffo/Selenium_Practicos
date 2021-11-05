@@ -50,13 +50,13 @@ public class AccountsTests {
     @DataProvider(name = "accounts")
     public Object[][] dataProviderAccounts() {
         return new Object[][]{
-                {"Pedro Lopez", "Esta es la cuenta de Pedro", "pedro.com.ar"},
-                {"Maria Lopez", "Esta es la cuenta de Maria", "maria.com.ar"}
+                {"Ramiro Lopez", "Esta es la cuenta de Pedro", "pedro.com.ar"},
+                {"Ramira Lopez", "Esta es la cuenta de Maria", "maria.com.ar"}
         };
     }
 
     @Test(dataProvider = "accounts")
-    public void loadAccountsTest(String name, String description, String site) {
+    public void createAnAccountTest(String name, String description, String site) {
 
         System.out.println("---> " + name + "  " + description);
 
@@ -74,8 +74,12 @@ public class AccountsTests {
 
         System.out.println("Respuesta: " + newAccountResponse);
         JsonPath js = new JsonPath(newAccountResponse);
-        String contactId = js.get("id");
+        String contactId = js.getString("id");
+        boolean success = js.getBoolean("success");
+        System.out.println("id obtenido: " + contactId);
+        System.out.println("success: " + success);
         Assert.assertTrue(contactId.startsWith("001"));
+        Assert.assertTrue(success);
     }
 
 
