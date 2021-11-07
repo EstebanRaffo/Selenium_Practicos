@@ -205,6 +205,7 @@ public class AccountsTests {
         String message = jsonPathEvaluator.get("[0].message");
         System.out.println("message obtenido: " + message);
         String errorCode = jsonPathEvaluator.get("[0].errorCode");
+        System.out.println("errorCode obtenido: " + errorCode);
 
         Assert.assertTrue(errorCode.contains("JSON_PARSER_ERROR"), "Error: deberia estar el error code JSON_PARSER_ERROR");
         Assert.assertTrue(message.contains("code 34"), "No se obtuvo el error code 34");

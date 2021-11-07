@@ -47,7 +47,7 @@
       <recent name="C:\Users\Usuario\Documents\SeleniumAcademy\IdeaProjects\APIsRestassured\src\test\java\Clase7" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AccountsTests.emptyTokenErrorTest">
+  <component name="RunManager" selected="TestNG.AccountsTests.invalidJsonTest">
     <configuration name="AccountsTests.emptyTokenErrorTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIsRestassured" />
       <extension name="coverage">
@@ -84,7 +84,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountsTests.invalidJsonXpTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AccountsTests.invalidJsonTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIsRestassured" />
       <extension name="coverage">
         <pattern>
@@ -94,7 +94,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="Practico8" />
       <option name="MAIN_CLASS_NAME" value="Practico8.AccountsTests" />
-      <option name="METHOD_NAME" value="invalidJsonXpTest" />
+      <option name="METHOD_NAME" value="invalidJsonTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -140,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AccountsTests.invalidJsonTest" />
         <item itemvalue="TestNG.AccountsTests.emptyTokenErrorTest" />
         <item itemvalue="TestNG.AccountsTests.withoutTokenErrorTest" />
         <item itemvalue="TestNG.AccountsTests.invalidTokenErrorTest" />
         <item itemvalue="TestNG.AccountsTests.getAccountTest" />
-        <item itemvalue="TestNG.AccountsTests.invalidJsonXpTest" />
       </list>
     </recent_temporary>
   </component>
