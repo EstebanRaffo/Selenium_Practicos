@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="5/11">
+    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="6/11">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Practico8/AccountsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Practico8/AccountsTests.java" afterDir="false" />
     </list>
@@ -47,43 +47,7 @@
       <recent name="C:\Users\Usuario\Documents\SeleniumAcademy\IdeaProjects\APIsRestassured\src\test\java\Clase7" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AccountsTests.emptyTokenErrorTest">
-    <configuration name="AccountsTests.deleteAccountTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="APIsRestassured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Practico8.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Practico8" />
-      <option name="MAIN_CLASS_NAME" value="Practico8.AccountsTests" />
-      <option name="METHOD_NAME" value="deleteAccountTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AccountsTests.emptyBodyErrorTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="APIsRestassured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Practico8.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Practico8" />
-      <option name="MAIN_CLASS_NAME" value="Practico8.AccountsTests" />
-      <option name="METHOD_NAME" value="emptyBodyErrorTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.AccountsTests.invalidTokenErrorTest">
     <configuration name="AccountsTests.emptyTokenErrorTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIsRestassured" />
       <extension name="coverage">
@@ -95,6 +59,24 @@
       <option name="PACKAGE_NAME" value="Practico8" />
       <option name="MAIN_CLASS_NAME" value="Practico8.AccountsTests" />
       <option name="METHOD_NAME" value="emptyTokenErrorTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountsTests.getAccountTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="APIsRestassured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Practico8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Practico8" />
+      <option name="MAIN_CLASS_NAME" value="Practico8.AccountsTests" />
+      <option name="METHOD_NAME" value="getAccountTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -138,13 +120,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AccountsTests.invalidTokenErrorTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="APIsRestassured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Practico8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Practico8" />
+      <option name="MAIN_CLASS_NAME" value="Practico8.AccountsTests" />
+      <option name="METHOD_NAME" value="invalidTokenErrorTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AccountsTests.invalidTokenErrorTest" />
+        <item itemvalue="TestNG.AccountsTests.getAccountTest" />
         <item itemvalue="TestNG.AccountsTests.emptyTokenErrorTest" />
         <item itemvalue="TestNG.AccountsTests.invalidJsonXpTest" />
         <item itemvalue="TestNG.AccountsTests.invalidJsonTest" />
-        <item itemvalue="TestNG.AccountsTests.emptyBodyErrorTest" />
-        <item itemvalue="TestNG.AccountsTests.deleteAccountTest" />
       </list>
     </recent_temporary>
   </component>
@@ -304,7 +304,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636151203706</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="6/11">
+      <created>1636232695192</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1636232695192</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -339,6 +346,7 @@
     <MESSAGE value="2/11" />
     <MESSAGE value="4/11" />
     <MESSAGE value="5/11" />
-    <option name="LAST_COMMIT_MESSAGE" value="5/11" />
+    <MESSAGE value="6/11" />
+    <option name="LAST_COMMIT_MESSAGE" value="6/11" />
   </component>
 </project>

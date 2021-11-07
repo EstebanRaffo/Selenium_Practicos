@@ -308,4 +308,53 @@ public class AccountsTests {
         Assert.assertEquals(errorCode, "INVALID_SESSION_ID", "Error: se esperaba otro session id");
     }
 
+    /*
+    @Esteban
+    07-11-2021
+    Se realiza la prueba de un POST con access token invalido
+    Se espera mensajes de error
+     */
+    @Test
+    public void invalidTokenErrorTest() {
+
+        Account anAccount = new Account("Juan Perez", "Mi cuenta", "juan.com.ar");
+
+        String newAccountResponse =
+                given()
+                    .header("Content-type", "application/json")
+                    .header("Authorization", "Bearer " + "00D5f000005Wnwo!ARoAQP5NiHTQB6IMtOu4HXO2Eea7BhijXx.zUiFdS.0AQM02jVlV2WCUPtu3u4F95FrRRwFKc3t7XrmzdZIDdzsUnlQmL9W")
+                    .body(anAccount)
+                .when()
+                    .post("/services/data/v51.0/sobjects/Account")
+                .then()
+                    .log().all().assertThat().statusCode(401)
+//                    .body("[0].message", containsString("INVALID_HEADER_TYPE"))
+//                    .body("[0].message", containsString("INVALID_AUTH_HEADER"))
+                    .extract().asString();
+
+        System.out.println("--> " + newAccountResponse);
+
+        Assert.assertTrue(newAccountResponse.contains("INVALID_SESSION_ID"), "Error: deberia estar el error code invalid session id");
+        Assert.assertTrue(newAccountResponse.contains("Session expired or invalid"), "Error: deberia estar el mensaje session expired");
+
+        Response response =
+                given()
+                    .header("Content-type", "application/json")
+                    //.header("Authorization", "Bearer " + ACCESS_TOKEN)
+                    .body(anAccount)
+                .when()
+                    .post("/services/data/v51.0/sobjects/Account")
+                .then()
+                    .log().all().assertThat().statusCode(401).extract().response();
+
+        JsonPath js = response.jsonPath();
+        String msg = js.get("[0].message");
+        String errorCode = js.get("[0].errorCode");
+
+        System.out.println("---> " + msg);
+        System.out.println("---> " + errorCode);
+
+        Assert.assertEquals(msg, "Session expired or invalid", "Error: se esperaba otro mensaje");
+        Assert.assertEquals(errorCode, "INVALID_SESSION_ID", "Error: se esperaba otro session id");
+    }
 }
