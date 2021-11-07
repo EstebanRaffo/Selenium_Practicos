@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 import java.awt.*;
 
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.core.StringContains.containsString;
 
 public class AccountsTests {
 
@@ -311,36 +312,36 @@ public class AccountsTests {
     /*
     @Esteban
     07-11-2021
-    Se realiza la prueba de un POST con access token invalido
+    Se realiza la prueba de un POST sin access token
     Se espera mensajes de error
      */
     @Test
-    public void invalidTokenErrorTest() {
+    public void withoutTokenErrorTest() {
 
         Account anAccount = new Account("Juan Perez", "Mi cuenta", "juan.com.ar");
 
         String newAccountResponse =
                 given()
                     .header("Content-type", "application/json")
-                    .header("Authorization", "Bearer " + "00D5f000005Wnwo!ARoAQP5NiHTQB6IMtOu4HXO2Eea7BhijXx.zUiFdS.0AQM02jVlV2WCUPtu3u4F95FrRRwFKc3t7XrmzdZIDdzsUnlQmL9W")
+                    .header("Authorization", "Bearer " + "")
                     .body(anAccount)
                 .when()
                     .post("/services/data/v51.0/sobjects/Account")
                 .then()
                     .log().all().assertThat().statusCode(401)
-//                    .body("[0].message", containsString("INVALID_HEADER_TYPE"))
-//                    .body("[0].message", containsString("INVALID_AUTH_HEADER"))
+                    .body("[0].message", containsString("INVALID_HEADER_TYPE"))
+                    .body("[0].errorCode", containsString("INVALID_AUTH_HEADER"))
                     .extract().asString();
 
         System.out.println("--> " + newAccountResponse);
 
-        Assert.assertTrue(newAccountResponse.contains("INVALID_SESSION_ID"), "Error: deberia estar el error code invalid session id");
-        Assert.assertTrue(newAccountResponse.contains("Session expired or invalid"), "Error: deberia estar el mensaje session expired");
+        Assert.assertTrue(newAccountResponse.contains("INVALID_HEADER_TYPE"), "Error: deberia estar el error INVALID_HEADER_TYPE");
+        Assert.assertTrue(newAccountResponse.contains("INVALID_AUTH_HEADER"), "Error: deberia estar el error INVALID_AUTH_HEADER");
 
         Response response =
                 given()
                     .header("Content-type", "application/json")
-                    //.header("Authorization", "Bearer " + ACCESS_TOKEN)
+                    .header("Authorization", "Bearer " + "")
                     .body(anAccount)
                 .when()
                     .post("/services/data/v51.0/sobjects/Account")
@@ -354,7 +355,7 @@ public class AccountsTests {
         System.out.println("---> " + msg);
         System.out.println("---> " + errorCode);
 
-        Assert.assertEquals(msg, "Session expired or invalid", "Error: se esperaba otro mensaje");
-        Assert.assertEquals(errorCode, "INVALID_SESSION_ID", "Error: se esperaba otro session id");
+        Assert.assertEquals(msg, "INVALID_HEADER_TYPE", "Error: se esperaba el mensaje INVALID_HEADER_TYPE");
+        Assert.assertEquals(errorCode, "INVALID_AUTH_HEADER", "Error: se esperaba errorCode INVALID_AUTH_HEADER");
     }
 }
