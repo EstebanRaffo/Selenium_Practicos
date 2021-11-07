@@ -262,7 +262,7 @@ public class AccountsTests {
     /*
     @Esteban
     02-11-2021
-    Se realiza la prueba de un POST sin access token
+    Se realiza la prueba de un POST sin header con access token
     Se espera mensajes de error
      */
     @Test
@@ -279,8 +279,8 @@ public class AccountsTests {
                     .post("/services/data/v51.0/sobjects/Account")
                 .then()
                     .log().all().assertThat().statusCode(401)
-//                    .body("[0].message", containsString("INVALID_HEADER_TYPE"))
-//                    .body("[0].message", containsString("INVALID_AUTH_HEADER"))
+                    .body("[0].message", containsString("Session expired or invalid"))
+                    .body("[0].errorCode", containsString("INVALID_SESSION_ID"))
                     .extract().asString();
 
         System.out.println("--> " + newAccountResponse);

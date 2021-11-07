@@ -47,7 +47,7 @@
       <recent name="C:\Users\Usuario\Documents\SeleniumAcademy\IdeaProjects\APIsRestassured\src\test\java\Clase7" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AccountsTests.withoutTokenErrorTest">
+  <component name="RunManager" selected="TestNG.AccountsTests.emptyTokenErrorTest">
     <configuration name="AccountsTests.emptyTokenErrorTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIsRestassured" />
       <extension name="coverage">
@@ -140,10 +140,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AccountsTests.emptyTokenErrorTest" />
         <item itemvalue="TestNG.AccountsTests.withoutTokenErrorTest" />
         <item itemvalue="TestNG.AccountsTests.invalidTokenErrorTest" />
         <item itemvalue="TestNG.AccountsTests.getAccountTest" />
-        <item itemvalue="TestNG.AccountsTests.emptyTokenErrorTest" />
         <item itemvalue="TestNG.AccountsTests.invalidJsonXpTest" />
       </list>
     </recent_temporary>
@@ -318,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636298390614</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="7/11">
+      <created>1636299254950</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1636299254950</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
