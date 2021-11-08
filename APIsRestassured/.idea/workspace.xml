@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="7/11">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Practico9/WebToLead.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Clase9/WebToLead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Clase9/WebToLead.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +47,7 @@
       <recent name="C:\Users\Usuario\Documents\SeleniumAcademy\IdeaProjects\APIsRestassured\src\test\java\Clase7" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AccountsTests.invalidJsonTest">
+  <component name="RunManager" selected="TestNG.WebToLead.webToLeadTest">
     <configuration name="AccountsTests.emptyTokenErrorTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIsRestassured" />
       <extension name="coverage">
@@ -59,24 +59,6 @@
       <option name="PACKAGE_NAME" value="Practico8" />
       <option name="MAIN_CLASS_NAME" value="Practico8.AccountsTests" />
       <option name="METHOD_NAME" value="emptyTokenErrorTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AccountsTests.getAccountTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="APIsRestassured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Practico8.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Practico8" />
-      <option name="MAIN_CLASS_NAME" value="Practico8.AccountsTests" />
-      <option name="METHOD_NAME" value="getAccountTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -138,13 +120,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WebToLead.webToLeadTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="APIsRestassured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Practico9.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Practico9" />
+      <option name="MAIN_CLASS_NAME" value="Practico9.WebToLead" />
+      <option name="METHOD_NAME" value="webToLeadTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.WebToLead.webToLeadTest" />
         <item itemvalue="TestNG.AccountsTests.invalidJsonTest" />
         <item itemvalue="TestNG.AccountsTests.emptyTokenErrorTest" />
         <item itemvalue="TestNG.AccountsTests.withoutTokenErrorTest" />
         <item itemvalue="TestNG.AccountsTests.invalidTokenErrorTest" />
-        <item itemvalue="TestNG.AccountsTests.getAccountTest" />
       </list>
     </recent_temporary>
   </component>
@@ -346,7 +346,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636300984844</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="7/11">
+      <created>1636310194519</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1636310194519</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
