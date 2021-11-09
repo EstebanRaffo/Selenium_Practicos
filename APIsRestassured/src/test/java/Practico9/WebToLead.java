@@ -35,16 +35,16 @@ public class WebToLead {
 
         String respuesta =
                 given()
-                        //.header("Content-type", "application/json")
-                        .queryParam("grant_type", "password")
-                        .queryParam("client_id", "3MVG9p1Q1BCe9GmBFxFv86hAuBdOHjVb8SJIhkKHfVZUqdeSKAWcYNzzoLMN3v6QC0yp61kUYE1fCmekeCX.O")
-                        .queryParam("client_secret", "4381C0ECBB5F8BA367E97A1B75874BCBBB3EAE68ECD34D2523740B9EC56B68C8")
-                        .queryParam("username", "e.fraffo@gmail.com")
-                        .queryParam("password", "revolucionario87Ay7nOjpbwyCVhOpVNp2pSwfTx")
-                        .when()
-                        .post("token")
-                        .then()
-                        .assertThat().statusCode(200).extract().asString();
+                    //.header("Content-type", "application/json")
+                    .queryParam("grant_type", "password")
+                    .queryParam("client_id", "3MVG9p1Q1BCe9GmBFxFv86hAuBdOHjVb8SJIhkKHfVZUqdeSKAWcYNzzoLMN3v6QC0yp61kUYE1fCmekeCX.O")
+                    .queryParam("client_secret", "4381C0ECBB5F8BA367E97A1B75874BCBBB3EAE68ECD34D2523740B9EC56B68C8")
+                    .queryParam("username", "e.fraffo@gmail.com")
+                    .queryParam("password", "revolucionario87Ay7nOjpbwyCVhOpVNp2pSwfTx")
+                .when()
+                    .post("token")
+                .then()
+                    .assertThat().statusCode(200).extract().asString();
 
         System.out.println(respuesta);
 
@@ -84,27 +84,27 @@ public class WebToLead {
 
         String salesforceId =
                 given()
-                        .contentType(JSON)
-                        .header("Authorization", "Bearer " + ACCESS_TOKEN)
-                        .urlEncodingEnabled(false)
-                        .queryParam("q", query)
-                        .when()
-                        .get("/services/data/v51.0/query/")
-                        .then()
-                        .log().all().assertThat().statusCode(200).extract().path("records[0].Id");
+                    .contentType(JSON)
+                    .header("Authorization", "Bearer " + ACCESS_TOKEN)
+                    .urlEncodingEnabled(false)
+                    .queryParam("q", query)
+                .when()
+                    .get("/services/data/v51.0/query/")
+                .then()
+                    .log().all().assertThat().statusCode(200).extract().path("records[0].Id");
 
-        System.out.println("---> " + salesforceId);
+        System.out.println("records[0].Id ---> " + salesforceId);
 
         String newLeadInfo =
                 given()
-                        .contentType(JSON)
-                        .header("Authorization", "Bearer " + ACCESS_TOKEN)
-                        .urlEncodingEnabled(false)
-                        .queryParam("q", query)
-                        .when()
-                        .get("/services/data/v51.0/query/")
-                        .then()
-                        .log().all().assertThat().statusCode(200).extract().asString();
+                    .contentType(JSON)
+                    .header("Authorization", "Bearer " + ACCESS_TOKEN)
+                    .urlEncodingEnabled(false)
+                    .queryParam("q", query)
+                .when()
+                    .get("/services/data/v51.0/query/")
+                .then()
+                    .log().all().assertThat().statusCode(200).extract().asString();
 
         JsonPath js = new JsonPath(newLeadInfo);
 
@@ -115,10 +115,44 @@ public class WebToLead {
         Assert.assertTrue(leadId.startsWith("00Q"), "Error: el objeto obtenido no es un lead!!");
 
         String lastName = js.get("records[0].LastName");
+        System.out.println(lastName);
         Assert.assertEquals(lastName, "Picapiedra", "Error: se esperaba otro apellido");
 
         String status = js.get("records[0].Status");
         System.out.println(status);
+    }
+
+    @Test
+    public void getAccountIdTest(){
+
+        String query = "select+id+,+lastname+,+status+from+Account+where+lastname=+'Picapiedra'";
+
+        String salesforceId =
+                given()
+                    .contentType(JSON)
+                    .header("Authorization", "Bearer " + ACCESS_TOKEN)
+                    .urlEncodingEnabled(false)
+                    .queryParam("q", query)
+                .when()
+                    .get("/services/data/v51.0/query/")
+                .then()
+                    .log().all().assertThat().statusCode(200).extract().path("records[0].Id");
+
+        System.out.println("records[0].Id ---> " + salesforceId);
+
+        String accountInfo =
+                given()
+                    .contentType(JSON)
+                    .header("Authorization", "Bearer " + ACCESS_TOKEN)
+                    .urlEncodingEnabled(false)
+                    .queryParam("q", query)
+                .when()
+                    .get("/services/data/v51.0/query/")
+                .then()
+                    .log().all().assertThat().statusCode(200).extract().asString();
+
+        System.out.println("---> " + accountInfo);
+
     }
 }
 
