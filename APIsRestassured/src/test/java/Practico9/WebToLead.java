@@ -61,25 +61,7 @@ public class WebToLead {
 
     @Test
     public void webToLeadTest() throws InterruptedException {
- /*       System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://www.seleniumacademy.net/registro-web");
 
-        driver.manage().window().fullscreen();
-
-        System.out.println("-- " + driver.getTitle());
-        //Assert.assertEquals(driver.getTitle());
-        Assert.assertEquals(driver.getTitle(), "Web to Lead - Selenium Academy", "Error: se esperaba otro titulo");
-        driver.findElement(By.id("first_name")).sendKeys("Jonathan");
-        driver.findElement(By.id("last_name")).sendKeys("Rodriguez");
-        driver.findElement(By.id("email")).sendKeys("testing@testqa.com");
-        driver.findElement(By.id("company")).sendKeys("Selenium Academy");
-        driver.findElement(By.id("city")).sendKeys("Madrid");
-        driver.findElement(By.id("state")).sendKeys("FL");
-        Thread.sleep(3000);
-        driver.findElement(By.xpath("//*[@type='submit']")).click();
-        Assert.assertEquals(driver.getTitle(), "Home - Selenium Academy", "Error: se esperaba otro titulo");
-*/
         String query = "select+id+,+lastname+,+status+from+Lead+where+lastname=+'Picapiedra'";
 
         String salesforceId =
@@ -125,7 +107,7 @@ public class WebToLead {
     @Test
     public void getAccountIdTest(){
 
-        String query = "select+id+,+lastname+,+status+from+Account+where+lastname=+'Picapiedra'";
+        String query = "select+id+,+lastname+,+status+from+Lead+where+Id=+'00Q5f000004IsN6EAK'";
 
         String salesforceId =
                 given()
