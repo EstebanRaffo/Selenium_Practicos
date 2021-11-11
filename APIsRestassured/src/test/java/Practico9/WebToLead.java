@@ -107,7 +107,7 @@ public class WebToLead {
     @Test
     public void getAccountIdTest(){
 
-        String query = "select+id+,+lastname+,+status+from+Lead+where+Id=+'00Q5f000004IsN6EAK'";
+        String query = "select+Id+,+Name+,+Site+,+Description+from+Account+where+Id=+'0015f00000BOREfAAP'";
 
         String salesforceId =
                 given()
@@ -120,7 +120,9 @@ public class WebToLead {
                 .then()
                     .log().all().assertThat().statusCode(200).extract().path("records[0].Id");
 
-        System.out.println("records[0].Id ---> " + salesforceId);
+        System.out.println("Id ---> " + salesforceId);
+
+        Assert.assertTrue(salesforceId.startsWith("001"), "Error: el objeto obtenido no es un account!!");
 
         String accountInfo =
                 given()
@@ -133,8 +135,16 @@ public class WebToLead {
                 .then()
                     .log().all().assertThat().statusCode(200).extract().asString();
 
-        System.out.println("---> " + accountInfo);
+        System.out.println("accountInfo ---> " + accountInfo);
 
+        JsonPath datos = new JsonPath(accountInfo);
+        String name = datos.getString("records[0].Name");
+        String site = datos.getString("records[0].Site");
+        String description = datos.getString("records[0].Description");
+
+        System.out.println("Name: " + name);
+        System.out.println("Site: " + site);
+        System.out.println("Description: " + description);
     }
 }
 
