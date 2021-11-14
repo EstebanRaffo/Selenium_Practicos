@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="9/11">
+    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="11/11">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Clase10/Lead.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Clase10/LeadsValidations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Practico10/Lead.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Practico10/LeadsValidations.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Practico9/WebToLead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Practico9/WebToLead.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,36 +39,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/Practico10" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Usuario\Documents\SeleniumAcademy\IdeaProjects\APIsRestassured\src\test\java\Practico10" />
       <recent name="C:\Users\Usuario\Documents\SeleniumAcademy\IdeaProjects\APIsRestassured\src\test\java\Clase6" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Usuario\Documents\SeleniumAcademy\IdeaProjects\APIsRestassured\src\test\java\Clase7" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.WebToLead.getAccountIdTest">
-    <configuration name="AccountsTests.emptyTokenErrorTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="APIsRestassured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Practico8.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Practico8" />
-      <option name="MAIN_CLASS_NAME" value="Practico8.AccountsTests" />
-      <option name="METHOD_NAME" value="emptyTokenErrorTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.LeadsValidations.duplicateErrorOnLeadTest">
     <configuration name="AccountsTests.getAccountTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIsRestassured" />
       <extension name="coverage">
@@ -84,17 +70,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountsTests.invalidJsonTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LeadsValidations.duplicateErrorOnLeadTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIsRestassured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Practico8.*" />
+          <option name="PATTERN" value="Practico10.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Practico8" />
-      <option name="MAIN_CLASS_NAME" value="Practico8.AccountsTests" />
-      <option name="METHOD_NAME" value="invalidJsonTest" />
+      <option name="PACKAGE_NAME" value="Practico10" />
+      <option name="MAIN_CLASS_NAME" value="Practico10.LeadsValidations" />
+      <option name="METHOD_NAME" value="duplicateErrorOnLeadTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeadsValidations.requiredFieldOnLeadIsMissingCourse__cTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="APIsRestassured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Practico10.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Practico10" />
+      <option name="MAIN_CLASS_NAME" value="Practico10.LeadsValidations" />
+      <option name="METHOD_NAME" value="requiredFieldOnLeadIsMissingCourse__cTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeadsValidations.requiredFieldOnLeadIsMissingCourse__cTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="APIsRestassured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Clase10.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Clase10" />
+      <option name="MAIN_CLASS_NAME" value="Clase10.LeadsValidations" />
+      <option name="METHOD_NAME" value="requiredFieldOnLeadIsMissingCourse__cTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -120,31 +142,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebToLead.webToLeadTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="APIsRestassured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Practico9.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Practico9" />
-      <option name="MAIN_CLASS_NAME" value="Practico9.WebToLead" />
-      <option name="METHOD_NAME" value="webToLeadTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LeadsValidations.duplicateErrorOnLeadTest" />
+        <item itemvalue="TestNG.LeadsValidations.requiredFieldOnLeadIsMissingCourse__cTest (1)" />
+        <item itemvalue="TestNG.LeadsValidations.requiredFieldOnLeadIsMissingCourse__cTest" />
         <item itemvalue="TestNG.WebToLead.getAccountIdTest" />
         <item itemvalue="TestNG.AccountsTests.getAccountTest" />
-        <item itemvalue="TestNG.WebToLead.webToLeadTest" />
-        <item itemvalue="TestNG.AccountsTests.invalidJsonTest" />
-        <item itemvalue="TestNG.AccountsTests.emptyTokenErrorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -367,7 +371,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636499821891</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="11/11">
+      <created>1636670648177</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1636670648177</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -406,6 +417,7 @@
     <MESSAGE value="7/11" />
     <MESSAGE value="8/11" />
     <MESSAGE value="9/11" />
-    <option name="LAST_COMMIT_MESSAGE" value="9/11" />
+    <MESSAGE value="11/11" />
+    <option name="LAST_COMMIT_MESSAGE" value="11/11" />
   </component>
 </project>
