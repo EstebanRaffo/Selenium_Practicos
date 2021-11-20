@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="11/11">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Clase10/Lead.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Clase10/LeadsValidations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Practico10/Lead.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Practico10/LeadsValidations.java" afterDir="false" />
+    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="14/11">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Practico10/LeadsValidations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Practico10/LeadsValidations.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,18 +48,18 @@
       <recent name="C:\Users\Usuario\Documents\SeleniumAcademy\IdeaProjects\APIsRestassured\src\test\java\Clase7" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LeadsValidations.duplicateErrorOnLeadTest">
-    <configuration name="AccountsTests.getAccountTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.LeadsValidations.createLeadTest">
+    <configuration name="LeadsValidations.createLeadTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIsRestassured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Practico8.*" />
+          <option name="PATTERN" value="Practico10.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Practico8" />
-      <option name="MAIN_CLASS_NAME" value="Practico8.AccountsTests" />
-      <option name="METHOD_NAME" value="getAccountTest" />
+      <option name="PACKAGE_NAME" value="Practico10" />
+      <option name="MAIN_CLASS_NAME" value="Practico10.LeadsValidations" />
+      <option name="METHOD_NAME" value="createLeadTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -144,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LeadsValidations.createLeadTest" />
+        <item itemvalue="TestNG.WebToLead.getAccountIdTest" />
         <item itemvalue="TestNG.LeadsValidations.duplicateErrorOnLeadTest" />
         <item itemvalue="TestNG.LeadsValidations.requiredFieldOnLeadIsMissingCourse__cTest (1)" />
         <item itemvalue="TestNG.LeadsValidations.requiredFieldOnLeadIsMissingCourse__cTest" />
-        <item itemvalue="TestNG.WebToLead.getAccountIdTest" />
-        <item itemvalue="TestNG.AccountsTests.getAccountTest" />
       </list>
     </recent_temporary>
   </component>
@@ -378,7 +375,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636670648177</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="14/11">
+      <created>1636915612421</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1636915612421</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -418,6 +422,7 @@
     <MESSAGE value="8/11" />
     <MESSAGE value="9/11" />
     <MESSAGE value="11/11" />
-    <option name="LAST_COMMIT_MESSAGE" value="11/11" />
+    <MESSAGE value="14/11" />
+    <option name="LAST_COMMIT_MESSAGE" value="14/11" />
   </component>
 </project>

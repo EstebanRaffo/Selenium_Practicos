@@ -2,12 +2,12 @@ package Practico10;
 
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
+import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.contains;
-import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.*;
 
 public class LeadsValidations {
     private static String ACCESS_TOKEN = "";
@@ -106,6 +106,53 @@ public class LeadsValidations {
                         .extract().asString();
 
         System.out.println("response: " + response);
+
+    }
+
+
+    @Test
+    public void createLeadTest(){
+
+        String randomEmail = "test" + Math.random() + "@gmail.com";
+        System.out.println("Random Email : --> " + randomEmail);
+
+        Lead newLead = new Lead("Lead Test", "UM", "APIs", randomEmail);
+
+        String response =
+            given()
+                .header("Content-type", "application/json")
+                .header("Authorization", "Bearer " + ACCESS_TOKEN)
+                .body(newLead)
+            .when()
+                .post("/services/data/v51.0/sobjects/Lead")
+            .then()
+                .assertThat()
+                .statusCode(201)
+                .body("success", is(true))
+                .body("id", startsWith("00Q"))
+                .log().all()
+                .extract().asString();
+
+        System.out.println(response);
+
+        JsonPath js = new JsonPath(response);
+
+        String id = js.getString("id");
+        boolean success = js.getBoolean("success");
+
+        System.out.println("id: " + id + "\n" + "success: " + success);
+
+        Assert.assertTrue(id.startsWith("00Q"), "El Id de Lead no es valido");
+        Assert.assertTrue(success, "No se obtuvo respuesta exitosa");
+
+//        {
+//            "id": "00Q5f000004KdBeEAK",
+//            "success": true,
+//            "errors": [
+//
+//             ]
+//        }
+//        {"id":"00Q5f000004KdBeEAK","success":true,"errors":[]}
 
     }
 }
