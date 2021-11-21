@@ -2,6 +2,7 @@ package Practico10;
 
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -44,7 +45,6 @@ public class LeadsValidations {
         System.out.println("Instance Url: --> " + INSTANCE_URL);
     }
 
-
     @Test
     public void requiredFieldOnLeadIsMissingCourse__cTest() {
 
@@ -66,7 +66,6 @@ public class LeadsValidations {
 
         System.out.println("newAccountResponse: " + newAccountResponse);
     }
-
 
     @Test
     public void duplicateErrorOnLeadTest(){
@@ -108,7 +107,6 @@ public class LeadsValidations {
         System.out.println("response: " + response);
 
     }
-
 
     @Test
     public void createLeadTest(){
@@ -154,5 +152,60 @@ public class LeadsValidations {
 //        }
 //        {"id":"00Q5f000004KdBeEAK","success":true,"errors":[]}
 
+    }
+
+    @Test
+    public void updateLeadTest(){
+
+        String idLead = "00Q5f000004KdChEAK";
+        String abody = "{\n" +
+                        "    \"Rating\": \"Hot\"\n" +
+                        "}";
+
+        Response response =
+            given()
+                .header("Content-type", "application/json")
+                .header("Authorization", "Bearer " + ACCESS_TOKEN)
+                .body(abody)
+            .when()
+                .patch("/services/data/v51.0/sobjects/Lead/"+idLead)
+            .then()
+                .assertThat().statusCode(204).log().all().extract().response();
+
+        System.out.println(response.getStatusCode());
+        Assert.assertEquals(response.getStatusCode(), 204);
+    }
+
+    @Test
+    public void updateWithInvalidFieldTest(){
+
+        String idLead = "00Q5f000004KdChEAK";
+        String abody = "{\n" +
+                        "    \"Ratin\": \"Cold\"\n" +
+                        "}";
+
+        Response response =
+            given()
+                .header("Content-type", "application/json")
+                .header("Authorization", "Bearer " + ACCESS_TOKEN)
+                .body(abody)
+            .when()
+                .patch("/services/data/v51.0/sobjects/Lead/"+idLead)
+            .then()
+                .assertThat()
+                .statusCode(400)
+                .body("[0].errorCode", is("INVALID_FIELD"))
+                .body("[0].message", startsWith("No such column"))
+                .log().all().extract().response();
+
+        System.out.println(response.getBody());
+
+        JsonPath js = response.jsonPath();
+        String message = js.get("[0].message");
+        String errorCode = js.get("[0].errorCode");
+
+        Assert.assertTrue(message.startsWith("No such column"));
+        Assert.assertEquals(errorCode, "INVALID_FIELD");
+        Assert.assertEquals(response.getStatusCode(), 400);
     }
 }

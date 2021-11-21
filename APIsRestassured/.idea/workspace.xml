@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="14/11">
+    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="20/11">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Practico10/LeadsValidations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Practico10/LeadsValidations.java" afterDir="false" />
     </list>
@@ -48,7 +48,7 @@
       <recent name="C:\Users\Usuario\Documents\SeleniumAcademy\IdeaProjects\APIsRestassured\src\test\java\Clase7" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LeadsValidations.createLeadTest">
+  <component name="RunManager" selected="TestNG.LeadsValidations.updateWithInvalidFieldTest">
     <configuration name="LeadsValidations.createLeadTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIsRestassured" />
       <extension name="coverage">
@@ -85,7 +85,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeadsValidations.requiredFieldOnLeadIsMissingCourse__cTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LeadsValidations.updateLeadTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIsRestassured" />
       <extension name="coverage">
         <pattern>
@@ -95,7 +95,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="Practico10" />
       <option name="MAIN_CLASS_NAME" value="Practico10.LeadsValidations" />
-      <option name="METHOD_NAME" value="requiredFieldOnLeadIsMissingCourse__cTest" />
+      <option name="METHOD_NAME" value="updateLeadTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -103,17 +103,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeadsValidations.requiredFieldOnLeadIsMissingCourse__cTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LeadsValidations.updateWithInvalidFieldTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIsRestassured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Clase10.*" />
+          <option name="PATTERN" value="Practico10.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Clase10" />
-      <option name="MAIN_CLASS_NAME" value="Clase10.LeadsValidations" />
-      <option name="METHOD_NAME" value="requiredFieldOnLeadIsMissingCourse__cTest" />
+      <option name="PACKAGE_NAME" value="Practico10" />
+      <option name="MAIN_CLASS_NAME" value="Practico10.LeadsValidations" />
+      <option name="METHOD_NAME" value="updateWithInvalidFieldTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -141,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LeadsValidations.updateWithInvalidFieldTest" />
+        <item itemvalue="TestNG.LeadsValidations.updateLeadTest" />
         <item itemvalue="TestNG.LeadsValidations.createLeadTest" />
         <item itemvalue="TestNG.WebToLead.getAccountIdTest" />
         <item itemvalue="TestNG.LeadsValidations.duplicateErrorOnLeadTest" />
-        <item itemvalue="TestNG.LeadsValidations.requiredFieldOnLeadIsMissingCourse__cTest (1)" />
-        <item itemvalue="TestNG.LeadsValidations.requiredFieldOnLeadIsMissingCourse__cTest" />
       </list>
     </recent_temporary>
   </component>
@@ -382,7 +382,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636915612421</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="20/11">
+      <created>1637440492710</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1637440492710</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -423,6 +430,7 @@
     <MESSAGE value="9/11" />
     <MESSAGE value="11/11" />
     <MESSAGE value="14/11" />
-    <option name="LAST_COMMIT_MESSAGE" value="14/11" />
+    <MESSAGE value="20/11" />
+    <option name="LAST_COMMIT_MESSAGE" value="20/11" />
   </component>
 </project>
