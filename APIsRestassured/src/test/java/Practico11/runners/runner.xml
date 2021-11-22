@@ -1,0 +1,13 @@
+<suite name="Salesforce Tests">
+
+    <parameter name="org" value="uat"></parameter>
+    <parameter name="org" value="dev1"></parameter>
+    <parameter name="org" value="dev2"></parameter>
+
+    <test name = "Salesforce Leads Test">
+        <classes>
+            <class name="Practico11.LeadsValidations"></class>
+        </classes>
+
+    </test>
+</suite>

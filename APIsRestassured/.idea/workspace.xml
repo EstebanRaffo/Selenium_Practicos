@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="20/11">
+    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="21/11">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Clase11/BaseClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Clase11/runners/runner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Practico11/BaseClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Practico11/Lead.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Practico11/LeadsValidations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Practico11/runners/runner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Practico10/LeadsValidations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Practico10/LeadsValidations.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,16 +41,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/Practico10" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/Practico11" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Usuario\Documents\SeleniumAcademy\IdeaProjects\APIsRestassured\src\test\java\Practico11" />
       <recent name="C:\Users\Usuario\Documents\SeleniumAcademy\IdeaProjects\APIsRestassured\src\test\java\Practico10" />
       <recent name="C:\Users\Usuario\Documents\SeleniumAcademy\IdeaProjects\APIsRestassured\src\test\java\Clase6" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Usuario\Documents\SeleniumAcademy\IdeaProjects\APIsRestassured\src\test\java\Clase7" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Practico11" />
     </key>
   </component>
   <component name="RunManager" selected="TestNG.LeadsValidations.updateWithInvalidFieldTest">
@@ -389,7 +398,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637440492710</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="21/11">
+      <created>1637519488963</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1637519488963</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -406,7 +422,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="9/10" />
     <MESSAGE value="10/10" />
     <MESSAGE value="11/10" />
     <MESSAGE value="12/10" />
@@ -431,6 +446,7 @@
     <MESSAGE value="11/11" />
     <MESSAGE value="14/11" />
     <MESSAGE value="20/11" />
-    <option name="LAST_COMMIT_MESSAGE" value="20/11" />
+    <MESSAGE value="21/11" />
+    <option name="LAST_COMMIT_MESSAGE" value="21/11" />
   </component>
 </project>
