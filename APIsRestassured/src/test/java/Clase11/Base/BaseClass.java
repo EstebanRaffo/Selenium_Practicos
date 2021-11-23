@@ -1,6 +1,6 @@
 package Clase11.Base;
 
-import Utilities.Constants;
+import Clase11.Utilities.Constants;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import org.testng.annotations.*;
