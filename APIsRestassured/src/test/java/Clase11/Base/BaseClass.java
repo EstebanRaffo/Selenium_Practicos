@@ -1,4 +1,4 @@
-package BasePackage;
+package Clase11.Base;
 
 import Utilities.Constants;
 import io.restassured.RestAssured;
