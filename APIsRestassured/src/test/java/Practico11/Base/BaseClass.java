@@ -1,6 +1,6 @@
-package Practico11;
+package Practico11.Base;
 
-import Utilities.Constants;
+import Practico11.Utilities.Constants;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import org.testng.annotations.BeforeTest;

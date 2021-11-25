@@ -1,17 +1,16 @@
 package Practico11;
 
 import Practico10.Lead;
-import io.restassured.RestAssured;
+import Practico11.Base.BaseClass;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.testng.Assert;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 
-public class LeadsValidations extends BaseClass{
+public class LeadsValidations extends BaseClass {
 
     @Test
     public void requiredFieldOnLeadIsMissingCourse__cTest() {
