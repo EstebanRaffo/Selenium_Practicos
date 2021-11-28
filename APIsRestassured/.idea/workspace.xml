@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="23/11">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Practico11/Utilities/Constants.java" afterDir="false" />
+    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="25/11">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Clase12/LeadConvertionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Practico12/LeadConvertionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Practico11/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Practico11/Base/BaseClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Practico11/LeadsValidations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Practico11/LeadsValidations.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,36 +54,52 @@
       <recent name="Practico11" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LeadsValidations.updateWithInvalidFieldTest">
-    <configuration name="LeadsValidations.createLeadTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.LeadConvertionTest.newleadConvertionTest">
+    <configuration name="LeadConvertionTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIsRestassured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Practico10.*" />
+          <option name="PATTERN" value="Practico12.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Practico10" />
-      <option name="MAIN_CLASS_NAME" value="Practico10.LeadsValidations" />
-      <option name="METHOD_NAME" value="createLeadTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PACKAGE_NAME" value="Practico12" />
+      <option name="MAIN_CLASS_NAME" value="Practico12.LeadConvertionTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeadsValidations.duplicateErrorOnLeadTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LeadConvertionTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIsRestassured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Practico10.*" />
+          <option name="PATTERN" value="Clase12.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Practico10" />
-      <option name="MAIN_CLASS_NAME" value="Practico10.LeadsValidations" />
-      <option name="METHOD_NAME" value="duplicateErrorOnLeadTest" />
+      <option name="PACKAGE_NAME" value="Clase12" />
+      <option name="MAIN_CLASS_NAME" value="Clase12.LeadConvertionTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeadConvertionTest.newleadConvertionTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="APIsRestassured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Practico12.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Practico12" />
+      <option name="MAIN_CLASS_NAME" value="Practico12.LeadConvertionTest" />
+      <option name="METHOD_NAME" value="newleadConvertionTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -128,31 +143,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebToLead.getAccountIdTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="APIsRestassured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Practico9.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Practico9" />
-      <option name="MAIN_CLASS_NAME" value="Practico9.WebToLead" />
-      <option name="METHOD_NAME" value="getAccountIdTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LeadConvertionTest.newleadConvertionTest" />
+        <item itemvalue="TestNG.LeadConvertionTest (1)" />
+        <item itemvalue="TestNG.LeadConvertionTest" />
         <item itemvalue="TestNG.LeadsValidations.updateWithInvalidFieldTest" />
         <item itemvalue="TestNG.LeadsValidations.updateLeadTest" />
-        <item itemvalue="TestNG.LeadsValidations.createLeadTest" />
-        <item itemvalue="TestNG.WebToLead.getAccountIdTest" />
-        <item itemvalue="TestNG.LeadsValidations.duplicateErrorOnLeadTest" />
       </list>
     </recent_temporary>
   </component>
@@ -424,7 +421,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637709364901</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="25/11">
+      <created>1637879670387</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1637879670387</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -441,7 +445,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="12/10" />
     <MESSAGE value="16/10" />
     <MESSAGE value="17/10" />
     <MESSAGE value="18/10" />
@@ -466,6 +469,7 @@
     <MESSAGE value="21/11" />
     <MESSAGE value="22/11" />
     <MESSAGE value="23/11" />
-    <option name="LAST_COMMIT_MESSAGE" value="23/11" />
+    <MESSAGE value="25/11" />
+    <option name="LAST_COMMIT_MESSAGE" value="25/11" />
   </component>
 </project>
