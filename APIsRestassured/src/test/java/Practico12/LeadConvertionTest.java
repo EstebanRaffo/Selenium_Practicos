@@ -46,8 +46,8 @@ public class LeadConvertionTest {
     @Test
     public void newleadConvertionTest(){
 
-        String leadName = "Juan Pedro G. C.";
-        String leadCompany = "Globant";
+        String leadName = "Juan Gimenez";
+        String leadCompany = "Uala";
         Lead newLead = new Lead(leadName, leadCompany);
 
         //create the lead
@@ -68,7 +68,6 @@ public class LeadConvertionTest {
 
         Assert.assertTrue(leadId.startsWith("00Q"), "El id deberia comenzar con 00Q");
         Assert.assertTrue(status, "Error: el status deberia ser true");
-
 
         //get the lead created
         String responseLeadCreated =
@@ -94,13 +93,8 @@ public class LeadConvertionTest {
             .then()
                 .assertThat().statusCode(204).log().all().extract().response();
 
+        Assert.assertEquals(updatedLeadResponse.getStatusCode(), 204, "Error: el status deberia ser 204");
         System.out.println("updatedLeadResponse: " + updatedLeadResponse);
-
-        JsonPath jp = updatedLeadResponse.jsonPath();
-        System.out.println("jp: " + jp);
-        String title = jp.get("Title");
-        System.out.println("Para leadId actualizado: " + leadId + "se obtuvo Title: " + title);
-        Assert.assertEquals(title, "QA Manager", "No se actualizó el Title correctamente");
 
         //get the lead updated
         String responseLeadUpdated =
@@ -128,19 +122,6 @@ public class LeadConvertionTest {
 
         Assert.assertEquals(convertedLeadResponse.getStatusCode(), 204, "Error: el status deberia ser 204");
 
-        JsonPath jpLead = convertedLeadResponse.jsonPath();
-        String statusLead = jpLead.get("Status");
-        String rating = jpLead.get("Rating");
-        boolean isConverted = jpLead.getBoolean("IsConverted");
-
-        System.out.println("statusLead: " + statusLead);
-        System.out.println("rating: " + rating);
-        System.out.println("isConverted: " + isConverted);
-
-        Assert.assertEquals(statusLead, "Closed - Converted", "No se obtuvo status Closed - Converted");
-        Assert.assertEquals(rating, "Hot", "No se obtuvo Rating Hot");
-        Assert.assertTrue(isConverted, "isConverted no es true");
-
         //get the converted lead...
         Response getConvertedLeadResponse =
             given()
@@ -158,9 +139,7 @@ public class LeadConvertionTest {
         String convertedContactId = leadInfoJsonPath.get("ConvertedContactId");
 
         Assert.assertEquals(convertedLeadId, leadId, "Error: id del lead equivocada");
-
-        Assert.assertEquals(convertedLeadId, leadId, "Error: id del lead equivocada");
-        Assert.assertEquals(convertedLeadName, leadName, "Error: id del lead equivocada");
+        Assert.assertEquals(convertedLeadName, leadName, "Error: name del lead equivocado");
         Assert.assertTrue(convertedAccountId.startsWith("001"), "Error: id de account equivocada");
         Assert.assertTrue(convertedContactId.startsWith("003"), "Error: id de contact equivocada");
 
