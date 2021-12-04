@@ -165,7 +165,7 @@ public class LeadConvertionTest {
 
         System.out.println("********* CONVERTED CONTACT *************");
 
-        //get the new account related to the lead...
+        //get the new contact related to the lead...
         Response getConvertedContactResponse =
             given()
                 .header("Content-type", "application/json")
