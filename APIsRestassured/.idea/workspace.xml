@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="05/12">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Practico13/Lead.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Practico13/LeadDataLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Practico13/LeadsFromCSV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Practico13/leads.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Clase13/LeadConvertionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Clase13/LeadDataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Clase13/LeadDataLoader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -459,7 +455,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638718442895</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="05/12">
+      <created>1638730545484</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1638730545484</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
