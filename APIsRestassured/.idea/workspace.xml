@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="04/12">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Clase13/Lead.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Clase13/LeadDataLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Clase13/LeadsFromCSV.java" afterDir="false" />
+    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="05/12">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Practico13/Lead.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Practico13/LeadDataLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Practico13/LeadsFromCSV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Practico13/leads.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Clase13/LeadDataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Clase13/LeadDataLoader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,11 +40,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/Practico11" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/Practico13" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Usuario\Documents\SeleniumAcademy\IdeaProjects\APIsRestassured\src\test\java\Practico13" />
       <recent name="C:\Users\Usuario\Documents\SeleniumAcademy\IdeaProjects\APIsRestassured\src\test\java\Practico11" />
       <recent name="C:\Users\Usuario\Documents\SeleniumAcademy\IdeaProjects\APIsRestassured\src\test\java\Practico10" />
       <recent name="C:\Users\Usuario\Documents\SeleniumAcademy\IdeaProjects\APIsRestassured\src\test\java\Clase6" />
@@ -56,7 +58,7 @@
       <recent name="Practico11" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LeadConvertionTest.newleadConvertionTest">
+  <component name="RunManager" selected="TestNG.LeadsFromCSV">
     <configuration name="LeadConvertionTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIsRestassured" />
       <extension name="coverage">
@@ -109,18 +111,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeadsValidations.updateLeadTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LeadsFromCSV" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIsRestassured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Practico10.*" />
+          <option name="PATTERN" value="Practico13.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Practico10" />
-      <option name="MAIN_CLASS_NAME" value="Practico10.LeadsValidations" />
-      <option name="METHOD_NAME" value="updateLeadTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PACKAGE_NAME" value="Practico13" />
+      <option name="MAIN_CLASS_NAME" value="Practico13.LeadsFromCSV" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -147,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LeadsFromCSV" />
         <item itemvalue="TestNG.LeadConvertionTest.newleadConvertionTest" />
         <item itemvalue="TestNG.LeadConvertionTest (1)" />
         <item itemvalue="TestNG.LeadConvertionTest" />
         <item itemvalue="TestNG.LeadsValidations.updateWithInvalidFieldTest" />
-        <item itemvalue="TestNG.LeadsValidations.updateLeadTest" />
       </list>
     </recent_temporary>
   </component>
@@ -451,7 +452,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638645193072</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="05/12">
+      <created>1638718442895</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1638718442895</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -468,7 +476,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="18/10" />
     <MESSAGE value="19/10" />
     <MESSAGE value="20/10" />
     <MESSAGE value="23/10" />
@@ -493,6 +500,7 @@
     <MESSAGE value="25/11" />
     <MESSAGE value="28/11" />
     <MESSAGE value="04/12" />
-    <option name="LAST_COMMIT_MESSAGE" value="04/12" />
+    <MESSAGE value="05/12" />
+    <option name="LAST_COMMIT_MESSAGE" value="05/12" />
   </component>
 </project>
