@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="05/12">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Clase13/LeadConvertionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Practico13/LeadConvertionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Practico13/LeadConvertionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,11 +50,12 @@
       <recent name="C:\Users\Usuario\Documents\SeleniumAcademy\IdeaProjects\APIsRestassured\src\test\java\Clase7" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Practico13" />
       <recent name="Clase11" />
       <recent name="Practico11" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LeadsFromCSV">
+  <component name="RunManager" selected="TestNG.LeadConvertionTest (2)">
     <configuration name="LeadConvertionTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIsRestassured" />
       <extension name="coverage">
@@ -65,6 +66,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="Practico12" />
       <option name="MAIN_CLASS_NAME" value="Practico12.LeadConvertionTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeadConvertionTest (2)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="APIsRestassured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Practico13.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Practico13" />
+      <option name="MAIN_CLASS_NAME" value="Practico13.LeadConvertionTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -124,31 +142,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeadsValidations.updateWithInvalidFieldTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="APIsRestassured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Practico10.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Practico10" />
-      <option name="MAIN_CLASS_NAME" value="Practico10.LeadsValidations" />
-      <option name="METHOD_NAME" value="updateWithInvalidFieldTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LeadConvertionTest (2)" />
         <item itemvalue="TestNG.LeadsFromCSV" />
         <item itemvalue="TestNG.LeadConvertionTest.newleadConvertionTest" />
         <item itemvalue="TestNG.LeadConvertionTest (1)" />
         <item itemvalue="TestNG.LeadConvertionTest" />
-        <item itemvalue="TestNG.LeadsValidations.updateWithInvalidFieldTest" />
       </list>
     </recent_temporary>
   </component>
@@ -462,7 +462,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638730545484</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="05/12">
+      <created>1638732782831</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1638732782831</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

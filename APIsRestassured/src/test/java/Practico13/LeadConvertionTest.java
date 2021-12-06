@@ -15,8 +15,8 @@ public class LeadConvertionTest {
     protected static String ACCESS_TOKEN = "";
     protected static String INSTANCE_URL = "";
     private String leadId;
-    private String leadName = "Emiliano G. C.";
-    private String leadCompany = "Manchester Bakery";
+    private final String leadName = "Pedro Gomez";
+    private final String leadCompany = "IBM";
     private String convertedAccountId = "";
     private String convertedContactId = "";
 
@@ -55,16 +55,16 @@ public class LeadConvertionTest {
         //create the lead
         Response response =
                 given()
-                        .header("Content-type", "application/json")
-                        .header("Authorization", "Bearer " + ACCESS_TOKEN)
-                        .body(newLead)
-                        .when()
-                        .post("/services/data/v51.0/sobjects/Lead")
-                        .then()
-                        .assertThat()
-                        .statusCode(201)
-                        .log().all()
-                        .extract().response();
+                    .header("Content-type", "application/json")
+                    .header("Authorization", "Bearer " + ACCESS_TOKEN)
+                    .body(newLead)
+                .when()
+                    .post("/services/data/v51.0/sobjects/Lead")
+                .then()
+                    .assertThat()
+                    .statusCode(201)
+                    .log().all()
+                    .extract().response();
 
         JsonPath jsonPath = response.jsonPath();
 
@@ -80,16 +80,19 @@ public class LeadConvertionTest {
         //update the lead...
         Response updatedLeadResponse =
                 given()
-                        .header("Content-type", "application/json")
-                        .header("Authorization", "Bearer " + ACCESS_TOKEN)
-                        .body("{\"Title\":\"QA Manager\"}")
-                        .when()
-                        .patch("/services/data/v51.0/sobjects/Lead/" + leadId)
-                        .then()
-                        .assertThat()
-                        .statusCode(204)
-                        .log().all()
-                        .extract().response();
+                    .header("Content-type", "application/json")
+                    .header("Authorization", "Bearer " + ACCESS_TOKEN)
+                    .body("{\"Title\":\"QA Manager\"}")
+                .when()
+                    .patch("/services/data/v51.0/sobjects/Lead/" + leadId)
+                .then()
+                    .assertThat()
+                    .statusCode(204)
+                    .log().all()
+                    .extract().response();
+
+        Assert.assertEquals(updatedLeadResponse.getStatusCode(), 204, "Error: el status deberia ser 204");
+        System.out.println("updatedLeadResponse: " + updatedLeadResponse);
     }
 
     @Test (dependsOnMethods = "updateLeadTitleTest")
@@ -169,7 +172,7 @@ public class LeadConvertionTest {
     }
 
     @Test (dependsOnMethods = "getConvertedAccountTest")
-    public void getConvertedContectTest(){
+    public void getConvertedContactTest(){
 
         System.out.println("********* CONVERTED CONTACT *************");
 
@@ -178,9 +181,9 @@ public class LeadConvertionTest {
                 given()
                         .header("Content-type", "application/json")
                         .header("Authorization", "Bearer " + ACCESS_TOKEN)
-                        .when()
+                .when()
                         .get("/services/data/v51.0/sobjects/Contact/" + convertedContactId)
-                        .then()
+                .then()
                         .assertThat()
                         .statusCode(200)
                         .log().all()
