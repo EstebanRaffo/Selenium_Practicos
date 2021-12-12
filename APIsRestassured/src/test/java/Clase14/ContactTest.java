@@ -42,7 +42,7 @@ public class ContactTest {
 
         String contactId = js.get("id");
 
-        //obtener la informacion del contacto previamente creado....
+        //obtener la informacion del contacto previamente creado...
         obtainedContactInformation =
                 given()
                         .header("Content-Type", "application/json")
