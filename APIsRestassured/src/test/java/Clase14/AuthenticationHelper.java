@@ -33,25 +33,25 @@ public class AuthenticationHelper {
             .build();
 
 
-    @Given("I got the access token and instance url")
-    public void i_got_the_access_token_and_instance_url() {
-
-        String respuesta = given()
-                .spec(requestSpecificationForDEV)
-                .when()
-                .post("token")
-                .then().assertThat().statusCode(200)
-                .extract().asString();
-
-        System.out.println(respuesta);
-
-        JsonPath js = new JsonPath(respuesta);
-
-        ACCESS_TOKEN = js.get("access_token");
-        INSTANCE_URL = js.get("instance_url");
-
-        RestAssured.baseURI = INSTANCE_URL;
-
-    }
+//    @Given("I got the access token and instance url")
+//    public void i_got_the_access_token_and_instance_url() {
+//
+//        String respuesta = given()
+//                .spec(requestSpecificationForDEV)
+//                .when()
+//                .post("token")
+//                .then().assertThat().statusCode(200)
+//                .extract().asString();
+//
+//        System.out.println(respuesta);
+//
+//        JsonPath js = new JsonPath(respuesta);
+//
+//        ACCESS_TOKEN = js.get("access_token");
+//        INSTANCE_URL = js.get("instance_url");
+//
+//        RestAssured.baseURI = INSTANCE_URL;
+//
+//    }
 
 }

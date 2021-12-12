@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="12/12">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Clase14/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Practico14/Case.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Practico14/test/AuthenticationHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Practico14/test/CasesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Practico14/utilities/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Clase14/AccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Clase14/AccountTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Clase14/ContactTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Clase14/ContactTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Clase14/AuthenticationHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Clase14/AuthenticationHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Clase14/cases.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Practico14/features/cases.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,16 +52,38 @@
       <recent name="C:\Users\Usuario\Documents\SeleniumAcademy\IdeaProjects\APIsRestassured\src\test\java\Clase6" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Usuario\Documents\SeleniumAcademy\IdeaProjects\APIsRestassured\src\test\java\Practico14\features" />
+      <recent name="C:\Users\Usuario\Documents\SeleniumAcademy\IdeaProjects\APIsRestassured\src\test\java\Practico14" />
       <recent name="C:\Users\Usuario\Documents\SeleniumAcademy\IdeaProjects\APIsRestassured\src\test\java\Clase7" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Practico14.Utilities" />
+      <recent name="Practico14" />
       <recent name="Clase14" />
       <recent name="Practico13" />
       <recent name="Clase11" />
-      <recent name="Practico11" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LeadConvertionTest (2)">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Create a new case">
+    <configuration name="Scenario: Create a new case" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Practico14/features/cases.feature" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="APIsRestassured" />
+      <option name="NAME_FILTER" value="^Create a new case$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Create a new case$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Create a new case" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LeadConvertionTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIsRestassured" />
       <extension name="coverage">
@@ -86,23 +111,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="Practico13" />
       <option name="MAIN_CLASS_NAME" value="Practico13.LeadConvertionTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LeadConvertionTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="APIsRestassured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Clase12.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Clase12" />
-      <option name="MAIN_CLASS_NAME" value="Clase12.LeadConvertionTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -147,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Create a new case" />
         <item itemvalue="TestNG.LeadConvertionTest (2)" />
         <item itemvalue="TestNG.LeadsFromCSV" />
         <item itemvalue="TestNG.LeadConvertionTest.newleadConvertionTest" />
         <item itemvalue="TestNG.LeadConvertionTest (1)" />
-        <item itemvalue="TestNG.LeadConvertionTest" />
       </list>
     </recent_temporary>
   </component>
@@ -486,7 +494,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639322419017</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="12/12">
+      <created>1639330584664</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1639330584665</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
