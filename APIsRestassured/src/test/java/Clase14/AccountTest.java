@@ -25,14 +25,14 @@ public class AccountTest {
     public void i_send_a_request_to_create_an_account() {
         newAccountResponse =
                 given()
-                        .header("Content-type", "application/json")
-                        .header("Authorization", "Bearer " + AuthenticationHelper.ACCESS_TOKEN)
-                        .body(anAccount)
-                        .when()
-                        .post("/services/data/v51.0/sobjects/Account")
-                        .then()
-                        .assertThat().statusCode(201)
-                        .extract().asString();
+                    .header("Content-type", "application/json")
+                    .header("Authorization", "Bearer " + AuthenticationHelper.ACCESS_TOKEN)
+                    .body(anAccount)
+                .when()
+                    .post("/services/data/v51.0/sobjects/Account")
+                .then()
+                    .assertThat().statusCode(201)
+                    .extract().asString();
 
         System.out.println("Respuesta: " + newAccountResponse);
     }

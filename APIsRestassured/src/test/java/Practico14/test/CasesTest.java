@@ -17,7 +17,7 @@ public class CasesTest {
 
     @Given("I got a new case")
     public void i_got_a_new_case() {
-        aCase = new Case(Constants.STATUS, Constants.CASE_ORIGIN, Constants.CASE_REASON, Constants.DESCRIPTION);
+        aCase = new Case(Constants.STATUS, Constants.CASE_REASON, Constants.CASE_ORIGIN, Constants.DESCRIPTION);
     }
 
     @When("I send a request to create a case")
