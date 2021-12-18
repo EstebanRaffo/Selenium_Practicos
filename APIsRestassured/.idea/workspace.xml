@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="12/12">
+    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="13/12">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Clase14/AccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Clase14/AccountTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Practico14/Case.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Practico14/Case.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Practico14/test/AuthenticationHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Practico14/test/AuthenticationHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Practico14/test/CasesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Practico14/test/CasesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Practico14/utilities/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Practico14/utilities/Constants.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +62,25 @@
     </key>
   </component>
   <component name="RunManager" selected="Cucumber Java.Scenario: Create a new case">
+    <configuration name="Feature: cases" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Practico14/features/cases.feature" />
+      <option name="GLUE" value="Practico14.test" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="APIsRestassured" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: cases" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Scenario: Create a new case" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Practico14/features/cases.feature" />
@@ -77,23 +96,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LeadConvertionTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="APIsRestassured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Practico12.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Practico12" />
-      <option name="MAIN_CLASS_NAME" value="Practico12.LeadConvertionTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -153,10 +155,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Cucumber Java.Scenario: Create a new case" />
+        <item itemvalue="Cucumber Java.Feature: cases" />
         <item itemvalue="TestNG.LeadConvertionTest (2)" />
         <item itemvalue="TestNG.LeadsFromCSV" />
         <item itemvalue="TestNG.LeadConvertionTest.newleadConvertionTest" />
-        <item itemvalue="TestNG.LeadConvertionTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -505,7 +507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639339559043</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="13/12">
+      <created>1639436021771</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1639436021771</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -522,7 +531,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="23/10" />
     <MESSAGE value="24/10" />
     <MESSAGE value="26/10" />
     <MESSAGE value="28/10" />
@@ -547,6 +555,7 @@
     <MESSAGE value="05/12" />
     <MESSAGE value="06/12" />
     <MESSAGE value="12/12" />
-    <option name="LAST_COMMIT_MESSAGE" value="12/12" />
+    <MESSAGE value="13/12" />
+    <option name="LAST_COMMIT_MESSAGE" value="13/12" />
   </component>
 </project>

@@ -26,7 +26,13 @@ public class CasesTest {
                 given()
                     .header("Content-type", "application/json")
                     .header("Authorization", "Bearer " + AuthenticationHelper.ACCESS_TOKEN)
-                    .body(aCase)
+//                    .body(aCase)
+                    .body("{\n" +
+                            "\"Status\": \"New\",\n" +
+                            "\"Reason\": \"Installation\",\n" +
+                            "\"Origin\": \"Web\",\n" +
+                            "\"Description\": \"caI got an error by running the installation\"\n" +
+                            "}")
                 .when()
                     .post("/services/data/v51.0/sobjects/Case")
                 .then()
