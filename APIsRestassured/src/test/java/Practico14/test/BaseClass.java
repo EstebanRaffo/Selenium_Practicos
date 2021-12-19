@@ -1,17 +1,17 @@
 package Practico14.test;
 
 import Practico14.utilities.Constants;
-import io.cucumber.java.en.Given;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.path.json.JsonPath;
 import io.restassured.specification.RequestSpecification;
+import org.testng.annotations.BeforeTest;
 
 import static io.restassured.RestAssured.given;
 
-public class AuthenticationHelper {
-    public static String ACCESS_TOKEN;
-    public static String INSTANCE_URL;
+public class BaseClass {
+    protected static String ACCESS_TOKEN = "";
+    protected static String INSTANCE_URL = "";
 
     private RequestSpecification requestSpecificationForUAT = new RequestSpecBuilder()
             .addParam("grant_type", "password")
@@ -33,8 +33,9 @@ public class AuthenticationHelper {
             .setBasePath("/services/oauth2/")
             .build();
 
-    @Given("I got the access token and instance url")
-    public void i_got_the_access_token_and_instance_url() {
+    @BeforeTest
+    public void getCredentials(){
+        RestAssured.baseURI = "https://login.salesforce.com/services/oauth2/";
 
         String respuesta = given()
                 .spec(requestSpecificationForDEV)
@@ -51,5 +52,7 @@ public class AuthenticationHelper {
         INSTANCE_URL = js.get("instance_url");
 
         RestAssured.baseURI = INSTANCE_URL;
+        System.out.println("Access token: --> " + ACCESS_TOKEN);
+        System.out.println("Instance Url: --> " + INSTANCE_URL);
     }
 }

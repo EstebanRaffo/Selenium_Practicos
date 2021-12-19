@@ -1,4 +1,4 @@
-package Practico14.test;
+package Practico14.testSteps;
 
 import Clase14.AuthenticationHelper;
 import Practico14.Case;
@@ -9,7 +9,7 @@ import io.cucumber.java.en.When;
 
 import static io.restassured.RestAssured.given;
 
-public class CasesTest {
+public class CasesStepsTest {
     Case aCase;
     String newCaseResponse;
     String clientId;

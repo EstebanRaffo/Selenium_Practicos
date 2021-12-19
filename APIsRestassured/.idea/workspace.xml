@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="13/12">
+    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="18/12">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Practico14/test/BaseClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Practico14/test/SalesforceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Practico14/test/AuthenticationHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Practico14/test/AuthenticationHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Practico14/test/CasesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Practico14/test/CasesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Practico14/utilities/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Practico14/utilities/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Practico14/test/AuthenticationHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Practico14/testSteps/AuthenticationHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Practico14/test/CasesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Practico14/testSteps/CasesStepsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,13 +171,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633806289567</updated>
-    </task>
-    <task id="LOCAL-00001" summary="9/10">
-      <created>1633808903134</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1633808903134</updated>
     </task>
     <task id="LOCAL-00002" summary="10/10">
       <created>1633898641646</created>
@@ -514,7 +508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639436021771</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="18/12">
+      <created>1639851962596</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1639851962612</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -531,7 +532,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="24/10" />
     <MESSAGE value="26/10" />
     <MESSAGE value="28/10" />
     <MESSAGE value="31/10" />
@@ -556,6 +556,7 @@
     <MESSAGE value="06/12" />
     <MESSAGE value="12/12" />
     <MESSAGE value="13/12" />
-    <option name="LAST_COMMIT_MESSAGE" value="13/12" />
+    <MESSAGE value="18/12" />
+    <option name="LAST_COMMIT_MESSAGE" value="18/12" />
   </component>
 </project>
