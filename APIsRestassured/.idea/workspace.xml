@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="18/12">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Practico14/test/BaseClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Practico14/test/SalesforceTest.java" afterDir="false" />
+    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="19/12">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Clase15/features/leads.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Clase15/steps/LeadsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Practico14/test/AuthenticationHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Practico14/testSteps/AuthenticationHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Practico14/test/CasesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Practico14/testSteps/CasesStepsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Practico14/test/SalesforceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Practico14/test/SalesforceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +61,7 @@
       <recent name="Clase11" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Create a new case">
+  <component name="RunManager" selected="TestNG.SalesforceTest">
     <configuration name="Feature: cases" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Practico14/features/cases.feature" />
@@ -101,16 +100,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeadConvertionTest (2)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SalesforceTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIsRestassured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Practico13.*" />
+          <option name="PATTERN" value="Practico14.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Practico13" />
-      <option name="MAIN_CLASS_NAME" value="Practico13.LeadConvertionTest" />
+      <option name="PACKAGE_NAME" value="Practico14.test" />
+      <option name="MAIN_CLASS_NAME" value="Practico14.test.SalesforceTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -118,17 +117,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeadConvertionTest.newleadConvertionTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SalesforceTest.createCaseTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIsRestassured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Practico12.*" />
+          <option name="PATTERN" value="Practico14.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Practico12" />
-      <option name="MAIN_CLASS_NAME" value="Practico12.LeadConvertionTest" />
-      <option name="METHOD_NAME" value="newleadConvertionTest" />
+      <option name="PACKAGE_NAME" value="Practico14.test" />
+      <option name="MAIN_CLASS_NAME" value="Practico14.test.SalesforceTest" />
+      <option name="METHOD_NAME" value="createCaseTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -136,17 +135,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeadsFromCSV" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SalesforceTest.createContactTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIsRestassured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Practico13.*" />
+          <option name="PATTERN" value="Practico14.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Practico13" />
-      <option name="MAIN_CLASS_NAME" value="Practico13.LeadsFromCSV" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PACKAGE_NAME" value="Practico14.test" />
+      <option name="MAIN_CLASS_NAME" value="Practico14.test.SalesforceTest" />
+      <option name="METHOD_NAME" value="createContactTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -155,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SalesforceTest" />
+        <item itemvalue="TestNG.SalesforceTest.createCaseTest" />
+        <item itemvalue="TestNG.SalesforceTest.createContactTest" />
         <item itemvalue="Cucumber Java.Scenario: Create a new case" />
         <item itemvalue="Cucumber Java.Feature: cases" />
-        <item itemvalue="TestNG.LeadConvertionTest (2)" />
-        <item itemvalue="TestNG.LeadsFromCSV" />
-        <item itemvalue="TestNG.LeadConvertionTest.newleadConvertionTest" />
       </list>
     </recent_temporary>
   </component>
@@ -171,13 +171,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633806289567</updated>
-    </task>
-    <task id="LOCAL-00002" summary="10/10">
-      <created>1633898641646</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1633898641646</updated>
     </task>
     <task id="LOCAL-00003" summary="11/10">
       <created>1633977513550</created>
@@ -515,7 +508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639851962612</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="19/12">
+      <created>1639945416957</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1639945416957</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -532,7 +532,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="26/10" />
     <MESSAGE value="28/10" />
     <MESSAGE value="31/10" />
     <MESSAGE value="1/11" />
@@ -557,6 +556,7 @@
     <MESSAGE value="12/12" />
     <MESSAGE value="13/12" />
     <MESSAGE value="18/12" />
-    <option name="LAST_COMMIT_MESSAGE" value="18/12" />
+    <MESSAGE value="19/12" />
+    <option name="LAST_COMMIT_MESSAGE" value="19/12" />
   </component>
 </project>

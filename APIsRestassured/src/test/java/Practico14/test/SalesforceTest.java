@@ -5,6 +5,7 @@ import Clase14.AuthenticationHelper;
 import Clase6.Contact;
 import Practico14.Case;
 import Practico14.utilities.Constants;
+import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.testng.Assert;
@@ -21,27 +22,29 @@ public class SalesforceTest extends BaseClass{
     Contact newContact;
     String newContactResponse;
     String obtainedContactInformation;
-    String contactLastName = "Gonchi Martinez";
+    String contactLastName = "Pedro Martinez";
 
     @Test
     public void createCaseTest(){
+//        RestAssured.baseURI = AuthenticationHelper.INSTANCE_URL;
+
         aCase = new Case(Constants.STATUS, Constants.CASE_REASON, Constants.CASE_ORIGIN, Constants.DESCRIPTION);
 
-        String newCaseResponse = given()
-                .header("Content-type", "application/json")
-                .header("Authorization", "Bearer " + AuthenticationHelper.ACCESS_TOKEN)
-                .body(aCase)
-//                    .body("{\n" +
-//                            "\"Status\": \"New\",\n" +
-//                            "\"Reason\": \"Installation\",\n" +
-//                            "\"Origin\": \"Web\",\n" +
-//                            "\"Description\": \"I got an error by running the installation\"\n" +
-//                            "}")
+        String newCaseResponse =
+                given()
+                    .header("Content-type", "application/json")
+                    .header("Authorization", "Bearer " + AuthenticationHelper.ACCESS_TOKEN)
+                    .body(aCase).log().all()
+    //                    .body("{\n" +
+    //                            "\"Status\": \"New\",\n" +
+    //                            "\"Reason\": \"Installation\",\n" +
+    //                            "\"Origin\": \"Web\",\n" +
+    //                            "\"Description\": \"I got an error by running the installation\"\n" +
+    //                            "}")
                 .when()
-                .post("/services/data/v51.0/sobjects/Case")
+                    .post("/services/data/v51.0/sobjects/Case")
                 .then()
-                .assertThat().statusCode(201)
-                .extract().asString();
+                    .assertThat().statusCode(201).extract().asString();
 
         System.out.println("Respuesta: " + newCaseResponse);
     }
