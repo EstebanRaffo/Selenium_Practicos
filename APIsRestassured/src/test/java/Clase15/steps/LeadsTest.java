@@ -1,7 +1,6 @@
 package Clase15.steps;
 
-import Clase10.Lead;
-import Clase14.AuthenticationHelper;
+import Practico10.Lead;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -19,18 +18,26 @@ public class LeadsTest {
     String status = "";
     String convertedAccountId = "";
     String convertedContactId = "";
-    String lastName = "My Selenium Lead 12";
+    String lastName = "My Selenium Lead 13";
+    String leadCompany = "IBM";
+    String leadName = "Pedro Gomez";
+    String leadCourse = "Course A1";
     Lead newLead;
 
     @Given("I got a lead")
     public void i_got_a_lead() {
         //leadAsJson = "{\"LastName\":\"" + lastName +"\", \"Status\": \"Open\", \"Company\": \"This is a company 12\"}";
-        newLead = new Lead(lastName, "This is a company 12");
+        // UAT
+//        newLead = new Lead(lastName, "This is a company 12");
+        // DEV
+        newLead = new Practico10.Lead(leadName, leadCompany, leadCourse);
+
     }
 
     @When("I send a request to create the lead")
     public void i_send_a_request_to_create_the_lead() {
-        RestAssured.baseURI = AuthenticationHelper.INSTANCE_URL;
+//        RestAssured.baseURI = AuthenticationHelper.INSTANCE_URL;
+        System.out.println("RestAssured.baseURI: " + RestAssured.baseURI);
 
         String newLeadResp =
                 given()

@@ -1,18 +1,20 @@
 package Practico14.testSteps;
 
-import Clase14.AuthenticationHelper;
 import Practico14.Case;
 import Practico14.utilities.Constants;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.restassured.path.json.JsonPath;
+import org.testng.Assert;
 
 import static io.restassured.RestAssured.given;
 
 public class CasesStepsTest {
     Case aCase;
     String newCaseResponse;
-    String clientId;
+    String caseId;
+    String obtainedCaseInformation;
 
 
     @Given("I got a new case")
@@ -26,13 +28,13 @@ public class CasesStepsTest {
                 given()
                     .header("Content-type", "application/json")
                     .header("Authorization", "Bearer " + AuthenticationHelper.ACCESS_TOKEN)
-//                    .body(aCase)
-                    .body("{\n" +
-                            "\"Status\": \"New\",\n" +
-                            "\"Reason\": \"Installation\",\n" +
-                            "\"Origin\": \"Web\",\n" +
-                            "\"Description\": \"caI got an error by running the installation\"\n" +
-                            "}")
+                    .body(aCase).log().all()
+//                    .body("{\n" +
+//                            "\"Status\": \"New\",\n" +
+//                            "\"Reason\": \"Installation\",\n" +
+//                            "\"Origin\": \"Web\",\n" +
+//                            "\"Description\": \"caI got an error by running the installation\"\n" +
+//                            "}")
                 .when()
                     .post("/services/data/v51.0/sobjects/Case")
                 .then()
@@ -40,22 +42,26 @@ public class CasesStepsTest {
                     .extract().asString();
 
         System.out.println("Respuesta: " + newCaseResponse);
+
+        JsonPath jsResponse = new JsonPath(newCaseResponse);
+        caseId = jsResponse.getString("id");
     }
 
     @Then("a case has been created")
     public void a_case_has_been_created() {
-
         //obtener la informacion del contacto previamente creado...
-//        obtainedContactInformation =
-//                given()
-//                        .header("Content-Type", "application/json")
-//                        .header("Authorization", "Bearer " + AuthenticationHelper.ACCESS_TOKEN)
-//                        .when()
-//                        .get("services/data/v51.0/sobjects/Case/" + contactId )
-//                        .then()
-//                        .assertThat().statusCode(200).extract().asString();
-//
-//        System.out.println("Informacion del contacto obtenido: " + obtainedContactInformation);
+        obtainedCaseInformation =
+                given()
+                    .header("Content-Type", "application/json")
+                    .header("Authorization", "Bearer " + AuthenticationHelper.ACCESS_TOKEN)
+                .when()
+                    .get("services/data/v51.0/sobjects/Case/" + caseId )
+                .then()
+                    .assertThat().statusCode(200).extract().asString();
+
+        System.out.println("Informacion del contacto obtenido: " + obtainedCaseInformation);
+
+        Assert.assertTrue(caseId.startsWith("500"), "El id de Case debería comenzar con 500");
     }
 
 }
