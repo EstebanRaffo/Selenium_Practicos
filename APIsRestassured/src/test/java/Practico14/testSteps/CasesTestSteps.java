@@ -10,7 +10,7 @@ import org.testng.Assert;
 
 import static io.restassured.RestAssured.given;
 
-public class CasesStepsTest {
+public class CasesTestSteps {
     Case aCase;
     String newCaseResponse;
     String caseId;

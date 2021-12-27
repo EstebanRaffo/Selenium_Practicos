@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="24/12">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Clase15/steps/AuthenticationHelper.java" afterDir="false" />
+    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="26/12">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Practico14/features/contact.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Practico14/testSteps/ContactTestSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Clase14/AuthenticationHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Clase14/AuthenticationHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Clase15/steps/LeadsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Clase15/steps/LeadsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Practico14/test/SalesforceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Practico14/test/SalesforceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Practico14/testSteps/CasesStepsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Practico14/testSteps/CasesStepsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Practico14/testSteps/CasesStepsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Practico14/testSteps/CasesTestSteps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +61,7 @@
       <recent name="Practico13" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Create a lead">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Create a new contact">
     <configuration name="Feature: cases" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Practico14/features/cases.feature" />
@@ -123,20 +121,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SalesforceTest.createContactTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Create a new contact" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Practico14/features/contact.feature" />
+      <option name="GLUE" value="Clase14" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="APIsRestassured" />
+      <option name="NAME_FILTER" value="^Create a new contact$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Create a new contact$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Create a new contact" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Practico14.test.*" />
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Practico14.test" />
-      <option name="MAIN_CLASS_NAME" value="Practico14.test.SalesforceTest" />
-      <option name="METHOD_NAME" value="createContactTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -161,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Create a new contact" />
         <item itemvalue="Cucumber Java.Scenario: Create a lead" />
         <item itemvalue="Cucumber Java.Feature: cases" />
         <item itemvalue="Cucumber Java.Scenario: Create a new case" />
         <item itemvalue="TestNG.SalesforceTest.createLeadTest" />
-        <item itemvalue="TestNG.SalesforceTest.createContactTest" />
       </list>
     </recent_temporary>
   </component>
@@ -177,13 +177,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633806289567</updated>
-    </task>
-    <task id="LOCAL-00004" summary="12/10">
-      <created>1634078940786</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1634078940786</updated>
     </task>
     <task id="LOCAL-00005" summary="16/10">
       <created>1634418693610</created>
@@ -521,7 +514,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640371366539</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="26/12">
+      <created>1640545712365</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1640545712365</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -538,7 +538,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="31/10" />
     <MESSAGE value="1/11" />
     <MESSAGE value="2/11" />
     <MESSAGE value="4/11" />
@@ -563,6 +562,7 @@
     <MESSAGE value="18/12" />
     <MESSAGE value="19/12" />
     <MESSAGE value="24/12" />
-    <option name="LAST_COMMIT_MESSAGE" value="24/12" />
+    <MESSAGE value="26/12" />
+    <option name="LAST_COMMIT_MESSAGE" value="26/12" />
   </component>
 </project>
