@@ -1,4 +1,4 @@
-package Practico14.testSteps;
+package Practico14.steps;
 
 import Practico14.utilities.Constants;
 import io.cucumber.java.en.Given;

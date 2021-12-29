@@ -1,4 +1,4 @@
-package Practico14.testSteps;
+package Practico14.steps;
 
 import Practico14.Case;
 import Practico14.utilities.Constants;
@@ -10,7 +10,7 @@ import org.testng.Assert;
 
 import static io.restassured.RestAssured.given;
 
-public class CasesTestSteps {
+public class CasesTest {
     Case aCase;
     String newCaseResponse;
     String caseId;

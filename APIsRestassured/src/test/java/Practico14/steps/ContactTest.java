@@ -1,4 +1,4 @@
-package Practico14.testSteps;
+package Practico14.steps;
 
 import Clase6.Contact;
 import io.cucumber.java.en.Given;
@@ -7,10 +7,10 @@ import io.cucumber.java.en.When;
 import io.restassured.path.json.JsonPath;
 import org.testng.Assert;
 
-import static Practico14.testSteps.AuthenticationHelper.ACCESS_TOKEN;
+import static Practico14.steps.AuthenticationHelper.ACCESS_TOKEN;
 import static io.restassured.RestAssured.given;
 
-public class ContactTestSteps {
+public class ContactTest {
     Contact newContact;
     String newContactResponse;
     String obtainedContactInformation;
