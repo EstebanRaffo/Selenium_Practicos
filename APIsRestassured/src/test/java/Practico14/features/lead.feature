@@ -5,3 +5,4 @@ Feature: : Leads in Salesforce
     And I got a lead
     When I send a request to create the lead
     Then a lead is created
+    And new lead information expected is the same as lead sent

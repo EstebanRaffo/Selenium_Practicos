@@ -30,7 +30,7 @@ public class LeadsTest {
         // UAT
 //        newLead = new Lead(lastName, "This is a company 12");
         // DEV
-        newLead = new Practico10.Lead(leadName, leadCompany, leadCourse);
+        newLead = new Lead(leadName, leadCompany, leadCourse);
 
     }
 

@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="27/12">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Practico14/features/lead.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Practico14/testSteps/LeadTest.java" afterDir="false" />
+    <list default="true" id="956846e5-7aea-4786-9a92-9b77d148e63b" name="Default Changelist" comment="29/12">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Practico14/testSteps/CasesTestSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Practico14/testSteps/CasesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Practico14/testSteps/ContactTestSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Practico14/testSteps/ContactTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Clase15/steps/LeadsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Clase15/steps/LeadsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Practico14/features/lead.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Practico14/features/lead.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Practico14/steps/LeadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Practico14/steps/LeadTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +38,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Intermedio/Practico15" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
@@ -62,7 +61,7 @@
       <recent name="Practico13" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Create a lead (1)">
+  <component name="RunManager" selected="Cucumber Java.Feature: lead">
     <configuration name="Feature: contact" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Practico14/features/contact.feature" />
@@ -163,8 +162,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: Create a lead (1)" />
         <item itemvalue="Cucumber Java.Feature: lead" />
+        <item itemvalue="Cucumber Java.Scenario: Create a lead (1)" />
         <item itemvalue="Cucumber Java.Feature: contact" />
         <item itemvalue="Cucumber Java.Scenario: Create a new case" />
         <item itemvalue="Cucumber Java.Scenario: Create a new contact" />
@@ -179,13 +178,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633806289567</updated>
-    </task>
-    <task id="LOCAL-00006" summary="17/10">
-      <created>1634504734953</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1634504734953</updated>
     </task>
     <task id="LOCAL-00007" summary="18/10">
       <created>1634598245252</created>
@@ -523,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640643059345</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="29/12">
+      <created>1640818084010</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1640818084010</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -540,7 +539,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="2/11" />
     <MESSAGE value="4/11" />
     <MESSAGE value="5/11" />
     <MESSAGE value="6/11" />
@@ -565,6 +563,7 @@
     <MESSAGE value="24/12" />
     <MESSAGE value="26/12" />
     <MESSAGE value="27/12" />
-    <option name="LAST_COMMIT_MESSAGE" value="27/12" />
+    <MESSAGE value="29/12" />
+    <option name="LAST_COMMIT_MESSAGE" value="29/12" />
   </component>
 </project>
