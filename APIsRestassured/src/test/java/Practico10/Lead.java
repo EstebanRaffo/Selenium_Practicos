@@ -7,6 +7,10 @@ public class Lead {
     private String Course__c;
     private String Email;
 
+    public Lead(String lastName){
+        this.LastName = lastName;
+    }
+
     public Lead(String aName, String aCompany){
         this.LastName = aName;
         this.Company = aCompany;
