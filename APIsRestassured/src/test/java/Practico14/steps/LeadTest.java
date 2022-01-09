@@ -8,7 +8,6 @@ import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.testng.Assert;
-import Practico14.steps.AuthenticationHelper;
 
 import static io.restassured.RestAssured.given;
 

@@ -60,7 +60,6 @@ public class ContactTest {
         JsonPath js = new JsonPath(obtainedContactInformation);
 
         String obtainedContactLastName = js.get("LastName");
-
         Assert.assertEquals(obtainedContactLastName, contactLastName, "Error: se esperaba otro apellido" );
     }
 }
